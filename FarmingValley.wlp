@@ -112,7 +112,8 @@
                 {
                     "type": "cursor",
                     "cursor": {
-                        "handedness": "input component"
+                        "handedness": "none",
+                        "cursorObject": null
                     }
                 }
             ]
@@ -171,7 +172,7 @@
                 1.0,
                 0.0,
                 4.656612873077393e-10,
-                3.0,
+                3.06264591217041,
                 2.0,
                 1.0
             ]
@@ -199,9 +200,9 @@
                 0.0,
                 1.0,
                 0.0,
-                -1.0,
-                3.0,
-                -1.0,
+                -0.9898642301559448,
+                3.06264591217041,
+                -0.9898641109466552,
                 1.0
             ]
         },
@@ -493,6 +494,359 @@
                 1.0
             ],
             "deleted": true
+        },
+        "43": {
+            "name": "Mesh.004",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                0.10000000149011612,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.10000000149011612,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.10000000149011612,
+                0.0,
+                9.313225746154786e-10,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "44": {
+            "name": "Mesh.005",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "22"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "change-material",
+                    "change-material": {
+                        "mat": "25"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                7.450580596923828e-9,
+                1.007559061050415,
+                -3.899313926696778,
+                1.0
+            ],
+            "deleted": true
+        },
+        "45": {
+            "name": "GUI",
+            "parent": "17",
+            "transformation": [
+                0.03999999910593033,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.03999999910593033,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.03999999910593033,
+                0.0,
+                0.0,
+                -0.20000000298023225,
+                -0.5,
+                1.0
+            ]
+        },
+        "46": {
+            "name": "HoeButton",
+            "parent": "45",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "48"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "menu-click",
+                    "menu-click": {
+                        "hoverMaterial": "49",
+                        "selectMaterial": "54"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                0.03999999910593033,
+                                0.03999999910593033,
+                                0.004999999888241291
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -2.0999999046325685,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "47": {
+            "name": "Empty",
+            "parent": "46",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Hoe"
+                    }
+                }
+            ],
+            "transformation": [
+                2.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.0,
+                0.0,
+                0.0,
+                0.0,
+                0.10000000149011612,
+                1.0
+            ]
+        },
+        "50": {
+            "name": "WateringButton",
+            "parent": "45",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "48"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "menu-click",
+                    "menu-click": {
+                        "hoverMaterial": "49",
+                        "menuItem": "Water",
+                        "selectMaterial": "54"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                0.03999999910593033,
+                                0.03999999910593033,
+                                0.004999999888241291
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "51": {
+            "name": "SeedButton",
+            "parent": "45",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "48"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "menu-click",
+                    "menu-click": {
+                        "hoverMaterial": "49",
+                        "menuItem": "Seed",
+                        "selectMaterial": "54"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                0.03999999910593033,
+                                0.03999999910593033,
+                                0.004999999888241291
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.0999999046325685,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "52": {
+            "name": "Empty",
+            "parent": "50",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Watering\nCan"
+                    }
+                }
+            ],
+            "transformation": [
+                2.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.0,
+                0.0,
+                -0.000003814697265625,
+                0.0,
+                0.100006103515625,
+                1.0
+            ]
+        },
+        "53": {
+            "name": "Empty",
+            "parent": "51",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Seeds"
+                    }
+                }
+            ],
+            "transformation": [
+                2.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.0,
+                0.0,
+                -0.0000095367431640625,
+                0.0,
+                0.100006103515625,
+                1.0
+            ]
         }
     },
     "meshes": {
@@ -647,6 +1001,42 @@
         },
         "39": {
             "name": "Placeholder"
+        },
+        "48": {
+            "name": "menuItem",
+            "shader": "Flat",
+            "Flat": {
+                "color": [
+                    0.7921568751335144,
+                    0.43529412150382998,
+                    0.0117647061124444,
+                    1.0
+                ]
+            }
+        },
+        "49": {
+            "name": "menuItemHover",
+            "shader": "Flat",
+            "Flat": {
+                "color": [
+                    0.9254902005195618,
+                    0.589470386505127,
+                    0.19235678017139436,
+                    1.0
+                ]
+            }
+        },
+        "54": {
+            "name": "menuItemSelected",
+            "shader": "Flat",
+            "Flat": {
+                "color": [
+                    0.26690220832824709,
+                    0.6235294342041016,
+                    0.22985005378723145,
+                    1.0
+                ]
+            }
         }
     },
     "shaders": {
@@ -716,8 +1106,8 @@
             "name": "FarmingValley",
             "version": [
                 0,
-                7,
-                6
+                8,
+                0
             ]
         },
         "vr": {
@@ -728,8 +1118,12 @@
             "sourcePaths": [
                 "/js/components/",
                 "js/",
-                "js/components"
+                "js/components",
+                "js/lib"
             ]
+        },
+        "runtime": {
+            "visualizeColliders": false
         }
     },
     "animations": {},
