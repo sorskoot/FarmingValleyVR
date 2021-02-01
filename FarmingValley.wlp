@@ -11,21 +11,21 @@
                 }
             ],
             "transformation": [
-                0.7160133123397827,
+                0.9999988079071045,
                 0.0,
-                0.6980865001678467,
+                0.0,
                 0.0,
                 0.0,
                 1.0,
                 0.0,
                 0.0,
-                -0.6980865001678467,
                 0.0,
-                0.7160133123397827,
                 0.0,
-                -3.2591099739074709,
-                1.800013542175293,
-                1.7569212913513184,
+                0.9999988079071045,
+                0.0,
+                0.01682758890092373,
+                1.8000209331512452,
+                4.447821617126465,
                 1.0
             ]
         },
@@ -57,7 +57,8 @@
                 0.0,
                 1.192092895507813e-7,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "16": {
             "name": "Cube",
@@ -113,7 +114,8 @@
                     "type": "cursor",
                     "cursor": {
                         "handedness": "none",
-                        "cursorObject": null
+                        "cursorObject": null,
+                        "cursorRayObject": null
                     }
                 }
             ]
@@ -274,14 +276,32 @@
                 {
                     "type": "patch-of-land",
                     "patch-of-land": {
-                        "meshRough": "7",
-                        "meshTilled": "7",
-                        "meshWet": "7",
-                        "materialRough": "26",
-                        "materialTilled": "25",
-                        "materialWet": "22"
+                        "meshRough": "124",
+                        "meshTilled": "130",
+                        "meshWet": "130",
+                        "materialRough": "123",
+                        "materialTilled": "129",
+                        "materialWet": "154"
                     }
                 }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                1.0
             ]
         },
         "33": {
@@ -523,7 +543,8 @@
                 0.0,
                 0.0,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "44": {
             "name": "Mesh.005",
@@ -847,6 +868,815 @@
                 0.100006103515625,
                 1.0
             ]
+        },
+        "75": {
+            "link": {
+                "name": "bone",
+                "file": "assets\\models\\Fence.gltf"
+            },
+            "transformation": [
+                -8.195635103902532e-8,
+                0.0,
+                -0.06249997019767761,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                0.0,
+                0.06249997019767761,
+                0.0,
+                -8.195635103902532e-8,
+                0.0,
+                -1.0000011920928956,
+                0.0,
+                -1.1342248916625977,
+                1.0
+            ],
+            "deleted": true
+        },
+        "76": {
+            "link": {
+                "name": "88f44f64-72ee-d6fd-f625-453e5dc496fd<bone",
+                "file": "assets\\models\\Fence.gltf"
+            },
+            "deleted": true
+        },
+        "77": {
+            "link": {
+                "name": "7ea1b707-89a7-bc56-32ec-8d5f86bbf654<bone",
+                "file": "assets\\models\\Fence.gltf"
+            },
+            "deleted": true
+        },
+        "78": {
+            "link": {
+                "name": "1d96aced-67bb-706e-f410-02469f672db9<bone",
+                "file": "assets\\models\\Fence.gltf"
+            },
+            "deleted": true
+        },
+        "79": {
+            "link": {
+                "name": "279361f5-b142-0ee1-1448-26d10b3bf371<bone",
+                "file": "assets\\models\\Fence.gltf"
+            },
+            "deleted": true
+        },
+        "106": {
+            "link": {
+                "name": "Fence.obj",
+                "file": "assets\\models\\scene (5).glb"
+            },
+            "deleted": true
+        },
+        "107": {
+            "link": {
+                "name": "cube<Fence.obj",
+                "file": "assets\\models\\scene (5).glb"
+            },
+            "deleted": true
+        },
+        "108": {
+            "link": {
+                "name": "cube<Fence.obj",
+                "file": "assets\\models\\scene (5).glb"
+            },
+            "deleted": true
+        },
+        "109": {
+            "link": {
+                "name": "cube<Fence.obj",
+                "file": "assets\\models\\scene (5).glb"
+            },
+            "deleted": true
+        },
+        "110": {
+            "link": {
+                "name": "cube<Fence.obj",
+                "file": "assets\\models\\scene (5).glb"
+            },
+            "deleted": true
+        },
+        "111": {
+            "name": "Mesh.006",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "61",
+                        "material": "80"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "116": {
+            "link": {
+                "name": "Fence",
+                "file": "assets\\models\\Fence.glb"
+            },
+            "transformation": [
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                -1.0,
+                0.0,
+                -1.5456680059432984,
+                1.0
+            ],
+            "parent": "134"
+        },
+        "117": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\Fence.glb"
+            }
+        },
+        "118": {
+            "link": {
+                "name": "root",
+                "file": "assets\\models\\Fence.glb"
+            },
+            "deleted": true
+        },
+        "119": {
+            "link": {
+                "name": "Fence<root",
+                "file": "assets\\models\\Fence.glb"
+            },
+            "deleted": true
+        },
+        "120": {
+            "link": {
+                "name": "Default light<root",
+                "file": "assets\\models\\Fence.glb"
+            },
+            "deleted": true
+        },
+        "125": {
+            "link": {
+                "name": "Plane002",
+                "file": "assets\\models\\grass.glb"
+            },
+            "transformation": [
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                7.751464750072046e-7,
+                -3.875732375036023e-7,
+                0.0,
+                1.0
+            ],
+            "name": "Grass",
+            "deleted": true
+        },
+        "126": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\grass.glb"
+            }
+        },
+        "131": {
+            "link": {
+                "name": "Plane003",
+                "file": "assets\\models\\tilled.glb"
+            },
+            "transformation": [
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                0.0,
+                -3.875732375036023e-7,
+                0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "132": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\tilled.glb"
+            }
+        },
+        "133": {
+            "name": "Mesh.007",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "129"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0819588452577591,
+                -0.9966410398483276,
+                0.0,
+                0.0,
+                0.9966410398483276,
+                0.0819588452577591,
+                0.0,
+                -1.7283427715301514,
+                1.3960621356964112,
+                -3.576278686523438e-7,
+                1.0
+            ],
+            "deleted": true
+        },
+        "134": {
+            "name": "Land"
+        },
+        "135": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                0.0,
+                -5.960464477539063e-8,
+                -1.5,
+                1.0
+            ]
+        },
+        "136": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                -1.0,
+                -5.960464477539063e-8,
+                -1.5,
+                1.0
+            ]
+        },
+        "137": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                1.0,
+                -5.960464477539063e-8,
+                -1.5,
+                1.0
+            ]
+        },
+        "138": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                2.0,
+                -5.960464477539063e-8,
+                -1.5,
+                1.0
+            ]
+        },
+        "139": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                -2.0,
+                -5.960464477539064e-8,
+                -1.5,
+                1.0
+            ]
+        },
+        "140": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                -2.0,
+                -4.4703483581542978e-8,
+                -0.5,
+                1.0
+            ]
+        },
+        "141": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                -2.0,
+                -4.470348358154297e-8,
+                0.5,
+                1.0
+            ]
+        },
+        "142": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                -2.0,
+                5.960464477539064e-8,
+                1.5,
+                1.0
+            ]
+        },
+        "143": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                -2.0,
+                0.0,
+                2.5,
+                1.0
+            ]
+        },
+        "144": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                -1.0,
+                0.0,
+                2.5,
+                1.0
+            ]
+        },
+        "145": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                0.0,
+                0.0,
+                2.5,
+                1.0
+            ]
+        },
+        "146": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                1.0,
+                0.0,
+                2.5,
+                1.0
+            ]
+        },
+        "147": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                2.0,
+                0.0,
+                2.5,
+                1.0
+            ]
+        },
+        "148": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                2.0,
+                5.960464477539064e-8,
+                1.5,
+                1.0
+            ]
+        },
+        "149": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                2.0,
+                4.4703483581542978e-8,
+                0.5,
+                1.0
+            ]
+        },
+        "150": {
+            "name": "Grass001",
+            "parent": "134",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "123"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00024384260177612305,
+                -0.4999999403953552,
+                0.0,
+                0.0,
+                0.4999999403953552,
+                0.00024384260177612305,
+                0.0,
+                2.0,
+                4.4703483581542978e-8,
+                -0.5,
+                1.0
+            ]
+        },
+        "151": {
+            "link": {
+                "name": "Fence",
+                "file": "assets\\models\\Fence.glb"
+            },
+            "transformation": [
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                1.0,
+                0.0,
+                -1.5456680059432984,
+                1.0
+            ],
+            "parent": "134"
+        },
+        "152": {
+            "link": {
+                "name": "Fence",
+                "file": "assets\\models\\Fence.glb"
+            },
+            "transformation": [
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                -1.5456680059432984,
+                1.0
+            ],
+            "parent": "134"
+        },
+        "155": {
+            "name": "Mesh.008",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "154"
+                    }
+                }
+            ],
+            "deleted": true
         }
     },
     "meshes": {
@@ -885,6 +1715,254 @@
                 "name": "PrimitiveCircle",
                 "file": "default"
             }
+        },
+        "61": {
+            "link": {
+                "name": "mesh_0",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "62": {
+            "link": {
+                "name": "mesh_1",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "63": {
+            "link": {
+                "name": "mesh_2",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "mesh_3",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "mesh_4",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "66": {
+            "link": {
+                "name": "mesh_5",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "67": {
+            "link": {
+                "name": "mesh_6",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "mesh_7",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "69": {
+            "link": {
+                "name": "mesh_8",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "70": {
+            "link": {
+                "name": "mesh_9",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "71": {
+            "link": {
+                "name": "mesh_10",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "72": {
+            "link": {
+                "name": "mesh_11",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "73": {
+            "link": {
+                "name": "mesh_12",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "74": {
+            "link": {
+                "name": "mesh_13",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "82": {
+            "link": {
+                "name": "mesh_0",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "83": {
+            "link": {
+                "name": "mesh_1",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "84": {
+            "link": {
+                "name": "mesh_2",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "85": {
+            "link": {
+                "name": "mesh_3",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "mesh_4",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "mesh_5",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "88": {
+            "link": {
+                "name": "mesh_6",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "89": {
+            "link": {
+                "name": "mesh_7",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "mesh_8",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "mesh_9",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "mesh_10",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "mesh_11",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "94": {
+            "link": {
+                "name": "mesh_12",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "95": {
+            "link": {
+                "name": "mesh_13",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "96": {
+            "link": {
+                "name": "mesh_14",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "97": {
+            "link": {
+                "name": "mesh_15",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "98": {
+            "link": {
+                "name": "mesh_16",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "99": {
+            "link": {
+                "name": "mesh_17",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "100": {
+            "link": {
+                "name": "mesh_18",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "101": {
+            "link": {
+                "name": "mesh_19",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "102": {
+            "link": {
+                "name": "mesh_20",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "103": {
+            "link": {
+                "name": "mesh_21",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "104": {
+            "link": {
+                "name": "mesh_22",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "105": {
+            "link": {
+                "name": "mesh_23",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "115": {
+            "link": {
+                "name": "Fence",
+                "file": "assets\\models\\Fence.glb"
+            }
+        },
+        "124": {
+            "link": {
+                "name": "Plane002",
+                "file": "assets\\models\\grass.glb"
+            },
+            "name": "Grass"
+        },
+        "130": {
+            "link": {
+                "name": "Plane003",
+                "file": "assets\\models\\tilled.glb"
+            },
+            "name": "Tilled"
         }
     },
     "textures": {
@@ -894,9 +1972,85 @@
                 "file": "default"
             },
             "name": "DefaultFont"
+        },
+        "57": {
+            "link": {
+                "name": "textures_1.png",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "58": {
+            "link": {
+                "name": "texture_1",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "113": {
+            "link": {
+                "name": "textures_1.png",
+                "file": "assets\\models\\Fence.glb"
+            }
+        },
+        "122": {
+            "link": {
+                "name": "textures_0.png",
+                "file": "assets\\models\\grass.glb"
+            }
+        },
+        "128": {
+            "link": {
+                "name": "textures_2.png",
+                "file": "assets\\models\\tilled.glb"
+            }
+        },
+        "153": {
+            "name": "texture.000"
+        },
+        "157": {
+            "link": {
+                "name": "textures_3.png",
+                "file": "assets\\models\\textures_3.png"
+            }
         }
     },
-    "images": {},
+    "images": {
+        "55": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "image_1",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "112": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\Fence.glb"
+            }
+        },
+        "121": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\grass.glb"
+            }
+        },
+        "127": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\tilled.glb"
+            }
+        },
+        "156": {
+            "link": {
+                "name": "textures_3.png",
+                "file": "assets\\models\\textures_3.png"
+            }
+        }
+    },
     "materials": {
         "DefaultFontMaterial": {
             "link": {
@@ -1008,7 +2162,7 @@
             "Flat": {
                 "color": [
                     0.7921568751335144,
-                    0.43529412150382998,
+                    0.43529412150383,
                     0.0117647061124444,
                     1.0
                 ]
@@ -1036,6 +2190,63 @@
                     0.22985005378723145,
                     1.0
                 ]
+            }
+        },
+        "59": {
+            "link": {
+                "name": "textures_1.png",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "60": {
+            "link": {
+                "name": "material_1",
+                "file": "assets\\models\\Fence.gltf"
+            }
+        },
+        "80": {
+            "link": {
+                "name": "m_0",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "81": {
+            "link": {
+                "name": "none",
+                "file": "assets\\models\\scene (5).glb"
+            }
+        },
+        "114": {
+            "link": {
+                "name": "Material #25",
+                "file": "assets\\models\\Fence.glb"
+            }
+        },
+        "123": {
+            "link": {
+                "name": "Grass",
+                "file": "assets\\models\\grass.glb"
+            },
+            "Phong": {
+                "shininess": 255
+            },
+            "shader": "Flat Textured"
+        },
+        "129": {
+            "link": {
+                "name": "Tilled",
+                "file": "assets\\models\\tilled.glb"
+            },
+            "shader": "Flat Textured"
+        },
+        "154": {
+            "name": "TilledWet",
+            "Phong": {
+                "diffuseTexture": "157"
+            },
+            "shader": "Flat Textured",
+            "Flat": {
+                "flatTexture": "157"
             }
         }
     },
@@ -1119,7 +2330,8 @@
                 "/js/components/",
                 "js/",
                 "js/components",
-                "js/lib"
+                "js/lib",
+                "js/data"
             ]
         },
         "runtime": {
@@ -1127,5 +2339,13 @@
         }
     },
     "animations": {},
-    "skins": {}
+    "skins": {},
+    "files": [
+        "assets/models/Fence.gltf",
+        "assets/models/scene (5).glb",
+        "assets/models/Fence.glb",
+        "assets/models/grass.glb",
+        "assets/models/tilled.glb",
+        "assets/models/textures_3.png"
+    ]
 }

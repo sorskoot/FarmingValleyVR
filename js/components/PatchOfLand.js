@@ -27,9 +27,9 @@ WL.registerComponent('patch-of-land', {
                     materialWet: this.materialWet
                 })
                 tile.initialize();
-                o.translate([x, y, .1]);
-                o.scale([.45, .45, .45]);
-                o.rotateAxisAngleDeg(AXIS.X, -90);
+                o.translate([x, 0, y]);
+                o.scale([.0625, .0625, .0625]);
+                //o.rotateAxisAngleDeg(AXIS.X, -90);
             }
         }
     },

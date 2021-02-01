@@ -6,11 +6,19 @@ const MENU_ITEMS = {
 
 class Game {
 
-    constructor() {
+     constructor() {
         this.currentAction = "Nothing";
         this.menuChangeHandlers = [];
+        
+        //this.loadData();
     }
     
+    async loadData(){
+        var data = await fetch("/test.json");
+        var result = await data.json();
+        console.log(result.test);       
+    }
+
     addMenuChangeFunction(callback){
         this.menuChangeHandlers.push(callback);
     }

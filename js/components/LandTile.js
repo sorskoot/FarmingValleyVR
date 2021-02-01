@@ -10,10 +10,10 @@ WL.registerComponent('landtile', {
     materialWet: { type: WL.Type.Material },
 }, {
     init: function () {
-       
+
     },
     initialize: function () {
-         this.meshes = [
+        this.meshes = [
             { mesh: this.meshRough, material: this.materialRough },
             { mesh: this.meshTilled, material: this.materialTilled },
             { mesh: this.meshWet, material: this.materialWet },
@@ -21,7 +21,6 @@ WL.registerComponent('landtile', {
 
         /** @type WL.MeshComponent  */
         let meshComponent = this.object.addComponent('mesh');
-        
 
         /** @type WL.CollisionComponent  */
         let collisionComponent = this.object.addComponent('collision');
@@ -46,8 +45,25 @@ WL.registerComponent('landtile', {
 
     },
     onClick: function () {
-        this.state = TILESTATE_TILLED;
-        this.updateState();
+
+        switch (window.game.currentAction) {
+            case "Tilling":
+                if (this.state === TILESTATE_ROUGH) {
+                    this.state = TILESTATE_TILLED;
+                    this.updateState();
+                }
+                break;
+            case "Watering":
+                if (this.state === TILESTATE_TILLED) {
+                    this.state = TILESTATE_WET;
+                    this.updateState();
+                }
+                break;
+            default:
+                break;
+        }
+
+
     },
     updateState: function () {
         this.meshComponent.mesh = this.meshes[this.state].mesh;
