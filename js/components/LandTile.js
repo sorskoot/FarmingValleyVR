@@ -59,6 +59,13 @@ WL.registerComponent('landtile', {
                     this.updateState();
                 }
                 break;
+            case "Seeding":
+                if (this.state === TILESTATE_WET) {
+                    var temp = [0, 0, 0];
+                    this.object.getTranslationWorld(temp);       
+                    this.plant = window.game.plant(temp);
+                }
+                break;
             default:
                 break;
         }

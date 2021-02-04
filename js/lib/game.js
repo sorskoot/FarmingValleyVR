@@ -9,7 +9,7 @@ class Game {
      constructor() {
         this.currentAction = "Nothing";
         this.menuChangeHandlers = [];
-        
+        this.registeredPlants = [];
         //this.loadData();
     }
     
@@ -40,6 +40,19 @@ class Game {
         }
         this.menuChangeHandlers
         console.log(this.currentAction);
+    }
+    
+    plant(position){
+        if(this.registeredPlants[0]){
+            this.registeredPlants[0].plant(position);
+        }
+    }
+
+    registerPlant(plant){        
+        if(!~this.registeredPlants.findIndex(v=>v.name === plant.name))
+        {
+            this.registeredPlants.push(plant);
+        }
     }
 }
 

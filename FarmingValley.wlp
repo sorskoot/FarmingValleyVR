@@ -11,7 +11,7 @@
                 }
             ],
             "transformation": [
-                0.9999988079071045,
+                0.9999988079071044,
                 0.0,
                 0.0,
                 0.0,
@@ -21,7 +21,7 @@
                 0.0,
                 0.0,
                 0.0,
-                0.9999988079071045,
+                0.9999988079071044,
                 0.0,
                 0.01682758890092373,
                 1.8000209331512452,
@@ -595,24 +595,33 @@
         },
         "45": {
             "name": "GUI",
-            "parent": "17",
+            "parent": "243",
             "transformation": [
-                0.03999999910593033,
+                0.03999995067715645,
+                3.0098612491258338e-9,
+                0.0,
+                0.0,
+                -3.0098696868208209e-9,
+                0.0400000624358654,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
-                0.03999999910593033,
+                0.03999999538064003,
                 0.0,
+                -5.684309360015627e-14,
+                -0.000045441171096172187,
                 0.0,
-                0.0,
-                0.0,
-                0.03999999910593033,
-                0.0,
-                0.0,
-                -0.20000000298023225,
-                -0.5,
                 1.0
+            ],
+            "components": [
+                {
+                    "type": "reparent-in-vr",
+                    "reparent-in-vr": {
+                        "InVR": "243",
+                        "NotInVR": "246"
+                    }
+                }
             ]
         },
         "46": {
@@ -999,7 +1008,8 @@
             "link": {
                 "name": "Default light",
                 "file": "assets\\models\\Fence.glb"
-            }
+            },
+            "deleted": true
         },
         "118": {
             "link": {
@@ -1052,7 +1062,8 @@
             "link": {
                 "name": "Default light",
                 "file": "assets\\models\\grass.glb"
-            }
+            },
+            "deleted": true
         },
         "131": {
             "link": {
@@ -1083,7 +1094,8 @@
             "link": {
                 "name": "Default light",
                 "file": "assets\\models\\tilled.glb"
-            }
+            },
+            "deleted": true
         },
         "133": {
             "name": "Mesh.007",
@@ -1145,7 +1157,7 @@
                 0.00024384260177612305,
                 0.0,
                 0.0,
-                -5.960464477539063e-8,
+                -5.960464477539065e-8,
                 -1.5,
                 1.0
             ]
@@ -1176,7 +1188,7 @@
                 0.00024384260177612305,
                 0.0,
                 -1.0,
-                -5.960464477539063e-8,
+                -5.960464477539065e-8,
                 -1.5,
                 1.0
             ]
@@ -1207,7 +1219,7 @@
                 0.00024384260177612305,
                 0.0,
                 1.0,
-                -5.960464477539063e-8,
+                -5.960464477539065e-8,
                 -1.5,
                 1.0
             ]
@@ -1238,7 +1250,7 @@
                 0.00024384260177612305,
                 0.0,
                 2.0,
-                -5.960464477539063e-8,
+                -5.960464477539065e-8,
                 -1.5,
                 1.0
             ]
@@ -1269,7 +1281,7 @@
                 0.00024384260177612305,
                 0.0,
                 -2.0,
-                -5.960464477539064e-8,
+                -5.960464477539065e-8,
                 -1.5,
                 1.0
             ]
@@ -1331,7 +1343,7 @@
                 0.00024384260177612305,
                 0.0,
                 -2.0,
-                -4.470348358154297e-8,
+                -4.4703483581542978e-8,
                 0.5,
                 1.0
             ]
@@ -1362,7 +1374,7 @@
                 0.00024384260177612305,
                 0.0,
                 -2.0,
-                5.960464477539064e-8,
+                5.960464477539065e-8,
                 1.5,
                 1.0
             ]
@@ -1548,7 +1560,7 @@
                 0.00024384260177612305,
                 0.0,
                 2.0,
-                5.960464477539064e-8,
+                5.960464477539065e-8,
                 1.5,
                 1.0
             ]
@@ -1675,6 +1687,546 @@
                         "material": "154"
                     }
                 }
+            ],
+            "deleted": true
+        },
+        "158": {
+            "name": "PlantRegister",
+            "components": [
+                {
+                    "type": "corn",
+                    "corn": {
+                        "stage01Mesh": "221",
+                        "material": "221"
+                    }
+                }
+            ]
+        },
+        "163": {
+            "link": {
+                "name": "CornStage1",
+                "file": "assets\\models\\CornStage1.glb"
+            },
+            "deleted": true
+        },
+        "164": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\CornStage1.glb"
+            },
+            "deleted": true
+        },
+        "165": {
+            "name": "Mesh.009",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "161"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "169": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\CornStage-1.glb"
+            },
+            "deleted": true
+        },
+        "174": {
+            "link": {
+                "name": "CornStage1",
+                "file": "assets\\models\\CornStage-1.glb"
+            },
+            "deleted": true
+        },
+        "175": {
+            "name": "Mesh.010",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "154"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "176": {
+            "name": "Mesh.011",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "161"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "177": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\CornStage-2.glb"
+            },
+            "deleted": true
+        },
+        "182": {
+            "link": {
+                "name": "CornStage003",
+                "file": "assets\\models\\CornStage-3.glb"
+            },
+            "deleted": true
+        },
+        "183": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\CornStage-3.glb"
+            },
+            "deleted": true
+        },
+        "203": {
+            "link": {
+                "name": "CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "204": {
+            "link": {
+                "name": "Corn08<CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "205": {
+            "link": {
+                "name": "Corn06<CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "206": {
+            "link": {
+                "name": "Corn11<CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "207": {
+            "link": {
+                "name": "Corn10<CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "208": {
+            "link": {
+                "name": "Corn07<CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "209": {
+            "link": {
+                "name": "Corn03<CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "210": {
+            "link": {
+                "name": "Corn01<CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "211": {
+            "link": {
+                "name": "Corn05<CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "212": {
+            "link": {
+                "name": "Corn00<CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "213": {
+            "link": {
+                "name": "Corn04<CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "214": {
+            "link": {
+                "name": "Corn02<CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "215": {
+            "link": {
+                "name": "Corn09<CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "216": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\CornStage-4.glb"
+            },
+            "deleted": true
+        },
+        "222": {
+            "link": {
+                "name": "CornStage1",
+                "file": "assets\\models\\CornStage-01.glb"
+            },
+            "deleted": true
+        },
+        "223": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\CornStage-01.glb"
+            },
+            "deleted": true
+        },
+        "224": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\CornStage-02.glb"
+            },
+            "deleted": true
+        },
+        "229": {
+            "link": {
+                "name": "CornStage003",
+                "file": "assets\\models\\CornStage-03.glb"
+            },
+            "deleted": true
+        },
+        "230": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\CornStage-03.glb"
+            },
+            "deleted": true
+        },
+        "239": {
+            "link": {
+                "name": "CornStage004",
+                "file": "assets\\models\\CornStage-04.glb"
+            },
+            "deleted": true
+        },
+        "240": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\CornStage-04.glb"
+            },
+            "deleted": true
+        },
+        "241": {
+            "link": {
+                "name": "LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "14",
+            "transformation": [
+                0.019999919459223748,
+                0.0,
+                -0.9997940063476564,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.9997940063476564,
+                0.0,
+                0.019999919459223748,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand left"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "242": {
+            "name": "Left Hand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand left"
+                    }
+                }
+            ]
+        },
+        "243": {
+            "name": "VR Gui Helper",
+            "parent": "242",
+            "transformation": [
+                0.9999968409538269,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00030213521677069366,
+                -0.999997615814209,
+                0.0,
+                0.0,
+                1.0000001192092896,
+                0.00030213597347028553,
+                0.0,
+                0.0000019073627299803776,
+                3.725290298461914e-9,
+                -0.06863843649625778,
+                1.0
+            ]
+        },
+        "244": {
+            "name": "Right Hand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand right"
+                    }
+                }
+            ]
+        },
+        "245": {
+            "name": "Mesh.012",
+            "parent": "244",
+            "transformation": [
+                0.05000000074505806,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.05000000074505806,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.05000000074505806,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "246": {
+            "name": "NonVR Gui Helper",
+            "parent": "17",
+            "components": [
+                {
+                    "type": "mesh"
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.20000000298023225,
+                -0.5,
+                1.0
+            ]
+        },
+        "247": {
+            "name": "Mesh.013",
+            "components": [
+                {
+                    "type": "mesh"
+                }
+            ],
+            "transformation": [
+                -8.34464913168631e-7,
+                0.0,
+                -1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -8.34464913168631e-7,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "268": {
+            "link": {
+                "name": "LeftQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            },
+            "parent": "242",
+            "deleted": true
+        },
+        "269": {
+            "link": {
+                "name": "Bottom_Button<LeftQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "270": {
+            "link": {
+                "name": "ControllerMain<LeftQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "271": {
+            "link": {
+                "name": "GripTrigger<LeftQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "272": {
+            "link": {
+                "name": "Option_Button<LeftQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "273": {
+            "link": {
+                "name": "Thumbstick<LeftQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "274": {
+            "link": {
+                "name": "Top_Button<LeftQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "275": {
+            "link": {
+                "name": "Trigger<LeftQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "276": {
+            "link": {
+                "name": "RightQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            },
+            "parent": "244",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "277": {
+            "link": {
+                "name": "Bottom_Button.001<RightQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "278": {
+            "link": {
+                "name": "ControllerMain.001<RightQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "279": {
+            "link": {
+                "name": "GripTrigger.001<RightQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "280": {
+            "link": {
+                "name": "Option_Button.001<RightQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "281": {
+            "link": {
+                "name": "Thumbstick.001<RightQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "282": {
+            "link": {
+                "name": "Top_Button.001<RightQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "283": {
+            "link": {
+                "name": "Trigger.001<RightQuestController",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "284": {
+            "name": "OutOfTheWay",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -1000.0,
+                0.0,
+                1.0
             ],
             "deleted": true
         }
@@ -1963,6 +2515,217 @@
                 "file": "assets\\models\\tilled.glb"
             },
             "name": "Tilled"
+        },
+        "162": {
+            "link": {
+                "name": "CornStage1",
+                "file": "assets\\models\\CornStage1.glb"
+            }
+        },
+        "173": {
+            "link": {
+                "name": "CornStage1",
+                "file": "assets\\models\\CornStage-1.glb"
+            }
+        },
+        "181": {
+            "link": {
+                "name": "CornStage003",
+                "file": "assets\\models\\CornStage-3.glb"
+            },
+            "name": "CornStage2"
+        },
+        "190": {
+            "link": {
+                "name": "CornStage004",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "191": {
+            "link": {
+                "name": "Corn08",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "192": {
+            "link": {
+                "name": "Corn06",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "193": {
+            "link": {
+                "name": "Corn11",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "194": {
+            "link": {
+                "name": "Corn10",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "195": {
+            "link": {
+                "name": "Corn07",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "196": {
+            "link": {
+                "name": "Corn03",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "197": {
+            "link": {
+                "name": "Corn01",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "198": {
+            "link": {
+                "name": "Corn05",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "199": {
+            "link": {
+                "name": "Corn00",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "200": {
+            "link": {
+                "name": "Corn04",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "201": {
+            "link": {
+                "name": "Corn02",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "202": {
+            "link": {
+                "name": "Corn09",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "217": {
+            "link": {
+                "name": "CornStage004.0",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "221": {
+            "link": {
+                "name": "CornStage1",
+                "file": "assets\\models\\CornStage-01.glb"
+            }
+        },
+        "228": {
+            "link": {
+                "name": "CornStage003",
+                "file": "assets\\models\\CornStage-03.glb"
+            }
+        },
+        "237": {
+            "link": {
+                "name": "CornStage004",
+                "file": "assets\\models\\CornStage-04.glb"
+            }
+        },
+        "238": {
+            "link": {
+                "name": "CornStage004.0",
+                "file": "assets\\models\\CornStage-04.glb"
+            }
+        },
+        "254": {
+            "link": {
+                "name": "Mesh.002",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "255": {
+            "link": {
+                "name": "Mesh",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "256": {
+            "link": {
+                "name": "Mesh.006",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "257": {
+            "link": {
+                "name": "Mesh.003",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "258": {
+            "link": {
+                "name": "Mesh.004",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "259": {
+            "link": {
+                "name": "Mesh.001",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "260": {
+            "link": {
+                "name": "Mesh.005",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "261": {
+            "link": {
+                "name": "Mesh.009",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "262": {
+            "link": {
+                "name": "Mesh.007",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "263": {
+            "link": {
+                "name": "Mesh.013",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "264": {
+            "link": {
+                "name": "Mesh.010",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "265": {
+            "link": {
+                "name": "Mesh.011",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "266": {
+            "link": {
+                "name": "Mesh.008",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "267": {
+            "link": {
+                "name": "Mesh.012",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
         }
     },
     "textures": {
@@ -2011,6 +2774,69 @@
                 "name": "textures_3.png",
                 "file": "assets\\models\\textures_3.png"
             }
+        },
+        "160": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\CornStage1.glb"
+            }
+        },
+        "166": {
+            "name": "texture.001"
+        },
+        "168": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\textures_4.png"
+            }
+        },
+        "171": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\CornStage-1.glb"
+            }
+        },
+        "179": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\CornStage-3.glb"
+            }
+        },
+        "186": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "187": {
+            "link": {
+                "name": "textures_5.png",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "219": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\CornStage-01.glb"
+            }
+        },
+        "226": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\CornStage-03.glb"
+            }
+        },
+        "233": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\CornStage-04.glb"
+            }
+        },
+        "234": {
+            "link": {
+                "name": "textures_5.png",
+                "file": "assets\\models\\CornStage-04.glb"
+            }
         }
     },
     "images": {
@@ -2048,6 +2874,66 @@
             "link": {
                 "name": "textures_3.png",
                 "file": "assets\\models\\textures_3.png"
+            }
+        },
+        "159": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\CornStage1.glb"
+            }
+        },
+        "167": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\textures_4.png"
+            }
+        },
+        "170": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\CornStage-1.glb"
+            }
+        },
+        "178": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\CornStage-3.glb"
+            }
+        },
+        "184": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "185": {
+            "link": {
+                "name": "image_1",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "218": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\CornStage-01.glb"
+            }
+        },
+        "225": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\CornStage-03.glb"
+            }
+        },
+        "231": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\CornStage-04.glb"
+            }
+        },
+        "232": {
+            "link": {
+                "name": "image_1",
+                "file": "assets\\models\\CornStage-04.glb"
             }
         }
     },
@@ -2220,6 +3106,14 @@
             "link": {
                 "name": "Material #25",
                 "file": "assets\\models\\Fence.glb"
+            },
+            "Phong": {
+                "specularColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ]
             }
         },
         "123": {
@@ -2228,25 +3122,135 @@
                 "file": "assets\\models\\grass.glb"
             },
             "Phong": {
-                "shininess": 255
+                "shininess": 255,
+                "specularColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ]
             },
-            "shader": "Flat Textured"
+            "shader": "Phong Textured"
         },
         "129": {
             "link": {
                 "name": "Tilled",
                 "file": "assets\\models\\tilled.glb"
             },
-            "shader": "Flat Textured"
+            "shader": "Flat Textured",
+            "Phong": {
+                "specularColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ]
+            }
         },
         "154": {
             "name": "TilledWet",
             "Phong": {
-                "diffuseTexture": "157"
+                "diffuseTexture": "157",
+                "shininess": 1
             },
             "shader": "Flat Textured",
             "Flat": {
                 "flatTexture": "157"
+            }
+        },
+        "161": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\CornStage1.glb"
+            },
+            "Phong": {
+                "diffuseTexture": "168"
+            },
+            "shader": "Flat Textured"
+        },
+        "172": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\CornStage-1.glb"
+            },
+            "shader": "Flat Textured"
+        },
+        "180": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\CornStage-3.glb"
+            }
+        },
+        "188": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "189": {
+            "link": {
+                "name": "Corn",
+                "file": "assets\\models\\CornStage-4.glb"
+            }
+        },
+        "220": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\CornStage-01.glb"
+            }
+        },
+        "227": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\CornStage-03.glb"
+            }
+        },
+        "235": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\CornStage-04.glb"
+            }
+        },
+        "236": {
+            "link": {
+                "name": "Corn",
+                "file": "assets\\models\\CornStage-04.glb"
+            }
+        },
+        "248": {
+            "link": {
+                "name": "blinn1",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "249": {
+            "link": {
+                "name": "lambert2",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "250": {
+            "link": {
+                "name": "lambert1",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "251": {
+            "link": {
+                "name": "blinn1.001",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "252": {
+            "link": {
+                "name": "lambert2.001",
+                "file": "assets\\models\\quest_controllers.glb"
+            }
+        },
+        "253": {
+            "link": {
+                "name": "lambert1.001",
+                "file": "assets\\models\\quest_controllers.glb"
             }
         }
     },
@@ -2336,6 +3340,9 @@
         },
         "runtime": {
             "visualizeColliders": false
+        },
+        "ar": {
+            "framework": "none"
         }
     },
     "animations": {},
@@ -2346,6 +3353,17 @@
         "assets/models/Fence.glb",
         "assets/models/grass.glb",
         "assets/models/tilled.glb",
-        "assets/models/textures_3.png"
+        "assets/models/textures_3.png",
+        "assets/models/CornStage1.glb",
+        "assets/models/textures_4.png",
+        "assets/models/CornStage-1.glb",
+        "assets/models/CornStage-2.glb",
+        "assets/models/CornStage-3.glb",
+        "assets/models/CornStage-4.glb",
+        "assets/models/CornStage-01.glb",
+        "assets/models/CornStage-02.glb",
+        "assets/models/CornStage-03.glb",
+        "assets/models/CornStage-04.glb",
+        "assets/models/quest_controllers.glb"
     ]
 }
