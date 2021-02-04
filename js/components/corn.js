@@ -1,32 +1,48 @@
 WL.registerComponent('corn', {
-    stage01Mesh: {type: WL.Type.Mesh},
-    stage02Mesh: {type: WL.Type.Mesh},
-    stage03Mesh: {type: WL.Type.Mesh},
-    stage04Mesh: {type: WL.Type.Mesh},
-    material:{type: WL.Type.Mesh}
+    stage01Mesh: { type: WL.Type.Mesh },
+    stage02Mesh: { type: WL.Type.Mesh },
+    stage03Mesh: { type: WL.Type.Mesh },
+    stage04Mesh: { type: WL.Type.Mesh },
+    material: { type: WL.Type.Material }
 }, {
-    name:"corn",
+    name: "corn",
 
-    init: function() {
+    init: function () {
         window.game.registerPlant(this);
     },
-    start: function() {
-        
+    start: function () {
+
     },
-    update: function(dt) {
-        
+
+    update: function (dt) {
+
     },
-    plant:function(position){
-        let obj = WL.scene.addObject(this.object);      
-       
-        let meshComponent = obj.addComponent('mesh');
-        
-        meshComponent.mesh = this.stage01Mesh;
+
+    plant: function (position) {
+        if (!this.meshes) {
+            this.meshes = [
+                this.stage01Mesh,
+                this.stage02Mesh,
+                this.stage03Mesh,
+                this.stage04Mesh
+            ];
+        };
+        let obj = WL.scene.addObject(this.object);
+        meshComponent = obj.addComponent('mesh');
+        meshComponent.mesh = this.meshes[0];
         meshComponent.material = this.material;
-        console.log(position);
+        let growable = obj.addComponent('growable',{growthChance:0.4});
+        growable.addOnGrow(this.onGrow.bind(this));
         obj.setTranslationLocal(position);
-        console.log(obj.transformWorld);
-        console.log(this.object.scalingWorld);
+
         obj.scale([.0625, .0625, .0625]);
+        this.isPlanted = true;
+    },
+
+    onGrow: function (obj, stage) {
+        if (stage < 4) {
+            let m = obj.getComponent('mesh');
+            m.mesh = this.meshes[stage];
+        }
     }
 });

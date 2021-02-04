@@ -598,10 +598,10 @@
             "parent": "243",
             "transformation": [
                 0.03999995067715645,
-                3.0098612491258338e-9,
+                3.0098612491258334e-9,
                 0.0,
                 0.0,
-                -3.0098696868208209e-9,
+                -3.00986968682082e-9,
                 0.0400000624358654,
                 0.0,
                 0.0,
@@ -609,7 +609,7 @@
                 0.0,
                 0.03999999538064003,
                 0.0,
-                -5.684309360015627e-14,
+                -5.684309360015628e-14,
                 -0.000045441171096172187,
                 0.0,
                 1.0
@@ -1696,11 +1696,15 @@
                 {
                     "type": "corn",
                     "corn": {
-                        "stage01Mesh": "221",
-                        "material": "221"
+                        "stage01Mesh": "328",
+                        "material": "328",
+                        "stage02Mesh": "334",
+                        "stage03Mesh": "340",
+                        "stage04Mesh": "346"
                     }
                 }
-            ]
+            ],
+            "deleted": true
         },
         "163": {
             "link": {
@@ -1984,7 +1988,7 @@
             "name": "VR Gui Helper",
             "parent": "242",
             "transformation": [
-                0.9999968409538269,
+                0.9999968409538268,
                 0.0,
                 0.0,
                 0.0,
@@ -2265,6 +2269,189 @@
                 0.0,
                 0.0,
                 1.0
+            ]
+        },
+        "290": {
+            "link": {
+                "name": "CornStage1",
+                "file": "assets\\models\\crops\\CornStage-01.glb"
+            },
+            "deleted": true
+        },
+        "291": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\CornStage-01.glb"
+            },
+            "deleted": true
+        },
+        "292": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\CornStage-02.glb"
+            },
+            "deleted": true
+        },
+        "297": {
+            "link": {
+                "name": "CornStage003",
+                "file": "assets\\models\\crops\\CornStage-03.glb"
+            },
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                60.00000381469727,
+                0.0017180442810058594,
+                20.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "298": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\CornStage-03.glb"
+            },
+            "deleted": true
+        },
+        "307": {
+            "link": {
+                "name": "CornStage004",
+                "file": "assets\\models\\crops\\CornStage-04.glb"
+            },
+            "deleted": true
+        },
+        "308": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\CornStage-04.glb"
+            },
+            "deleted": true
+        },
+        "310": {
+            "link": {
+                "name": "CornStage4",
+                "file": "assets\\models\\crops\\CornStage-01.glb"
+            },
+            "deleted": true
+        },
+        "319": {
+            "link": {
+                "name": "CornStage4",
+                "file": "assets\\models\\crops\\CornStage-02.glb"
+            },
+            "deleted": true
+        },
+        "321": {
+            "link": {
+                "name": "CornStage4",
+                "file": "assets\\models\\crops\\CornStage-03.glb"
+            },
+            "deleted": true
+        },
+        "323": {
+            "link": {
+                "name": "CornStage4",
+                "file": "assets\\models\\crops\\CornStage-04.glb"
+            },
+            "deleted": true
+        },
+        "324": {
+            "name": "Mesh.014",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "181",
+                        "material": "317"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "329": {
+            "link": {
+                "name": "CornStage1",
+                "file": "assets\\models\\crops\\Corn1.glb"
+            },
+            "parent": "324"
+        },
+        "330": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\Corn1.glb"
+            },
+            "parent": "324",
+            "deleted": true
+        },
+        "335": {
+            "link": {
+                "name": "CornStage2",
+                "file": "assets\\models\\crops\\Corn2.glb"
+            },
+            "parent": "324"
+        },
+        "336": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\Corn2.glb"
+            },
+            "parent": "324",
+            "deleted": true
+        },
+        "341": {
+            "link": {
+                "name": "CornStage3",
+                "file": "assets\\models\\crops\\Corn3.glb"
+            },
+            "parent": "324"
+        },
+        "342": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\Corn3.glb"
+            },
+            "parent": "324",
+            "deleted": true
+        },
+        "347": {
+            "link": {
+                "name": "CornStage4",
+                "file": "assets\\models\\crops\\Corn4.glb"
+            },
+            "parent": "324"
+        },
+        "348": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\Corn4.glb"
+            },
+            "parent": "324",
+            "deleted": true
+        },
+        "349": {
+            "name": "Plant Registry",
+            "components": [
+                {
+                    "type": "corn",
+                    "corn": {
+                        "stage01Mesh": "328",
+                        "stage02Mesh": "334",
+                        "stage03Mesh": "340",
+                        "stage04Mesh": "346",
+                        "material": "345"
+                    }
+                }
             ]
         }
     },
@@ -2763,6 +2950,88 @@
                 "name": "Mesh.012",
                 "file": "assets\\models\\quest_controllers.glb"
             }
+        },
+        "289": {
+            "link": {
+                "name": "CornStage1",
+                "file": "assets\\models\\crops\\CornStage-01.glb"
+            }
+        },
+        "296": {
+            "link": {
+                "name": "CornStage003",
+                "file": "assets\\models\\crops\\CornStage-03.glb"
+            }
+        },
+        "305": {
+            "link": {
+                "name": "CornStage004",
+                "file": "assets\\models\\crops\\CornStage-04.glb"
+            }
+        },
+        "306": {
+            "link": {
+                "name": "CornStage004.0",
+                "file": "assets\\models\\crops\\CornStage-04.glb"
+            }
+        },
+        "309": {
+            "link": {
+                "name": "CornStage4",
+                "file": "assets\\models\\crops\\CornStage-01.glb"
+            }
+        },
+        "314": {
+            "link": {
+                "name": "CornStage4.0",
+                "file": "assets\\models\\crops\\CornStage-01.glb"
+            }
+        },
+        "318": {
+            "link": {
+                "name": "CornStage4",
+                "file": "assets\\models\\crops\\CornStage-02.glb"
+            }
+        },
+        "320": {
+            "link": {
+                "name": "CornStage4",
+                "file": "assets\\models\\crops\\CornStage-03.glb"
+            }
+        },
+        "322": {
+            "link": {
+                "name": "CornStage4",
+                "file": "assets\\models\\crops\\CornStage-04.glb"
+            }
+        },
+        "328": {
+            "link": {
+                "name": "CornStage1",
+                "file": "assets\\models\\crops\\Corn1.glb"
+            },
+            "name": "Corn1"
+        },
+        "334": {
+            "link": {
+                "name": "CornStage2",
+                "file": "assets\\models\\crops\\Corn2.glb"
+            },
+            "name": "Corn2"
+        },
+        "340": {
+            "link": {
+                "name": "CornStage3",
+                "file": "assets\\models\\crops\\Corn3.glb"
+            },
+            "name": "Corn3"
+        },
+        "346": {
+            "link": {
+                "name": "CornStage4",
+                "file": "assets\\models\\crops\\Corn4.glb"
+            },
+            "name": "Corn4"
         }
     },
     "textures": {
@@ -2874,6 +3143,66 @@
                 "name": "textures_5.png",
                 "file": "assets\\models\\CornStage-04.glb"
             }
+        },
+        "287": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\crops\\CornStage-01.glb"
+            }
+        },
+        "294": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\crops\\CornStage-03.glb"
+            }
+        },
+        "301": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\crops\\CornStage-04.glb"
+            }
+        },
+        "302": {
+            "link": {
+                "name": "textures_5.png",
+                "file": "assets\\models\\crops\\CornStage-04.glb"
+            }
+        },
+        "312": {
+            "link": {
+                "name": "textures_5.png",
+                "file": "assets\\models\\crops\\CornStage-01.glb"
+            }
+        },
+        "316": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\crops\\CornStage-02.glb"
+            }
+        },
+        "326": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\crops\\Corn1.glb"
+            }
+        },
+        "332": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\crops\\Corn2.glb"
+            }
+        },
+        "338": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\crops\\Corn3.glb"
+            }
+        },
+        "344": {
+            "link": {
+                "name": "textures_4.png",
+                "file": "assets\\models\\crops\\Corn4.glb"
+            }
         }
     },
     "images": {
@@ -2972,6 +3301,66 @@
                 "name": "image_1",
                 "file": "assets\\models\\CornStage-04.glb"
             }
+        },
+        "286": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\CornStage-01.glb"
+            }
+        },
+        "293": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\CornStage-03.glb"
+            }
+        },
+        "299": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\CornStage-04.glb"
+            }
+        },
+        "300": {
+            "link": {
+                "name": "image_1",
+                "file": "assets\\models\\crops\\CornStage-04.glb"
+            }
+        },
+        "311": {
+            "link": {
+                "name": "image_1",
+                "file": "assets\\models\\crops\\CornStage-01.glb"
+            }
+        },
+        "315": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\CornStage-02.glb"
+            }
+        },
+        "325": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\Corn1.glb"
+            }
+        },
+        "331": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\Corn2.glb"
+            }
+        },
+        "337": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\Corn3.glb"
+            }
+        },
+        "343": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\Corn4.glb"
+            }
         }
     },
     "materials": {
@@ -2994,8 +3383,8 @@
                 "shininess": 1,
                 "emissiveColor": [
                     1.0,
-                    0.9999899864196777,
-                    0.9999899864196777,
+                    0.9999899864196776,
+                    0.9999899864196776,
                     1.0
                 ]
             }
@@ -3295,6 +3684,67 @@
                 "name": "lambert1.001",
                 "file": "assets\\models\\quest_controllers.glb"
             }
+        },
+        "288": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\crops\\CornStage-01.glb"
+            }
+        },
+        "295": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\crops\\CornStage-03.glb"
+            }
+        },
+        "303": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\crops\\CornStage-04.glb"
+            }
+        },
+        "304": {
+            "link": {
+                "name": "Corn",
+                "file": "assets\\models\\crops\\CornStage-04.glb"
+            }
+        },
+        "313": {
+            "link": {
+                "name": "Corn",
+                "file": "assets\\models\\crops\\CornStage-01.glb"
+            }
+        },
+        "317": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\crops\\CornStage-02.glb"
+            }
+        },
+        "327": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\crops\\Corn1.glb"
+            }
+        },
+        "333": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\crops\\Corn2.glb"
+            }
+        },
+        "339": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\crops\\Corn3.glb"
+            }
+        },
+        "345": {
+            "link": {
+                "name": "Plant",
+                "file": "assets\\models\\crops\\Corn4.glb"
+            },
+            "name": "Corn"
         }
     },
     "shaders": {
@@ -3407,6 +3857,14 @@
         "assets/models/CornStage-02.glb",
         "assets/models/CornStage-03.glb",
         "assets/models/CornStage-04.glb",
-        "assets/models/quest_controllers.glb"
+        "assets/models/quest_controllers.glb",
+        "assets/models/crops/CornStage-01.glb",
+        "assets/models/crops/CornStage-02.glb",
+        "assets/models/crops/CornStage-03.glb",
+        "assets/models/crops/CornStage-04.glb",
+        "assets/models/crops/Corn1.glb",
+        "assets/models/crops/Corn2.glb",
+        "assets/models/crops/Corn3.glb",
+        "assets/models/crops/Corn4.glb"
     ]
 }
