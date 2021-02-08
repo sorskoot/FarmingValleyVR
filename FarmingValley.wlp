@@ -2440,7 +2440,7 @@
             "deleted": true
         },
         "349": {
-            "name": "Plant Registry",
+            "name": "Plant Registry2",
             "components": [
                 {
                     "type": "corn",
@@ -2450,7 +2450,8 @@
                         "stage03Mesh": "340",
                         "stage04Mesh": "346",
                         "material": "345"
-                    }
+                    },
+                    "active": true
                 }
             ]
         }
@@ -3828,11 +3829,12 @@
                 "js/",
                 "js/components",
                 "js/lib",
-                "js/data"
+                "js/data",
+                "js/components/corn.js"
             ]
         },
         "runtime": {
-            "visualizeColliders": false
+            "visualizeColliders": true
         },
         "ar": {
             "framework": "none"

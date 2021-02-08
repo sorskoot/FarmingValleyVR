@@ -10,6 +10,8 @@ class Game {
         this.currentAction = "Nothing";
         this.menuChangeHandlers = [];
         this.registeredPlants = [];
+        this.inventory = {};
+
         //this.loadData();
     }
     
@@ -51,8 +53,18 @@ class Game {
     registerPlant(plant){        
         if(!~this.registeredPlants.findIndex(v=>v.name === plant.name))
         {
+            this.inventory[plant.name] = 0;
             this.registeredPlants.push(plant);
         }
+    }
+
+    /**
+     * 
+     * @param {PlantType} plantType 
+     */
+    harvested(plantType){        
+        this.inventory[plantType.name]+=plantType.harvestAmount;
+        console.log(`You harvested a total of ${this.inventory[plantType.name]} ${plantType.name}s.`);
     }
 }
 

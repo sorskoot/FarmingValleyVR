@@ -1,29 +1,31 @@
 Must Have:
-    - Day/Night Cycle
-    - Crates to sell
-    - Harvest Crops
-    - Water the ground
+    ☐ Day/Night Cycle
+    ☐ Crates to sell
+    ✔ @today Harvest Crops @done(21-02-08 23:14)
+    ☐ Water the ground
     Models for:
-        - Hoe
-        - Watering can
-        - Seeds
-    - better design for menu
-    - way to make money
+        ☐ Hoe
+        ☐ Watering can
+        ☐ Seeds
+    ☐ better design for menu
+    ☐ way to make money
 
 Should Have:
-    - Multiple different crops
+    ☐ Multiple different crops
     Use Construct Arcade coins to buy:
-        - Fertilizer
-        - Seeds
-        - Skip days
-        - Land
+        ☐ Fertilizer
+        ☐ Seeds
+        ☐ Skip days
+        ☐ Land
 
 Could Have:
-    - Cows
-    - Chickens
+    ☐ Cows
+    ☐ Chickens
 
 Would Like:
 
+Bugs:
+    ✔ You can plant seeds even if there's a plant already @done(21-02-08 22:55)
 
 Ideas:
     - Cycle of planting seeds and harvestings

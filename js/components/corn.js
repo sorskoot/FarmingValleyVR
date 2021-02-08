@@ -5,10 +5,12 @@ WL.registerComponent('corn', {
     stage04Mesh: { type: WL.Type.Mesh },
     material: { type: WL.Type.Material }
 }, {
-    name: "corn",
+    name: "Corn",
 
     init: function () {
         window.game.registerPlant(this);
+        this.plantProperties = new PlantType("Corn", 6);
+        this.plantedAt = [];
     },
     start: function () {
 
@@ -19,6 +21,11 @@ WL.registerComponent('corn', {
     },
 
     plant: function (position) {
+        if(!!~this.plantedAt.indexOf(position.toString())){
+            console.log("Plant already at: "+position);
+            return;
+        }
+        this.plantedAt.push(position.toString());       
         if (!this.meshes) {
             this.meshes = [
                 this.stage01Mesh,
@@ -27,16 +34,31 @@ WL.registerComponent('corn', {
                 this.stage04Mesh
             ];
         };
+
         let obj = WL.scene.addObject(this.object);
         meshComponent = obj.addComponent('mesh');
         meshComponent.mesh = this.meshes[0];
         meshComponent.material = this.material;
-        let growable = obj.addComponent('growable',{growthChance:0.4});
-        growable.addOnGrow(this.onGrow.bind(this));
-        obj.setTranslationLocal(position);
+        let growable = obj.addComponent('growable', { 
+            growthTime: .5,
+            growthChance: .4 
+        }); 
 
+        growable.addOnGrow(this.onGrow.bind(this));
+
+        let collider = obj.addComponent('collision', {
+            collider: WL.Collider.AxisAlignedBox,
+            group: 1 << 1,
+            extents: [.5, 1, .5]
+        });
+
+        let target = obj.addComponent('cursor-target');
+        target.addClickFunction(this.onClick.bind(this, obj));
+
+        collider.active = false;
+
+        obj.setTranslationLocal(position);
         obj.scale([.0625, .0625, .0625]);
-        this.isPlanted = true;
     },
 
     onGrow: function (obj, stage) {
@@ -44,5 +66,18 @@ WL.registerComponent('corn', {
             let m = obj.getComponent('mesh');
             m.mesh = this.meshes[stage];
         }
+
+        if (stage === 3) {
+            let collision = obj.getComponent('collision');
+            collision.active = true;
+        }
+    },
+
+    onClick:function(obj){        
+        obj.destroy();        
+        this.plantedAt = this.plantedAt.splice(this.plantedAt.indexOf(obj.getTranslationLocal([]).toString(),1));
+        console.log(this.plantedAt);
+        window.game.harvested(this.plantProperties);
     }
+    
 });
