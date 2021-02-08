@@ -74,9 +74,8 @@ WL.registerComponent('corn', {
     },
 
     onClick:function(obj){        
-        obj.destroy();        
-        this.plantedAt = this.plantedAt.splice(this.plantedAt.indexOf(obj.getTranslationLocal([]).toString(),1));
-        console.log(this.plantedAt);
+        this.plantedAt.splice(this.plantedAt.indexOf(obj.getTranslationLocal([0,0,0]).toString(),1));
+        obj.destroy();                       
         window.game.harvested(this.plantProperties);
     }
     
