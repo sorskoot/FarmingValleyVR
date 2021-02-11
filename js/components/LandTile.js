@@ -9,6 +9,8 @@ WL.registerComponent('landtile', {
     materialTilled: { type: WL.Type.Material },
     materialWet: { type: WL.Type.Material },
 }, {
+    bought:false,
+
     init: function () {
 
     },
@@ -28,8 +30,6 @@ WL.registerComponent('landtile', {
 
         this.collisionComponent = collisionComponent;
          
-        this.updateState();
-
         let target = this.object.addComponent('cursor-target');
         target.addClickFunction(this.onClick.bind(this));
     },
@@ -41,10 +41,15 @@ WL.registerComponent('landtile', {
 
     },
     onClick: function () {
-
         switch (window.game.currentAction) {
+            case "Buying":
+                if (this.state === TILESTATE_ROUGH && !this.bought) {
+                    this.bought = true;
+                    this.updateState();
+                }
+                break;
             case "Tilling":
-                if (this.state === TILESTATE_ROUGH) {
+                if (this.state === TILESTATE_ROUGH && this.bought) {
                     this.state = TILESTATE_TILLED;
                     this.updateState();
                 }
@@ -68,7 +73,7 @@ WL.registerComponent('landtile', {
 
 
     },
-    updateState: function () {
+    updateState: function () {       
         /** @type WL.MeshComponent  */
         const meshComponent = this.object.getComponent('mesh');
         meshComponent.mesh = this.meshes[this.state].mesh;

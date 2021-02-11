@@ -7,7 +7,7 @@ WL.registerComponent('patch-of-land', {
     materialWet: { type: WL.Type.Material },
 }, {
     init: function () {
-        console.log('init() with param', this.param);
+        
     },
     start: function () {
         

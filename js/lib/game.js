@@ -1,7 +1,8 @@
 const MENU_ITEMS = {
     TILLING: 1,
     WATERING: 2,
-    SEEDING: 3
+    SEEDING: 3,
+    BUYING: 4
 }
 
 class Game {
@@ -23,8 +24,7 @@ class Game {
 
     addMenuChangeFunction(callback) {
         this.menuChangeHandlers.push(callback);
-    }
-
+    }    
     menuItem(item) {
         switch (item) {
             case MENU_ITEMS.TILLING:
@@ -35,6 +35,9 @@ class Game {
                 break;
             case MENU_ITEMS.SEEDING:
                 this.currentAction = "Seeding"
+                break;
+            case MENU_ITEMS.BUYING:
+                this.currentAction = "Buying"
                 break;
         }
         for (let index = 0; index < this.menuChangeHandlers.length; index++) {
