@@ -10,28 +10,44 @@ WL.registerComponent('patch-of-land', {
         console.log('init() with param', this.param);
     },
     start: function () {
+        
+        const children = this.object.children;
 
-        for (let x = -1; x <= 1; x++) {
-            for (let y = -1; y <= 1; y++) {
-                let o = WL.scene.addObject(this.object);
-                //o.name = "//`land-${x}-${y}`;
-                o.resetTranslationRotation();
-                o.resetScaling();
-                let tile = o.addComponent("landtile", {
-                    state: TILESTATE_ROUGH,
-                    meshRough: this.meshRough,
-                    meshTilled: this.meshTilled,
-                    meshWet: this.meshWet,
-                    materialRough: this.materialRough,
-                    materialTilled: this.materialTilled,
-                    materialWet: this.materialWet
-                })
-                tile.initialize();
-                o.translate([x, 0, y]);
-                o.scale([.0625, .0625, .0625]);
-                //o.rotateAxisAngleDeg(AXIS.X, -90);
-            }
+        for (let i = 0; i < children.length; i++) {
+            const child = children[i];
+            let tile = child.addComponent("landtile", {
+                state: TILESTATE_ROUGH,
+                meshRough: this.meshRough,
+                meshTilled: this.meshTilled,
+                meshWet: this.meshWet,
+                materialRough: this.materialRough,
+                materialTilled: this.materialTilled,
+                materialWet: this.materialWet
+            })
+            tile.initialize();
         }
+
+        // for (let x = -1; x <= 1; x++) {
+        //     for (let y = -1; y <= 1; y++) {
+        //         let o = WL.scene.addObject(this.object);
+        //         //o.name = "//`land-${x}-${y}`;
+        //         o.resetTranslationRotation();
+        //         o.resetScaling();
+        //         let tile = o.addComponent("landtile", {
+        //             state: TILESTATE_ROUGH,
+        //             meshRough: this.meshRough,
+        //             meshTilled: this.meshTilled,
+        //             meshWet: this.meshWet,
+        //             materialRough: this.materialRough,
+        //             materialTilled: this.materialTilled,
+        //             materialWet: this.materialWet
+        //         })
+        //         tile.initialize();
+        //         o.translate([x, 0, y]);
+        //         o.scale([.0625, .0625, .0625]);
+        //         //o.rotateAxisAngleDeg(AXIS.X, -90);
+        //     }
+        // }
     },
     update: function (dt) {
 

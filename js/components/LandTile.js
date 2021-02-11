@@ -19,9 +19,6 @@ WL.registerComponent('landtile', {
             { mesh: this.meshWet, material: this.materialWet },
         ]
 
-        /** @type WL.MeshComponent  */
-        let meshComponent = this.object.addComponent('mesh');
-
         /** @type WL.CollisionComponent  */
         let collisionComponent = this.object.addComponent('collision');
         collisionComponent.collider = WL.Collider.AxisAlignedBox;
@@ -30,8 +27,7 @@ WL.registerComponent('landtile', {
         collisionComponent.active = true;
 
         this.collisionComponent = collisionComponent;
-        this.meshComponent = meshComponent;
-
+         
         this.updateState();
 
         let target = this.object.addComponent('cursor-target');
@@ -73,8 +69,10 @@ WL.registerComponent('landtile', {
 
     },
     updateState: function () {
-        this.meshComponent.mesh = this.meshes[this.state].mesh;
-        this.meshComponent.material = this.meshes[this.state].material;
+        /** @type WL.MeshComponent  */
+        const meshComponent = this.object.getComponent('mesh');
+        meshComponent.mesh = this.meshes[this.state].mesh;
+        meshComponent.material = this.meshes[this.state].material;
         // if (this.state == 0) {
         //     this.meshComponent.material = this.materialRough;
         // } else {
