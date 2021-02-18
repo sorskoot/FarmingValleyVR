@@ -1,5 +1,5 @@
 Must Have:
-    ☐ @today Create a better world
+    ☐ Create a better world
     ☐ Day/Night Cycle
     ☐ Crates to sell
     ✔ Harvest Crops @done(21-02-08 23:14)
@@ -8,12 +8,15 @@ Must Have:
         ☐ Added different areas to till that can be bought
         ☐ Add a little farming house with a crates you can fill
         ☐ Fill everything in between with grass
+        ☐ randomly adds weeds, logs and rocks to grass to be removed first.
+        
     Models for:
         ☐ Hoe
         ☐ Watering can
         ☐ Seeds
-    ☐ better design for menu
-    ☐ way to make money
+    ☐ better design for menu/inventory system
+
+    ☐ way to make real life money
 
 Should Have:
     ☐ Multiple different crops
