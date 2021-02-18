@@ -12,7 +12,7 @@ WL.registerComponent('landtile', {
     bought:false,
 
     init: function () {
-
+        
     },
     initialize: function () {
         this.meshes = [
@@ -44,6 +44,7 @@ WL.registerComponent('landtile', {
         switch (window.game.currentAction) {
             case "Buying":
                 if (this.state === TILESTATE_ROUGH && !this.bought) {
+                    this.object.scale([.25,.25,.25]);
                     this.bought = true;
                     this.updateState();
                 }
