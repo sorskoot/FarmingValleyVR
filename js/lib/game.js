@@ -12,7 +12,7 @@ class Game {
         this.menuChangeHandlers = [];
         this.registeredPlants = [];
         this.inventory = {};
-
+        this.plantmap = [[]];
         //this.loadData();
     }
 
@@ -50,7 +50,9 @@ class Game {
     plant(position) {
         if (this.registeredPlants[0]) {
             this.registeredPlants[0].plant(position);
+           // this.plantmap[position.x][position.y] = 
         }
+
     }
 
     registerPlant(plant) {

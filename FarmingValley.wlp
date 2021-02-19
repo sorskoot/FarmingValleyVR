@@ -2098,12 +2098,16 @@
                     "type": "target-picker",
                     "target-picker": {
                         "allowedPickerMeshObject": "890",
-                        "floorGroup": 2,
+                        "floorGroup": 1,
                         "notAllowedPickerMeshObject": "861"
                     }
                 },
                 {
-                    "type": "action-controller"
+                    "type": "action-controller",
+                    "action-controller": {
+                        "meshRough": "496",
+                        "materialRough": "371"
+                    }
                 },
                 {
                     "type": "cursor",
@@ -13351,7 +13355,7 @@
                     "type": "collision",
                     "collision": {
                         "collider": "aabb",
-                        "groups": 4,
+                        "groups": 6,
                         "aabb": {
                             "extents": [
                                 50.0,

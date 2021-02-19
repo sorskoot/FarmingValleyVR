@@ -57,7 +57,6 @@ WL.registerComponent('target-picker', {
                 forwardDirection, (1 << this.floorGroup)) ;
             
             if (rayHit.hitCount > 0) {
-                console.log(rayHit.hitCount)
                 if (this.indicatorHidden) {
                     this.indicatorHidden = false;
                 }

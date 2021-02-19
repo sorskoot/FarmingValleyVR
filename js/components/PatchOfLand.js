@@ -11,21 +11,21 @@ WL.registerComponent('patch-of-land', {
     },
     start: function () {
         
-        const children = this.object.children;
+        // const children = this.object.children;
 
-        for (let i = 0; i < children.length; i++) {
-            const child = children[i];
-            let tile = child.addComponent("landtile", {
-                state: TILESTATE_ROUGH,
-                meshRough: this.meshRough,
-                meshTilled: this.meshTilled,
-                meshWet: this.meshWet,
-                materialRough: this.materialRough,
-                materialTilled: this.materialTilled,
-                materialWet: this.materialWet
-            })
-            tile.initialize();
-        }
+        // for (let i = 0; i < children.length; i++) {
+        //     const child = children[i];
+        //     let tile = child.addComponent("landtile", {
+        //         state: TILESTATE_ROUGH,
+        //         meshRough: this.meshRough,
+        //         meshTilled: this.meshTilled,
+        //         meshWet: this.meshWet,
+        //         materialRough: this.materialRough,
+        //         materialTilled: this.materialTilled,
+        //         materialWet: this.materialWet
+        //     })
+        //     tile.initialize();
+        // }
 
         // for (let x = -1; x <= 1; x++) {
         //     for (let y = -1; y <= 1; y++) {
