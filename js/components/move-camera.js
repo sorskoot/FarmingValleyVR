@@ -14,9 +14,7 @@ WL.registerComponent('move-camera', {
         // this.input = this.object.getComponent('input');        
         // this.teleportIndicatorMeshObject.translate([1000, -1000, 1000]);
         // this.cantTeleportIndicatorMeshObject.translate([1000, -1000, 1000]);
-       
-
-
+ 
         let myimage = new Image();
         let canvas = document.createElement('canvas');
         this.ctx = canvas.getContext("2d");
