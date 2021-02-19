@@ -615,7 +615,7 @@
                 3.0098612491258334e-9,
                 0.0,
                 0.0,
-                -3.00986968682082e-9,
+                -3.0098696868208205e-9,
                 0.0400000624358654,
                 0.0,
                 0.0,
@@ -2044,6 +2044,14 @@
                         "teleportIndicatorMeshObject": "859",
                         "floorGroup": 2,
                         "cantTeleportIndicatorMeshObject": "861"
+                    }
+                },
+                {
+                    "type": "target-picker",
+                    "target-picker": {
+                        "allowedPickerMeshObject": "859",
+                        "notAllowedPickerMeshObject": "861",
+                        "floorGroup": 2
                     }
                 }
             ]
@@ -4628,7 +4636,7 @@
                 0.06249997019767761,
                 0.0,
                 2.0,
-                7.4505797087454088e-9,
+                7.450579708745408e-9,
                 -0.000015974044799804689,
                 1.0
             ],
@@ -6178,7 +6186,7 @@
                 0.06249997019767761,
                 0.0,
                 -0.9999997615814208,
-                7.450579708745408e-9,
+                7.4505797087454088e-9,
                 -0.000015974044799804689,
                 1.0
             ],
@@ -6466,7 +6474,7 @@
                 0.06249997019767761,
                 0.0,
                 -3.999999523162842,
-                7.450579708745408e-9,
+                7.4505797087454088e-9,
                 -0.000015974044799804689,
                 1.0
             ],
@@ -8561,7 +8569,7 @@
                 0.06249997019767761,
                 0.0,
                 1.0000017881393433,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1.0
             ],
@@ -8657,7 +8665,7 @@
                 0.06249997019767761,
                 0.0,
                 0.0000017918646335601809,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1.0
             ],
@@ -8849,7 +8857,7 @@
                 0.06249997019767761,
                 0.0,
                 -1.9999982118606568,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1.0
             ],
@@ -8945,7 +8953,7 @@
                 0.06249997019767761,
                 0.0,
                 -3.000000238418579,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1.0
             ],
@@ -9137,7 +9145,7 @@
                 0.06249997019767761,
                 0.0,
                 -5.000004291534424,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1.0
             ],
@@ -9233,7 +9241,7 @@
                 0.06249997019767761,
                 0.0,
                 -6.000000476837158,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1.0
             ],
@@ -9901,7 +9909,7 @@
                 0.06249997019767761,
                 0.0,
                 1.9999996423721312,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 -4.500014781951904,
                 1.0
             ],
@@ -10189,7 +10197,7 @@
                 0.06249997019767761,
                 0.0,
                 -0.9999979734420776,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 -4.500014781951904,
                 1.0
             ],
@@ -11892,13 +11900,15 @@
                 -0.05000000074505806,
                 0.0,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "730": {
             "link": {
                 "name": "Plane003",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "731": {
             "link": {
@@ -11938,43 +11948,49 @@
                 0.25,
                 0.0,
                 1.5109360218048096,
-                -2.2546052491634328e-7,
+                -2.254605249163433e-7,
                 1.000927448272705,
                 1.0
             ],
             "components": [
                 null
-            ]
+            ],
+            "deleted": true
         },
         "733": {
             "link": {
                 "name": "Plane004<Buyable Land",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "734": {
             "link": {
                 "name": "Plane005<Buyable Land",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "735": {
             "link": {
                 "name": "Plane006<Buyable Land",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "736": {
             "link": {
                 "name": "Plane010<Buyable Land",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "737": {
             "link": {
                 "name": "Plane011<Buyable Land",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "738": {
             "link": {
@@ -11996,7 +12012,7 @@
                 1.0,
                 0.0,
                 -0.5000001788139343,
-                1.7864704204839655e-7,
+                1.786470420483966e-7,
                 -11.499999046325684,
                 1.0
             ]
@@ -12047,7 +12063,7 @@
                 0.0,
                 -6.499999523162842,
                 9.689330937590057e-8,
-                -6.5018534660339359,
+                -6.501853466033936,
                 1.0
             ]
         },
@@ -12220,11 +12236,12 @@
                 1.0,
                 0.0,
                 5.500002861022949,
-                -0.000012390315532684327,
+                -0.000012390315532684328,
                 -4.499989986419678,
                 1.0
             ],
-            "parent": "853"
+            "parent": "853",
+            "deleted": true
         },
         "784": {
             "link": {
@@ -12555,145 +12572,169 @@
             "link": {
                 "name": "Pebbles010<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "798": {
             "link": {
                 "name": "Pebbles008<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "799": {
             "link": {
                 "name": "Pebbles009<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "800": {
             "link": {
                 "name": "Pebbles011<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "801": {
             "link": {
                 "name": "Pebbles013<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "802": {
             "link": {
                 "name": "Pebbles012<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "803": {
             "link": {
                 "name": "Pebbles015<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "804": {
             "link": {
                 "name": "Pebbles014<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "805": {
             "link": {
                 "name": "Pebbles016<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "806": {
             "link": {
                 "name": "Pebbles017<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "807": {
             "link": {
                 "name": "Pebbles019<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "808": {
             "link": {
                 "name": "Pebbles018<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "809": {
             "link": {
                 "name": "Pebbles020<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "810": {
             "link": {
                 "name": "Pebbles021<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "811": {
             "link": {
                 "name": "Pebbles022<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "812": {
             "link": {
                 "name": "Pebbles023<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "813": {
             "link": {
                 "name": "Pebbles007<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "814": {
             "link": {
                 "name": "Pebbles006<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "815": {
             "link": {
                 "name": "Pebbles005<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "816": {
             "link": {
                 "name": "Pebbles004<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "817": {
             "link": {
                 "name": "Pebbles003<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "818": {
             "link": {
                 "name": "Pebbles002<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "819": {
             "link": {
                 "name": "Pebbles001<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "820": {
             "link": {
                 "name": "Pebbles (1)<Pebbles",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "825": {
             "link": {
@@ -12827,7 +12868,7 @@
                 0.0,
                 0.0,
                 0.49999791383743288,
-                -5.960439963814679e-8,
+                -5.96043996381468e-8,
                 0.0,
                 0.0,
                 0.0,
@@ -12910,7 +12951,7 @@
                 0.0,
                 0.25,
                 0.0,
-                4.5109357833862309,
+                4.510935783386231,
                 -2.1800994431941945e-7,
                 1.000927448272705,
                 1.0
@@ -12939,7 +12980,7 @@
                 0.25,
                 0.0,
                 1.5109360218048096,
-                -2.2546052491634328e-7,
+                -2.254605249163433e-7,
                 2.000927448272705,
                 1.0
             ],
@@ -13022,7 +13063,7 @@
                 0.0,
                 0.25,
                 0.0,
-                4.5109357833862309,
+                4.510935783386231,
                 -2.1800994431941945e-7,
                 2.000927448272705,
                 1.0
@@ -13051,7 +13092,7 @@
                 0.25,
                 0.0,
                 1.5109360218048096,
-                -2.2546052491634328e-7,
+                -2.254605249163433e-7,
                 3.000927448272705,
                 1.0
             ],
@@ -13134,7 +13175,7 @@
                 0.0,
                 0.25,
                 0.0,
-                4.5109357833862309,
+                4.510935783386231,
                 -2.1800994431941945e-7,
                 3.000927448272705,
                 1.0
@@ -13163,7 +13204,7 @@
                 0.25,
                 0.0,
                 1.5109360218048096,
-                -2.2546052491634328e-7,
+                -2.254605249163433e-7,
                 4.000927448272705,
                 1.0
             ],
@@ -13246,7 +13287,7 @@
                 0.0,
                 0.25,
                 0.0,
-                4.5109357833862309,
+                4.510935783386231,
                 -2.1800994431941945e-7,
                 4.000927448272705,
                 1.0
@@ -13311,7 +13352,7 @@
                 0.0,
                 0.0,
                 0.49999791383743288,
-                -5.9604399638146797e-8,
+                -5.96043996381468e-8,
                 0.0,
                 0.0,
                 0.0,
@@ -13319,6 +13360,96 @@
                 1.0
             ],
             "parent": "861"
+        },
+        "874": {
+            "link": {
+                "name": "Barn",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "875": {
+            "link": {
+                "name": "GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "876": {
+            "link": {
+                "name": "Plane018<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "877": {
+            "link": {
+                "name": "Plane013<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "878": {
+            "link": {
+                "name": "Plane014<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "879": {
+            "link": {
+                "name": "Plane015<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "880": {
+            "link": {
+                "name": "Plane016<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "881": {
+            "link": {
+                "name": "Plane017<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "882": {
+            "link": {
+                "name": "Plane024<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "883": {
+            "link": {
+                "name": "Plane019<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "884": {
+            "link": {
+                "name": "Plane020<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "885": {
+            "link": {
+                "name": "Plane021<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "886": {
+            "link": {
+                "name": "Plane022<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "887": {
+            "link": {
+                "name": "Plane023<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "888": {
+            "link": {
+                "name": "Plane012<GrasEdges",
+                "file": "assets\\models\\Farm.glb"
+            }
         }
     },
     "meshes": {
@@ -14132,6 +14263,30 @@
                 "name": "Line002",
                 "file": "assets\\models\\Farm.glb"
             }
+        },
+        "870": {
+            "link": {
+                "name": "Barn",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "871": {
+            "link": {
+                "name": "Barn.0",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "872": {
+            "link": {
+                "name": "Barn.1",
+                "file": "assets\\models\\Farm.glb"
+            }
+        },
+        "873": {
+            "link": {
+                "name": "Barn.2",
+                "file": "assets\\models\\Farm.glb"
+            }
         }
     },
     "textures": {
@@ -14429,6 +14584,12 @@
                 "name": "textures_27.png",
                 "file": "assets\\textures_27.png"
             }
+        },
+        "868": {
+            "link": {
+                "name": "textures_23.png",
+                "file": "assets\\models\\Farm.glb"
+            }
         }
     },
     "images": {
@@ -14694,6 +14855,12 @@
             "link": {
                 "name": "textures_27.png",
                 "file": "assets\\textures_27.png"
+            }
+        },
+        "867": {
+            "link": {
+                "name": "image_8",
+                "file": "assets\\models\\Farm.glb"
             }
         }
     },
@@ -15268,6 +15435,12 @@
             "Flat": {
                 "flatTexture": "866"
             }
+        },
+        "869": {
+            "link": {
+                "name": "Material #34",
+                "file": "assets\\models\\Farm.glb"
+            }
         }
     },
     "shaders": {
@@ -15357,7 +15530,7 @@
             ]
         },
         "runtime": {
-            "visualizeColliders": true
+            "visualizeColliders": false
         },
         "ar": {
             "framework": "none"
