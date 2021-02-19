@@ -1,8 +1,11 @@
 WL.registerComponent('target-picker', {
     allowedPickerMeshObject: { type: WL.Type.Object, default: null },
     notAllowedPickerMeshObject: { type: WL.Type.Object, default: null },
-    floorGroup: { type: WL.Type.Int, default: 1 }
+    floorGroup: { type: WL.Type.Int, default: 1 },
 }, {
+    canTrigger:function(){
+        return true;
+    },
     pickingAllowed:function(x,y,z){
         return true;
     },
@@ -20,7 +23,7 @@ WL.registerComponent('target-picker', {
         if (!this.input.xrInputSource) {
             return;
         }
-        if (this.input.xrInputSource.gamepad.buttons[0].pressed && this.pickingActive === false) {
+        if (this.input.xrInputSource.gamepad.buttons[0].pressed && this.pickingActive === false && this.canTrigger()) {
             this.pickingActive = true;
         }
         if (!this.input.xrInputSource.gamepad.buttons[0].pressed && this.pickingActive === true) {
@@ -50,9 +53,11 @@ WL.registerComponent('target-picker', {
 
             let forwardDirection = [0, 0, 0];
             glMatrix.vec3.transformQuat(forwardDirection, [0, 0, -1], quat);
-            let rayHit = WL.scene.rayCast(origin, forwardDirection, 1 << this.floorGroup);
-
+            let rayHit = WL.scene.rayCast(origin, 
+                forwardDirection, (1 << this.floorGroup)) ;
+            
             if (rayHit.hitCount > 0) {
+                console.log(rayHit.hitCount)
                 if (this.indicatorHidden) {
                     this.indicatorHidden = false;
                 }
