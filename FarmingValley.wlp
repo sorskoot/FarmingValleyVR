@@ -2041,8 +2041,9 @@
                     "type": "move-camera",
                     "move-camera": {
                         "player": "14",
-                        "teleportIndicatorMeshObject": "837",
-                        "floorGroup": 2
+                        "teleportIndicatorMeshObject": "859",
+                        "floorGroup": 2,
+                        "cantTeleportIndicatorMeshObject": "861"
                     }
                 }
             ]
@@ -11873,6 +11874,24 @@
             },
             "components": [
                 null
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.05000000074505806,
+                0.0,
+                1.0
             ]
         },
         "730": {
@@ -12787,35 +12806,35 @@
             ]
         },
         "837": {
-            "name": "TeleportCursor",
+            "name": "TeleportCursorMesh",
             "components": [
                 {
                     "type": "mesh",
                     "mesh": {
-                        "mesh": "11",
-                        "material": "20"
+                        "mesh": "7",
+                        "material": "863"
                     }
                 }
             ],
             "transformation": [
-                0.4000000059604645,
+                0.5,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
-                0.004616874735802412,
+                -5.9604346347441609e-8,
+                -0.49999746680259707,
+                0.0,
+                0.0,
+                0.49999791383743288,
+                -5.960439963814679e-8,
                 0.0,
                 0.0,
                 0.0,
-                0.0,
-                0.4000000059604645,
-                0.0,
-                0.0,
-                0.009999999776482582,
                 0.0,
                 1.0
             ],
-            "parent": null
+            "parent": "859"
         },
         "838": {
             "link": {
@@ -13262,6 +13281,44 @@
                     }
                 }
             ]
+        },
+        "859": {
+            "name": "TeleportCursor"
+        },
+        "861": {
+            "name": "CantTeleportCursor",
+            "parent": null
+        },
+        "862": {
+            "name": "CantTeleportCursorMesh",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "864"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -5.9604346347441609e-8,
+                -0.49999746680259707,
+                0.0,
+                0.0,
+                0.49999791383743288,
+                -5.9604399638146797e-8,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "parent": "861"
         }
     },
     "meshes": {
@@ -14360,6 +14417,18 @@
                 "name": "textures_25.png",
                 "file": "assets\\models\\Farm.glb"
             }
+        },
+        "857": {
+            "link": {
+                "name": "textures_26.png",
+                "file": "assets\\textures_26.png"
+            }
+        },
+        "866": {
+            "link": {
+                "name": "textures_27.png",
+                "file": "assets\\textures_27.png"
+            }
         }
     },
     "images": {
@@ -14614,6 +14683,18 @@
                 "name": "image_7",
                 "file": "assets\\models\\Farm.glb"
             }
+        },
+        "856": {
+            "link": {
+                "name": "textures_26.png",
+                "file": "assets\\textures_26.png"
+            }
+        },
+        "865": {
+            "link": {
+                "name": "textures_27.png",
+                "file": "assets\\textures_27.png"
+            }
         }
     },
     "materials": {
@@ -14625,7 +14706,7 @@
         },
         "20": {
             "name": "White",
-            "shader": "Flat",
+            "shader": "Flat Textured",
             "Phong": {
                 "specularColor": [
                     9.999899930335233e-7,
@@ -14640,6 +14721,9 @@
                     0.9999899864196776,
                     1.0
                 ]
+            },
+            "Flat": {
+                "flatTexture": "857"
             }
         },
         "22": {
@@ -15170,6 +15254,20 @@
                 "name": "Material #33",
                 "file": "assets\\models\\Farm.glb"
             }
+        },
+        "863": {
+            "name": "Teleport",
+            "shader": "Flat Textured",
+            "Flat": {
+                "flatTexture": "857"
+            }
+        },
+        "864": {
+            "name": "CantTeleport",
+            "shader": "Flat Textured",
+            "Flat": {
+                "flatTexture": "866"
+            }
         }
     },
     "shaders": {
@@ -15254,7 +15352,8 @@
                 "js/components",
                 "js/lib",
                 "js/data",
-                "js/components/corn.js"
+                "js/components/corn.js",
+                "js/utils"
             ]
         },
         "runtime": {
@@ -15308,6 +15407,8 @@
         "assets/models/GrassFlowers.glb",
         "assets/models/Road.glb",
         "assets/models/Farm.glb",
-        "assets/models/worldtest.glb"
+        "assets/models/worldtest.glb",
+        "assets/textures_26.png",
+        "assets/textures_27.png"
     ]
 }
