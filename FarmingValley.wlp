@@ -313,10 +313,11 @@
                 1.0,
                 0.0,
                 0.0,
-                0.0,
+                1.3497295379638672,
                 0.5,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "33": {
             "name": "Mesh",
@@ -707,7 +708,7 @@
             ],
             "transformation": [
                 0.800000011920929,
-                -9.094948508507271e-14,
+                -9.094948508507273e-14,
                 2.5604521893549466e-14,
                 0.0,
                 9.094950541386344e-14,
@@ -850,7 +851,7 @@
             ],
             "transformation": [
                 0.800000011920929,
-                -9.094948508507271e-14,
+                -9.094948508507273e-14,
                 2.5604521893549466e-14,
                 0.0,
                 9.094950541386344e-14,
@@ -1169,7 +1170,8 @@
                 0.0,
                 0.0,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "135": {
             "name": "Grass001",
@@ -2704,7 +2706,7 @@
                 "file": "assets\\models\\crate.glb"
             },
             "transformation": [
-                43.888023376464847,
+                43.88802337646485,
                 0.0,
                 -9.941903114318848,
                 0.0,
@@ -2714,11 +2716,11 @@
                 0.0,
                 9.941903114318848,
                 0.0,
-                43.888023376464847,
+                43.88802337646485,
                 0.0,
                 -2.123656749725342,
-                5.960464477539063e-8,
-                1.4456063508987427,
+                5.960464477539065e-8,
+                1.445606350898743,
                 1.0
             ]
         },
@@ -3989,7 +3991,8 @@
                 0.0,
                 1.0
             ],
-            "parent": "853"
+            "parent": "853",
+            "deleted": true
         },
         "417": {
             "name": "Grass001",
@@ -5632,7 +5635,8 @@
                 0.0,
                 0.0,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "484": {
             "link": {
@@ -5916,7 +5920,8 @@
                 0.0,
                 0.0,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "499": {
             "link": {
@@ -6776,7 +6781,8 @@
                 0.0,
                 0.0,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "532": {
             "link": {
@@ -11951,7 +11957,8 @@
                         "materialWet": "154"
                     }
                 }
-            ]
+            ],
+            "deleted": true
         },
         "732": {
             "link": {
@@ -12117,7 +12124,8 @@
                 0.0,
                 0.0,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "748": {
             "link": {
@@ -12581,10 +12589,11 @@
                 1.0,
                 0.0,
                 2.5,
-                -0.994975447654724,
+                -2.845540761947632,
                 -10.498148918151856,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "796": {
             "link": {
@@ -12810,7 +12819,8 @@
                 0.0,
                 0.0,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "834": {
             "link": {
@@ -12950,7 +12960,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "839": {
             "link": {
@@ -12978,7 +12989,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "840": {
             "link": {
@@ -13006,7 +13018,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "841": {
             "link": {
@@ -13034,7 +13047,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "842": {
             "link": {
@@ -13062,7 +13076,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "843": {
             "link": {
@@ -13090,7 +13105,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "844": {
             "link": {
@@ -13118,7 +13134,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "845": {
             "link": {
@@ -13146,7 +13163,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "846": {
             "link": {
@@ -13174,7 +13192,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "847": {
             "link": {
@@ -13202,7 +13221,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "848": {
             "link": {
@@ -13230,7 +13250,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "849": {
             "link": {
@@ -13258,7 +13279,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "850": {
             "link": {
@@ -13286,7 +13308,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "851": {
             "link": {
@@ -13314,7 +13337,8 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "852": {
             "link": {
@@ -13342,10 +13366,12 @@
             "components": [
                 null
             ],
-            "parent": "731"
+            "parent": "731",
+            "deleted": true
         },
         "853": {
-            "name": "Empty.000"
+            "name": "Empty.000",
+            "deleted": true
         },
         "854": {
             "name": "WorldColliders"
@@ -13449,7 +13475,8 @@
             "link": {
                 "name": "Barn",
                 "file": "assets\\models\\Farm.glb"
-            }
+            },
+            "deleted": true
         },
         "875": {
             "link": {
