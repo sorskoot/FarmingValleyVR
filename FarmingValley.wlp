@@ -707,7 +707,7 @@
             ],
             "transformation": [
                 0.800000011920929,
-                -9.094948508507271e-14,
+                -9.094948508507273e-14,
                 2.5604521893549466e-14,
                 0.0,
                 9.094950541386344e-14,
@@ -850,7 +850,7 @@
             ],
             "transformation": [
                 0.800000011920929,
-                -9.094948508507271e-14,
+                -9.094948508507273e-14,
                 2.5604521893549466e-14,
                 0.0,
                 9.094950541386344e-14,
@@ -2704,7 +2704,7 @@
                 "file": "assets\\models\\crate.glb"
             },
             "transformation": [
-                43.888023376464847,
+                43.88802337646485,
                 0.0,
                 -9.941903114318848,
                 0.0,
@@ -2714,11 +2714,11 @@
                 0.0,
                 9.941903114318848,
                 0.0,
-                43.888023376464847,
+                43.88802337646485,
                 0.0,
                 -2.123656749725342,
-                5.960464477539063e-8,
-                1.4456063508987427,
+                5.960464477539065e-8,
+                1.445606350898743,
                 1.0
             ]
         },
@@ -13633,6 +13633,111 @@
                 1.0
             ],
             "deleted": true
+        },
+        "930": {
+            "link": {
+                "name": "Box001",
+                "file": "assets\\models\\PlantTest.glb"
+            },
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.10884271562099456,
+                0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "931": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\PlantTest.glb"
+            }
+        },
+        "933": {
+            "link": {
+                "name": "Plane005",
+                "file": "assets\\models\\PlantTest.glb"
+            }
+        },
+        "934": {
+            "name": "Mesh.016",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "932",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.125,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.125,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.125,
+                0.0,
+                0.8697206974029541,
+                0.0,
+                -1.5154142379760745,
+                1.0
+            ]
+        },
+        "936": {
+            "link": {
+                "name": "Sphere001",
+                "file": "assets\\models\\Rock.glb"
+            },
+            "transformation": [
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                -6.228490352630615,
+                0.0,
+                -3.2015678882598879,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "938"
+                    }
+                }
+            ],
+            "name": "Rock"
+        },
+        "937": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\Rock.glb"
+            }
         }
     },
     "meshes": {
@@ -14512,6 +14617,24 @@
                 "name": "Plane027.5",
                 "file": "assets\\models\\World.glb"
             }
+        },
+        "929": {
+            "link": {
+                "name": "Box001",
+                "file": "assets\\models\\PlantTest.glb"
+            }
+        },
+        "932": {
+            "link": {
+                "name": "Plane005",
+                "file": "assets\\models\\PlantTest.glb"
+            }
+        },
+        "935": {
+            "link": {
+                "name": "Sphere001",
+                "file": "assets\\models\\Rock.glb"
+            }
         }
     },
     "textures": {
@@ -14863,6 +14986,12 @@
                 "name": "textures_32.png",
                 "file": "assets\\textures_32.png"
             }
+        },
+        "927": {
+            "link": {
+                "name": "textures_33.png",
+                "file": "assets\\models\\PlantTest.glb"
+            }
         }
     },
     "images": {
@@ -15183,6 +15312,12 @@
                 "name": "textures_32.png",
                 "file": "assets\\textures_32.png"
             }
+        },
+        "926": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\PlantTest.glb"
+            }
         }
     },
     "materials": {
@@ -15265,9 +15400,9 @@
             "name": "Green",
             "Phong": {
                 "diffuseColor": [
-                    0.15294118225574494,
-                    0.7882353067398071,
-                    0.5411764979362488,
+                    0.2078431397676468,
+                    0.5764706134796143,
+                    0.2235294133424759,
                     1.0
                 ],
                 "specularColor": [
@@ -15277,9 +15412,9 @@
                     1.0
                 ],
                 "ambientColor": [
-                    0.0,
-                    0.23529410362243653,
-                    0.1437908560037613,
+                    0.015747787430882459,
+                    0.1254901885986328,
+                    0.0828125923871994,
                     1.0
                 ]
             }
@@ -15856,6 +15991,15 @@
             "Flat": {
                 "flatTexture": "924"
             }
+        },
+        "928": {
+            "link": {
+                "name": "Leaves",
+                "file": "assets\\models\\PlantTest.glb"
+            }
+        },
+        "938": {
+            "name": "rock"
         }
     },
     "shaders": {
@@ -16003,6 +16147,8 @@
         "assets/textures_29.png",
         "assets/textures_30.png",
         "assets/textures_31.png",
-        "assets/textures_32.png"
+        "assets/textures_32.png",
+        "assets/models/PlantTest.glb",
+        "assets/models/Rock.glb"
     ]
 }

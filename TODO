@@ -20,6 +20,20 @@ Must Have:
 
 Should Have:
     ☐ Multiple different crops
+        ☐ v1 has 9 different crops. in the next version we can increase.
+            ☐ Corn
+            ☐ Califlower
+            ☐ Strawberries
+            ☐ Red Pepper
+            ☐ Melon
+            ☐ Tomato
+            ☐ Wheat
+            ☐ Eggplant
+            ☐ Pumpkin
+
+        ☐ v2 ideas:
+            ☐ Rice (grows better near water)
+
     Use Construct Arcade coins to buy:
         ☐ Fertilizer
         ☐ Seeds
@@ -34,6 +48,7 @@ Would Like:
 
 Bugs:
     ✔ You can plant seeds even if there's a plant already @done(21-02-08 22:55)
+    ☐ 'cursor' when selecting options in the menu is missing
 
 Ideas:
     - Cycle of planting seeds and harvestings
@@ -55,3 +70,8 @@ Ideas:
         - CA Coins
         - Web monitization
         - Wonderleap / zesty.market (https://docs.zesty.market/) ads
+    - crop growth:
+        ~ At the end of each cycle/day a crop has a chance of growing. If the crop didn't grow, the next
+          day the chance is increased. For example, if a plant has a 40% chance of growing, the first day 
+          it has 40% chance, the second day this is increased to 80%, the third to 120%=100%. This to make 
+          sure a plant grows in a specific amount of time.
