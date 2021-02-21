@@ -43,5 +43,16 @@ WL.registerComponent('menu-click', {
     menuChange: function (e) {
         this.isSelected = this.menuItem === e;
         this.isSelected ? this.onHover() : this.onUnHover();
+        
+        // /**
+        //  * @type {WL.Object}
+        //  */
+        // for (let i = 0; i < 15000; i++) {
+                  
+        
+        // var t = window.game.prefabStorage.instantiate('Tree');
+        // t.setTranslationWorld([~~(Math.random()*100-50)+.5,0,~~(Math.random()*100-50)+.5]);
+        // t.rotateAxisAngleDeg([0,1,0],Math.random()*360);
+        // }
     }
 });

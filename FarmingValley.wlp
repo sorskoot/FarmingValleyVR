@@ -13601,7 +13601,8 @@
             "link": {
                 "name": "Default light",
                 "file": "assets\\models\\World.glb"
-            }
+            },
+            "deleted": true
         },
         "925": {
             "name": "Sky",
@@ -13663,7 +13664,8 @@
             "link": {
                 "name": "Default light",
                 "file": "assets\\models\\PlantTest.glb"
-            }
+            },
+            "deleted": true
         },
         "933": {
             "link": {
@@ -13721,7 +13723,7 @@
                 0.0,
                 -6.228490352630615,
                 0.0,
-                -3.2015678882598879,
+                -3.201567888259888,
                 1.0
             ],
             "components": [
@@ -13737,6 +13739,125 @@
             "link": {
                 "name": "Default light",
                 "file": "assets\\models\\Rock.glb"
+            },
+            "deleted": true
+        },
+        "939": {
+            "name": "Prefab-Storage",
+            "components": [
+                {
+                    "type": "prefab-storage"
+                }
+            ]
+        },
+        "941": {
+            "link": {
+                "name": "Stick",
+                "file": "assets\\models\\Stick.glb"
+            },
+            "components": [
+                {
+                    "mesh": {
+                        "material": "943"
+                    }
+                },
+                {
+                    "type": "prefab",
+                    "prefab": {
+                        "name": "Twig"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "box": {
+                            "extents": [
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225
+                            ]
+                        },
+                        "groups": 4,
+                        "aabb": {
+                            "extents": [
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                -2.9128081798553469,
+                0.0,
+                -1.987832307815552,
+                1.0
+            ],
+            "parent": "939"
+        },
+        "942": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\Stick.glb"
+            },
+            "deleted": true
+        },
+        "945": {
+            "link": {
+                "name": "Tree",
+                "file": "assets\\models\\Tree.glb"
+            },
+            "transformation": [
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "26"
+                    }
+                },
+                {
+                    "type": "prefab",
+                    "prefab": {
+                        "name": "Tree"
+                    }
+                }
+            ],
+            "parent": "939"
+        },
+        "946": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\Tree.glb"
             }
         }
     },
@@ -14635,6 +14756,18 @@
                 "name": "Sphere001",
                 "file": "assets\\models\\Rock.glb"
             }
+        },
+        "940": {
+            "link": {
+                "name": "Stick",
+                "file": "assets\\models\\Stick.glb"
+            }
+        },
+        "944": {
+            "link": {
+                "name": "Tree",
+                "file": "assets\\models\\Tree.glb"
+            }
         }
     },
     "textures": {
@@ -15412,7 +15545,7 @@
                     1.0
                 ],
                 "ambientColor": [
-                    0.015747787430882459,
+                    0.01574778743088246,
                     0.1254901885986328,
                     0.0828125923871994,
                     1.0
@@ -15999,7 +16132,24 @@
             }
         },
         "938": {
-            "name": "rock"
+            "name": "gray"
+        },
+        "943": {
+            "name": "brown",
+            "Phong": {
+                "diffuseColor": [
+                    0.3058823347091675,
+                    0.17993050813674928,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    0.35686272382736208,
+                    0.24869240820407868,
+                    0.15254130959510804,
+                    0.0
+                ]
+            }
         }
     },
     "shaders": {
@@ -16149,6 +16299,8 @@
         "assets/textures_31.png",
         "assets/textures_32.png",
         "assets/models/PlantTest.glb",
-        "assets/models/Rock.glb"
+        "assets/models/Rock.glb",
+        "assets/models/Stick.glb",
+        "assets/models/Tree.glb"
     ]
 }
