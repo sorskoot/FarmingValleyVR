@@ -13,18 +13,72 @@ class Game {
         this.registeredPlants = [];
         this.inventory = {};
         this.plantmap = [[]];
-        //this.loadData();
+        this.loadMap();
+
+
+        Promise.all([
+            new Promise(res => setInterval(() => { if (this.mapLoaded) res() }, 100)),
+            new Promise(res => setInterval(() => { if (this.prefabLoaded) res() }, 100))
+        ]).then(() => {
+            this.generateEntities();
+        })
     }
 
     async loadData() {
         var data = await fetch("/test.json");
         var result = await data.json();
         console.log(result.test);
+
+    }
+
+    generateEntities() {
+        // this.entityCanvas = document.createElement('canvas');
+        // this.entityCanvas.width = 100;
+        // this.entityCanvas.height = 100;
+        // this.entityCtx = this.entityCanvas.getContext("2d");        
+        // this.entityCtx
+
+        for (let i = 0; i < gameConfig.treeAmount; i++) {
+            let tree = this.prefabStorage.instantiate('Tree');
+            this.placeRandom(tree);
+        }
+        for (let i = 0; i < gameConfig.treeAmount; i++) {
+            let twig = this.prefabStorage.instantiate('Twig');
+            this.placeRandom(twig);
+        }
+        for (let i = 0; i < gameConfig.treeAmount; i++) {
+            let rock = this.prefabStorage.instantiate('Rock');
+            this.placeRandom(rock);
+        }
+        for (let i = 0; i < gameConfig.treeAmount; i++) {
+            let grass = this.prefabStorage.instantiate('Grass');
+            this.placeRandom(grass);
+        }
+    }
+
+    placeRandom(entity) {
+        const x = Math.random() * 100 - 50;
+        const y = Math.random() * 100 - 50;
+        const color = this.getMapPixel(x, y);
+        if (color[3] === 255) {
+            console.log(color[1]);
+            entity.rotateAxisAngleDeg([0,1,0],Math.random()*360);
+            entity.setTranslationWorld([~~x + .5,            
+            { 82: 6, 137: 4, 171: 2, 206: 0 }[color[1]], ~~y + .5]);
+            
+        }
+    }
+
+    registerPrefabStorage(prefabStorage) {
+        this.prefabStorage = prefabStorage;
+
+        // needs to change to a special place that triggers when everything is done loading
+        this.prefabLoaded = true;
     }
 
     addMenuChangeFunction(callback) {
         this.menuChangeHandlers.push(callback);
-    }    
+    }
     menuItem(item) {
         switch (item) {
             case MENU_ITEMS.TILLING:
@@ -50,7 +104,7 @@ class Game {
     plant(position) {
         if (this.registeredPlants[0]) {
             this.registeredPlants[0].plant(position);
-           // this.plantmap[position.x][position.y] = 
+            // this.plantmap[position.x][position.y] = 
         }
 
     }
@@ -74,7 +128,7 @@ class Game {
     notify(text) {
         this.notificationText.text = text;
         clearTimeout(this.lastNotification);
-        this.lastNotification = setTimeout(()=>{ this.notificationText.text = "" }, 5000);
+        this.lastNotification = setTimeout(() => { this.notificationText.text = "" }, 5000);
     }
 
     /**
@@ -88,8 +142,24 @@ class Game {
                 break;
         }
     }
+
+    loadMap() {
+        let myimage = new Image();
+        let canvas = document.createElement('canvas');
+        this.mapCtx = canvas.getContext("2d");
+        myimage.onload = function () {
+            this.mapCtx.drawImage(myimage, 0, 0);
+            this.mapLoaded = true;
+        }.bind(this);
+        myimage.src = './map.png';
+    }
+
+    getMapPixel(x, y) {
+        return imageHelpers.getPixelXY(this.mapCtx.getImageData(0, 0, 100, 100), ~~x + 50, ~~y + 50);
+    }
 }
 
 var game = new Game();
+
 
 

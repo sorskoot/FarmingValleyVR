@@ -15,13 +15,7 @@ WL.registerComponent('move-camera', {
         // this.teleportIndicatorMeshObject.translate([1000, -1000, 1000]);
         // this.cantTeleportIndicatorMeshObject.translate([1000, -1000, 1000]);
  
-        let myimage = new Image();
-        let canvas = document.createElement('canvas');
-        this.ctx = canvas.getContext("2d");
-        myimage.onload = function () {
-            this.ctx.drawImage(myimage, 0, 0);
-        }.bind(this);
-        myimage.src = './map.png';
+       
 
         this.picker = this.object.getComponent('target-picker');
         this.picker.pickingAllowed = this.canTeleport.bind(this);
@@ -36,8 +30,8 @@ WL.registerComponent('move-camera', {
     },
     canTeleport: function (x,_ , y) {
         //~~this.hitSpot[0],0, ~~this.hitSpot[2]
-        let pixel = 
-            imageHelpers.getPixelXY(this.ctx.getImageData(0, 0, 100, 100), ~~x + 50, ~~y + 50);
+        let pixel = window.game.getMapPixel(x,y);
+            
         return pixel[3]===255;
     },
 

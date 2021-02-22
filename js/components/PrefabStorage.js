@@ -14,7 +14,7 @@ WL.registerComponent('prefab-storage', {
                 console.log(child.name + ' registered as prefab with name: '+ childPrefab.name);             
             }
         }
-        window.game.prefabStorage = this;
+        window.game.registerPrefabStorage(this);
     },
     /**
      * 
