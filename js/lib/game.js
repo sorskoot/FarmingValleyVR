@@ -42,15 +42,15 @@ class Game {
             let tree = this.prefabStorage.instantiate('Tree');
             this.placeRandom(tree);
         }
-        for (let i = 0; i < gameConfig.treeAmount; i++) {
+        for (let i = 0; i < gameConfig.stickAmount; i++) {
             let twig = this.prefabStorage.instantiate('Twig');
             this.placeRandom(twig);
         }
-        for (let i = 0; i < gameConfig.treeAmount; i++) {
+        for (let i = 0; i < gameConfig.stoneAmount; i++) {
             let rock = this.prefabStorage.instantiate('Rock');
             this.placeRandom(rock);
         }
-        for (let i = 0; i < gameConfig.treeAmount; i++) {
+        for (let i = 0; i < gameConfig.grassAmount; i++) {
             let grass = this.prefabStorage.instantiate('Grass');
             this.placeRandom(grass);
         }
@@ -61,11 +61,10 @@ class Game {
         const y = Math.random() * 100 - 50;
         const color = this.getMapPixel(x, y);
         if (color[3] === 255) {
-            console.log(color[1]);
-            entity.rotateAxisAngleDeg([0,1,0],Math.random()*360);
-            entity.setTranslationWorld([~~x + .5,            
+            entity.rotateAxisAngleDeg([0, 1, 0], Math.random() * 360);
+            entity.setTranslationWorld([~~x + .5,
             { 82: 6, 137: 4, 171: 2, 206: 0 }[color[1]], ~~y + .5]);
-            
+
         }
     }
 
