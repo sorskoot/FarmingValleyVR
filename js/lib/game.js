@@ -2,7 +2,7 @@ const MENU_ITEMS = {
     TILLING: 1,
     WATERING: 2,
     SEEDING: 3,
-    BUYING: 4
+    MOVING: 4
 }
 
 class Game {
@@ -82,8 +82,8 @@ class Game {
             case MENU_ITEMS.SEEDING:
                 this.currentAction = "Seeding"
                 break;
-            case MENU_ITEMS.BUYING:
-                this.currentAction = "Buying"
+            case MENU_ITEMS.MOVING:
+                this.currentAction = "Moving"
                 break;
         }
         for (let index = 0; index < this.menuChangeHandlers.length; index++) {
@@ -147,7 +147,7 @@ class Game {
     }
 
     getMapPixel(x, y) {
-        return imageHelpers.getPixelXY(this.mapCtx.getImageData(0, 0, 100, 100), ~~x + 50, ~~y + 50);
+        return imageHelpers.getPixelXY(this.mapCtx.getImageData(0, 0, 100, 100), Math.floor(x) + 50, Math.floor(y) + 50);
     }
 }
 

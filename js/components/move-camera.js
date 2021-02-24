@@ -13,26 +13,23 @@ WL.registerComponent('move-camera', {
         
         // this.input = this.object.getComponent('input');        
         // this.teleportIndicatorMeshObject.translate([1000, -1000, 1000]);
-        // this.cantTeleportIndicatorMeshObject.translate([1000, -1000, 1000]);
- 
-       
-
-        this.picker = this.object.getComponent('target-picker');
-        this.picker.pickingAllowed = this.canTeleport.bind(this);
-        this.picker.picked = this.teleport.bind(this);
+        // this.cantTeleportIndicatorMeshObject.translate([1000, -1000, 1000]);       
+        // this.picker = this.object.getComponent('target-picker');
+        // this.picker.initialize(this.object.getComponent('input'));
+        // this.picker.pickingAllowed = this.canTeleport.bind(this);
+        // this.picker.picked = this.teleport.bind(this);
         //document.body.appendChild(canvas);
         
     },
-    teleport: function(x,y,z){
-        let position = [];
-        this.player.getTranslationWorld(position);
-        this.player.setTranslationWorld([~~x + .5, position[1], ~~z + .5]);
-    },
-    canTeleport: function (x,_ , y) {
-        //~~this.hitSpot[0],0, ~~this.hitSpot[2]
-        let pixel = window.game.getMapPixel(x,y);
-            
-        return pixel[3]===255;
-    },
+    // teleport: function(x,y,z){
+    //     console.log([x,z]);
+    //     let position = [];
+    //     this.player.getTranslationWorld(position);
+    //     this.player.setTranslationWorld([~~x + .5, position[1], ~~z + .5]);
+    // },
+    // canTeleport: function (x,_ , y) {        
+    //     let pixel = window.game.getMapPixel(x,y);            
+    //     return pixel[3]===255;
+    // },
 
 });

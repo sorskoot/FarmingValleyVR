@@ -1,6 +1,12 @@
 Must Have:
+    For now change controls due to issue with controls mixing:
+        ☐ Replace option to buy tiles with option to teleport
+        ☐ Constantly show the location  (not only on down) and teleport on release
+        ☐ Move back and forth with the left controller pad
+
+
     ✔ Clear some unused textures @done(21-02-22 23:10)
-    ☐ @today Randomly add rocks, sticks, grass and trees.
+    ✔ Randomly add rocks, sticks, grass and trees. @done(21-02-24 22:51)
     ☐ Create a better world
     ☐ Day/Night Cycle
     ☐ Crates to sell
