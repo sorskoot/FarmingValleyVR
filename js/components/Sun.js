@@ -5,19 +5,19 @@ WL.registerComponent('sun', {
 
     init: function () {
         this.colorCycle = [
-            [217, 249, 182],
-            [144, 236, 239],
-            [112, 215, 242],
-            [112, 215, 242],
-            [112, 215, 242],
-            [112, 215, 242],
+            [242, 156, 3],
+            [240, 228, 177],
+            [255, 255, 255],
+            [255, 255, 255],
+            [255, 255, 255],
+            [255, 255, 255],
             [255, 129, 169],
-            [55, 108, 155],
-            [5, 9, 13],
-            [5, 9, 13],
-            [5, 9, 13],
-            [5, 9, 13],
-            [217, 249, 182],            
+            [209, 137, 2],
+            [16, 16, 32],
+            [16, 16, 32],
+            [16, 16, 32],
+            [16, 16, 32],
+            [242, 156, 3],            
         ];
 
         this.light = this.object.getComponent('light');
@@ -27,11 +27,8 @@ WL.registerComponent('sun', {
             this.colorCycle[0][0] / 255.0,
             this.colorCycle[0][1] / 255.0,
             this.colorCycle[0][2] / 255.0, 1]);
-    
-    
-        this.light.color = color;
         
-
+        this.light.color.set(color);        
         this.daySteps=12;
     },
     start: function () {
@@ -53,11 +50,11 @@ WL.registerComponent('sun', {
             this.colorCycle[day + 1][1] / 255.0,
             this.colorCycle[day + 1][2] / 255.0];
 
-        this.light.color = [
+        this.light.color.set([
             mathUtils.lerp(color1[0], color2[0], position),
             mathUtils.lerp(color1[1], color2[1], position),
             mathUtils.lerp(color1[2], color2[2], position),
-            1]
+            1]);
 
         if (this.dayCycleTime >= this.daySteps) {
             this.dayCycleTime -= this.daySteps;

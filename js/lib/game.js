@@ -23,14 +23,7 @@ class Game {
             this.generateEntities();
         })
     }
-
-    async loadData() {
-        var data = await fetch("/test.json");
-        var result = await data.json();
-        console.log(result.test);
-
-    }
-
+    
     generateEntities() {
         // this.entityCanvas = document.createElement('canvas');
         // this.entityCanvas.width = 100;

@@ -13,7 +13,6 @@ WL.registerComponent('sky', {
             [112, 215, 242],
             [255, 129, 169],
             [55, 108, 155],
-            //[22, 42, 61],
             [5, 9, 13],
             [5, 9, 13],
             [5, 9, 13],
@@ -31,7 +30,6 @@ WL.registerComponent('sky', {
         this.daySteps=12;
     },
     start: function () {
-        console.log(this.material.color);
         this.dayCycleTime = 0;
     },
     update: function (dt) {
