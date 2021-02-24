@@ -55,8 +55,8 @@ class Game {
         const color = this.getMapPixel(x, y);
         if (color[3] === 255) {
             entity.rotateAxisAngleDeg([0, 1, 0], Math.random() * 360);
-            entity.setTranslationWorld([~~x + .5,
-            { 82: 6, 137: 4, 171: 2, 206: 0 }[color[1]], ~~y + .5]);
+            entity.setTranslationWorld([Math.floor(x) + .5,
+            { 82: 6, 137: 4, 171: 2, 206: 0 }[color[1]], Math.floor(y) + .5]);
 
         }
     }
