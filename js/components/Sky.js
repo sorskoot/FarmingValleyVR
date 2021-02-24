@@ -5,26 +5,26 @@ WL.registerComponent('sky', {
 
     init: function () {
         this.colorCycle = [
-            [217, 249, 182],
-            [144, 236, 239],
-            [112, 215, 242],
-            [112, 215, 242],
-            [112, 215, 242],
-            [112, 215, 242],
-            [255, 129, 169],
-            [55, 108, 155],
-            [5, 9, 13],
-            [5, 9, 13],
-            [5, 9, 13],
-            [5, 9, 13],
-            [217, 249, 182],            
+            [217/255, 249/255, 182/255],
+            [144/255, 236/255, 239/255],
+            [112/255, 215/255, 242/255],
+            [112/255, 215/255, 242/255],
+            [112/255, 215/255, 242/255],
+            [112/255, 215/255, 242/255],
+            [255/255, 129/255, 169/255],
+            [55/255, 108/255, 155/255],
+            [5/255, 9/255, 13/255],
+            [5/255, 9/255, 13/255],
+            [5/255, 9/255, 13/255],
+            [5/255, 9/255, 13/255],
+            [217/255, 249/255, 182/255],            
         ];
         this.material = this.object.getComponent('mesh').material;
 
         let color = [
-            this.colorCycle[0][0] / 255.0,
-            this.colorCycle[0][1] / 255.0,
-            this.colorCycle[0][2] / 255.0, 1];
+            this.colorCycle[0][0],
+            this.colorCycle[0][1],
+            this.colorCycle[0][2], 1];
 
         this.material.color = color;
         this.daySteps=12;
@@ -38,14 +38,14 @@ WL.registerComponent('sky', {
         let day = ~~(this.dayCycleTime % this.daySteps);
 
         let color1 = [
-            this.colorCycle[day][0] / 255.0,
-            this.colorCycle[day][1] / 255.0,
-            this.colorCycle[day][2] / 255.0];
+            this.colorCycle[day][0],
+            this.colorCycle[day][1],
+            this.colorCycle[day][2]];
 
         let color2 = [
-            this.colorCycle[day + 1][0] / 255.0,
-            this.colorCycle[day + 1][1] / 255.0,
-            this.colorCycle[day + 1][2] / 255.0];
+            this.colorCycle[day + 1][0],
+            this.colorCycle[day + 1][1],
+            this.colorCycle[day + 1][2]];
 
         this.material.color = [
             mathUtils.lerp(color1[0], color2[0], position),
