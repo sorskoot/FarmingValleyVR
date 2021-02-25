@@ -5,8 +5,21 @@ const MENU_ITEMS = {
     MOVING: 4
 }
 
-class Game {
+const ENTITYTYPE = {
+    TREE:1,
+    TWIG:2,
+    ROCK:3,
+    GRASS:4
+}
 
+const MAPINDEX = {
+    ENTITYTYPE:0,
+    HEIGHT:1,
+    PLANT:2,
+    WATER:3
+}
+
+class Game {
     constructor() {
         this.currentAction = "Nothing";
         this.menuChangeHandlers = [];
@@ -25,38 +38,35 @@ class Game {
     }
     
     generateEntities() {
-        // this.entityCanvas = document.createElement('canvas');
-        // this.entityCanvas.width = 100;
-        // this.entityCanvas.height = 100;
-        // this.entityCtx = this.entityCanvas.getContext("2d");        
-        // this.entityCtx
-
-        for (let i = 0; i < gameConfig.treeAmount; i++) {
+         for (let i = 0; i < gameConfig.treeAmount; i++) {
             let tree = this.prefabStorage.instantiate('Tree');
-            this.placeRandom(tree);
+            this.placeRandom(tree, ENTITYTYPE.TREE);
         }
         for (let i = 0; i < gameConfig.stickAmount; i++) {
             let twig = this.prefabStorage.instantiate('Twig');
-            this.placeRandom(twig);
+            this.placeRandom(twig, ENTITYTYPE.TWIG);
         }
         for (let i = 0; i < gameConfig.stoneAmount; i++) {
             let rock = this.prefabStorage.instantiate('Rock');
-            this.placeRandom(rock);
+            this.placeRandom(rock, ENTITYTYPE.ROCK);
         }
         for (let i = 0; i < gameConfig.grassAmount; i++) {
             let grass = this.prefabStorage.instantiate('Grass');
-            this.placeRandom(grass);
+            this.placeRandom(grass, ENTITYTYPE.GRASS);
         }
     }
 
-    placeRandom(entity) {
+    placeRandom(entity, entityType) {
         const x = Math.random() * 100 - 50;
         const y = Math.random() * 100 - 50;
         const color = this.getMapPixel(x, y);
-        if (color[3] === 255) {
+        if (color[MAPINDEX.WATER] === 255 && color[MAPINDEX.ENTITYTYPE]===0) {
+            
+            this.setMapPixelEntityType(x,y, entityType);
+
             entity.rotateAxisAngleDeg([0, 1, 0], Math.random() * 360);
             entity.setTranslationWorld([Math.floor(x) + .5,
-            { 82: 6, 137: 4, 171: 2, 206: 0 }[color[1]], Math.floor(y) + .5]);
+            { 82: 6, 137: 4, 171: 2, 206: 0 }[color[MAPINDEX.HEIGHT]], Math.floor(y) + .5]);
 
         }
     }
@@ -96,7 +106,6 @@ class Game {
     plant(position) {
         if (this.registeredPlants[0]) {
             this.registeredPlants[0].plant(position);
-            // this.plantmap[position.x][position.y] = 
         }
 
     }
@@ -138,17 +147,27 @@ class Game {
     loadMap() {
         let myimage = new Image();
         let canvas = document.createElement('canvas');
-        this.mapCtx = canvas.getContext("2d");
+        this.mapCtx = canvas.getContext("2d");        
         myimage.onload = function () {
             this.mapCtx.drawImage(myimage, 0, 0);
             this.mapLoaded = true;
         }.bind(this);
         myimage.src = './map.png';
+
+        
+        document.body.appendChild(canvas);
     }
 
     getMapPixel(x, y) {
         return imageHelpers.getPixelXY(this.mapCtx.getImageData(0, 0, 100, 100), Math.floor(x) + 50, Math.floor(y) + 50);
     }
+
+    setMapPixelEntityType(x,y, entityType){                        
+        let imgData = this.mapCtx.getImageData(0, 0, 100, 100);
+        imgData.data[((Math.floor(y) + 50) * imgData.width + (Math.floor(x) + 50)) * 4 + MAPINDEX.ENTITYTYPE] = entityType*32;                
+        this.mapCtx.putImageData(imgData,0,0);
+    }
+    
 }
 
 var game = new Game();
