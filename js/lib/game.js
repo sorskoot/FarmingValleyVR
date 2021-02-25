@@ -19,6 +19,8 @@ const MAPINDEX = {
     WATER:3
 }
 
+const HEIGHTINDEX = { 82: 6, 137: 4, 171: 2, 206: 0 };
+
 class Game {
     constructor() {
         this.currentAction = "Nothing";
@@ -66,7 +68,7 @@ class Game {
 
             entity.rotateAxisAngleDeg([0, 1, 0], Math.random() * 360);
             entity.setTranslationWorld([Math.floor(x) + .5,
-            { 82: 6, 137: 4, 171: 2, 206: 0 }[color[MAPINDEX.HEIGHT]], Math.floor(y) + .5]);
+            HEIGHTINDEX[color[MAPINDEX.HEIGHT]], Math.floor(y) + .5]);
 
         }
     }

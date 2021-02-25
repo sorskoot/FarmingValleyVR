@@ -11,6 +11,7 @@ WL.registerComponent('action-controller', {
         this.picker.canTrigger = this.canTrigger.bind(this);
         this.picker.pickingAllowed = this.actingAllowed.bind(this);
         this.picker.picked = this.act.bind(this);
+        this.currentHeight = 206;
 
     },
     update: function (dt) {
@@ -43,7 +44,9 @@ WL.registerComponent('action-controller', {
         switch (window.game.currentAction) {
             case "Moving":
                 let pixel = window.game.getMapPixel(x, y);
-                return pixel[3] === 255;
+                console.log(pixel[MAPINDEX.HEIGHT]);
+                return pixel[MAPINDEX.WATER] === 255 
+                    && pixel[MAPINDEX.HEIGHT] === this.currentHeight;
         }
-    },
+    }
 });
