@@ -1,15 +1,21 @@
 Must Have:
-    For now change controls due to issue with controls mixing:
-        ☐ Replace option to buy tiles with option to teleport
+    Movement:
+        ✔ Replace option to buy tiles with option to teleport @done(21-02-25 17:09)
         ☐ Constantly show the location  (not only on down) and teleport on release
         ☐ Move back and forth with the left controller pad
-
-
+        ☐ @today Don't allow to pass walls/height difference
+    
     ✔ Clear some unused textures @done(21-02-22 23:10)
     ✔ Randomly add rocks, sticks, grass and trees. @done(21-02-24 22:51)
     ☐ Create a better world
-    ☐ Day/Night Cycle
+    ✔ @today Day/Night Cycle @done(21-02-25 21:27) ~ set duration to about 20 minutes @done(21-02-25 21:27)
+    ☐ Inventory system
     ☐ Crates to sell
+    ☐ Change menu with sub-menus
+    ☐ Make crops grow every morning - Add a global event the day as past.
+    ☐ Add looping sound of time of day + weather.
+    ☐ Add Rain - On rainy days, you don't have to water the plants.
+
     ✔ Harvest Crops @done(21-02-08 23:14)
     ✔ Water the ground @done(21-02-11 21:33)
     World generation:
@@ -17,12 +23,12 @@ Must Have:
         ☐ Add a little farming house with a crates you can fill
         ☐ Fill everything in between with grass
         ☐ randomly adds weeds, logs and rocks to grass to be removed first.
+            ☐ @today make sure they done stack
         
     Models for:
         ☐ Hoe
         ☐ Watering can
-        ☐ Seeds
-    ☐ better design for menu/inventory system
+        ☐ Seeds    
 
     ☐ way to make real life money
 
