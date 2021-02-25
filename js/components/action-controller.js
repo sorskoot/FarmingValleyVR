@@ -31,6 +31,7 @@ WL.registerComponent('action-controller', {
                 // console.log(o);
                 let position = [];
                 this.player.getTranslationWorld(position);
+                console.log([Math.floor(x) + .5, position[1], Math.floor(z) + .5]);
                 this.player.setTranslationWorld([Math.floor(x) + .5, position[1], Math.floor(z) + .5]);
                 break;
         }

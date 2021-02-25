@@ -160,6 +160,7 @@ class Game {
 
     getMapPixel(x, y) {
         return imageHelpers.getPixelXY(this.mapCtx.getImageData(0, 0, 100, 100), Math.floor(x) + 50, Math.floor(y) + 50);
+
     }
 
     setMapPixelEntityType(x,y, entityType){                        

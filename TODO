@@ -60,13 +60,14 @@ Should Have:
 Could Have:
     ☐ Cows
     ☐ Chickens
+    ☐ Fishing
 
 Would Like:
 
 Bugs:
     ✔ You can plant seeds even if there's a plant already @done(21-02-08 22:55)
     ✔ 'cursor' when selecting options in the menu is missing @done(21-02-22 23:10)
-    ☐ Teleporting goes to the wrong locations
+    ✔ Teleporting goes to the wrong locations @done(21-02-25 22:22)
     ☐ picking a tile to buy is .5 tile off
 
 Ideas:

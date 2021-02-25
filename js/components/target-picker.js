@@ -67,7 +67,7 @@ WL.registerComponent('target-picker', {
                 }
                 this.hitSpot = rayHit.locations[0];
 
-                if (this.pickingAllowed(~~this.hitSpot[0], 0, ~~this.hitSpot[2])) {
+                if (this.pickingAllowed(Math.floor(this.hitSpot[0]), 0, Math.floor(this.hitSpot[2]))) {
                     this.notAllowedPickerMeshObject.setTranslationWorld([1000, 1000, 1000]);
                     this.allowedPickerMeshObject.resetTranslationRotation();
                     this.allowedPickerMeshObject.translate([Math.floor(rayHit.locations[0][0]) + .5, Math.floor(rayHit.locations[0][1]) + .1,  Math.floor(rayHit.locations[0][2]) + .5]);
