@@ -9,7 +9,8 @@ const ENTITYTYPE = {
     TREE:1,
     TWIG:2,
     ROCK:3,
-    GRASS:4
+    GRASS:4,
+    PATHUP:5
 }
 
 const MAPINDEX = {
@@ -102,7 +103,6 @@ class Game {
             this.menuChangeHandlers[index](item);
         }
         this.menuChangeHandlers
-        console.log(this.currentAction);
     }
 
     plant(position) {
@@ -154,10 +154,8 @@ class Game {
             this.mapCtx.drawImage(myimage, 0, 0);
             this.mapLoaded = true;
         }.bind(this);
-        myimage.src = './map.png';
-
-        
-        document.body.appendChild(canvas);
+        myimage.src = './map.png';      
+        //document.body.appendChild(canvas);
     }
 
     getMapPixel(x, y) {

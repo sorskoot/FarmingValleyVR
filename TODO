@@ -4,7 +4,7 @@ Must Have:
         ☐ Constantly show the location  (not only on down) and teleport on release
         ☐ Move back and forth with the left controller pad
         ✔ Don't allow to pass walls/height difference @done(21-02-25 23:00)
-        ☐ @today Add path to go up and down
+        ✔ Add path to go up and down @done(21-02-26 22:34)
     
     ✔ Clear some unused textures @done(21-02-22 23:10)
     ✔ Randomly add rocks, sticks, grass and trees. @done(21-02-24 22:51)

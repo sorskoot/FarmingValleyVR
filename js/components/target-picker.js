@@ -1,3 +1,5 @@
+/// <reference path="../../deploy/wonderland.js" />
+
 WL.registerComponent('target-picker', {
     allowedPickerMeshObject: { type: WL.Type.Object, default: null },
     notAllowedPickerMeshObject: { type: WL.Type.Object, default: null },
@@ -6,10 +8,10 @@ WL.registerComponent('target-picker', {
     canTrigger:function(){
         return true;
     },
-    pickingAllowed:function(x,y,z){
+    pickingAllowed:function(obj, x,y,z){
         return true;
     },
-    picked:function(x,y,z){
+    picked:function(obj, x,y,z){
         console.log('please override picked function');
     },
     initialize:function(input){
@@ -36,10 +38,8 @@ WL.registerComponent('target-picker', {
         if (!this.input.xrInputSource.gamepad.buttons[0].pressed && this.pickingActive === true) {
             this.pickingActive = false;
             if (this.hitSpot) {
-                
-                console.log(this.input.xrInputSource)
-                if (this.pickingAllowed(this.hitSpot[0],this.hitSpot[1],this.hitSpot[2])) {
-                    this.picked(this.hitSpot[0],this.hitSpot[1],this.hitSpot[2]);
+                if (this.pickingAllowed(this.hitObject, this.hitSpot[0],this.hitSpot[1],this.hitSpot[2])) {
+                    this.picked(this.hitObject, this.hitSpot[0],this.hitSpot[1],this.hitSpot[2]);
                 }
                 if (!this.indicatorHidden) {
                     this.allowedPickerMeshObject.translate([1000, -1000, 1000]);
@@ -59,15 +59,15 @@ WL.registerComponent('target-picker', {
             let forwardDirection = [0, 0, 0];
             glMatrix.vec3.transformQuat(forwardDirection, [0, 0, -1], quat);
             let rayHit = WL.scene.rayCast(origin, 
-                forwardDirection, (1 << this.floorGroup)) ;
+                forwardDirection, (1 << this.floorGroup) + 1<<2 ) ;
             
-            if (rayHit.hitCount > 0) {
+            if (rayHit.hitCount > 0) {                
                 if (this.indicatorHidden) {
                     this.indicatorHidden = false;
                 }
-                this.hitSpot = rayHit.locations[0];
-
-                if (this.pickingAllowed(Math.floor(this.hitSpot[0]), 0, Math.floor(this.hitSpot[2]))) {
+                this.hitSpot = rayHit.locations[0];                
+                this.hitObject = rayHit.objects[0];                
+                if (this.pickingAllowed(this.hitObject , Math.floor(this.hitSpot[0]), 0, Math.floor(this.hitSpot[2]))) {
                     this.notAllowedPickerMeshObject.setTranslationWorld([1000, 1000, 1000]);
                     this.allowedPickerMeshObject.resetTranslationRotation();
                     this.allowedPickerMeshObject.translate([Math.floor(rayHit.locations[0][0]) + .5, Math.floor(rayHit.locations[0][1]) + .1,  Math.floor(rayHit.locations[0][2]) + .5]);
@@ -83,6 +83,7 @@ WL.registerComponent('target-picker', {
                     this.indicatorHidden = true;
                 }
                 this.hitSpot = undefined;
+                this.hitObject = undefined;  
             }
         }
     },

@@ -1,7 +1,7 @@
 const gameConfig =
 {
     treeAmount: 150,
-    stoneAmount: 200,
+    stoneAmount: 100,
     stickAmount: 150,
-    grassAmount: 500
+    grassAmount: 1000
 }
