@@ -59,14 +59,26 @@ WL.registerComponent('target-picker', {
             let forwardDirection = [0, 0, 0];
             glMatrix.vec3.transformQuat(forwardDirection, [0, 0, -1], quat);
             let rayHit = WL.scene.rayCast(origin, 
-                forwardDirection, (1 << this.floorGroup) + 1<<2 ) ;
+                forwardDirection, (1 << 1) + (1<<2) ) ; 
             
             if (rayHit.hitCount > 0) {                
                 if (this.indicatorHidden) {
                     this.indicatorHidden = false;
                 }
                 this.hitSpot = rayHit.locations[0];                
-                this.hitObject = rayHit.objects[0];                
+                this.hitObject = rayHit.objects[0];                     
+                let menuClick= this.hitObject.getComponent('menu-click');                        
+                if(menuClick){
+                    if (!this.indicatorHidden) {
+                        this.allowedPickerMeshObject.translate([1000, 1000, 1000]);
+                        this.notAllowedPickerMeshObject.translate([1000, 1000, 1000]);
+                        this.indicatorHidden = true;
+                    }
+                    this.hitSpot = undefined;
+                    this.hitObject = undefined;  
+                    return;
+                }
+
                 if (this.pickingAllowed(this.hitObject , Math.floor(this.hitSpot[0]), 0, Math.floor(this.hitSpot[2]))) {
                     this.notAllowedPickerMeshObject.setTranslationWorld([1000, 1000, 1000]);
                     this.allowedPickerMeshObject.resetTranslationRotation();

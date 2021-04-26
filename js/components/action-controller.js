@@ -48,10 +48,18 @@ WL.registerComponent('action-controller', {
                     this.player.setTranslationWorld([Math.floor(x) + .5, position[1], Math.floor(z) + .5]);
                 }
                 break;
+            case "Tilling":
+                //let landtile = obj.getComponent('landtile');
+                let landTile = window.game.prefabStorage.instantiate('Tilled_Ground');
+                landTile.setTranslationWorld([Math.floor(x) + .5, y, Math.floor(z) + .5]);
+                // let landTile = WL.scene.addObject();
+                // landTile.addComponent('landtile')
+                break;
         }
     },
     canTrigger: function () {
-        return (window.game.currentAction == "Moving");
+        return (window.game.currentAction == "Moving") ||
+               (window.game.currentAction == "Tilling");
     },
     /**
      * 
@@ -61,15 +69,20 @@ WL.registerComponent('action-controller', {
      * @param {number} y 
      */
     actingAllowed: function (obj, x, _, y) {
+        let pixel = window.game.getMapPixel(x, y);
         switch (window.game.currentAction) {
             case "Moving":
                 let pathUp = obj.getComponent('path-up');
                 if (pathUp) {
                     return true;
-                }
-                let pixel = window.game.getMapPixel(x, y);
+                }                
                 return pixel[MAPINDEX.WATER] === 255
                     && pixel[MAPINDEX.HEIGHT] === this.currentHeight;
+                
+            case "Tilling":                
+                return pixel[MAPINDEX.WATER] === 255;
+                    //&& pixel[MAPINDEX.ENTITYTYPE] === 0; // no entity                
+
         }
     }
 });

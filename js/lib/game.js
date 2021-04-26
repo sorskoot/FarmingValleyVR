@@ -6,18 +6,18 @@ const MENU_ITEMS = {
 }
 
 const ENTITYTYPE = {
-    TREE:1,
-    TWIG:2,
-    ROCK:3,
-    GRASS:4,
-    PATHUP:5
+    TREE: 1,
+    TWIG: 2,
+    ROCK: 3,
+    GRASS: 4,
+    PATHUP: 5
 }
 
 const MAPINDEX = {
-    ENTITYTYPE:0,
-    HEIGHT:1,
-    PLANT:2,
-    WATER:3
+    ENTITYTYPE: 0,
+    HEIGHT: 1,
+    PLANT: 2,
+    WATER: 3
 }
 
 const HEIGHTINDEX = { 82: 6, 137: 4, 171: 2, 206: 0 };
@@ -39,9 +39,9 @@ class Game {
             this.generateEntities();
         })
     }
-    
+
     generateEntities() {
-         for (let i = 0; i < gameConfig.treeAmount; i++) {
+        for (let i = 0; i < gameConfig.treeAmount; i++) {
             let tree = this.prefabStorage.instantiate('Tree');
             this.placeRandom(tree, ENTITYTYPE.TREE);
         }
@@ -63,9 +63,9 @@ class Game {
         const x = Math.random() * 100 - 50;
         const y = Math.random() * 100 - 50;
         const color = this.getMapPixel(x, y);
-        if (color[MAPINDEX.WATER] === 255 && color[MAPINDEX.ENTITYTYPE]===0) {
-            
-            this.setMapPixelEntityType(x,y, entityType);
+        if (color[MAPINDEX.WATER] === 255 && color[MAPINDEX.ENTITYTYPE] === 0) {
+
+            this.setMapPixelEntityType(x, y, entityType);
 
             entity.rotateAxisAngleDeg([0, 1, 0], Math.random() * 360);
             entity.setTranslationWorld([Math.floor(x) + .5,
@@ -102,7 +102,6 @@ class Game {
         for (let index = 0; index < this.menuChangeHandlers.length; index++) {
             this.menuChangeHandlers[index](item);
         }
-        this.menuChangeHandlers
     }
 
     plant(position) {
@@ -149,13 +148,13 @@ class Game {
     loadMap() {
         let myimage = new Image();
         let canvas = document.createElement('canvas');
-        this.mapCtx = canvas.getContext("2d");        
+        this.mapCtx = canvas.getContext("2d");
         myimage.onload = function () {
             this.mapCtx.drawImage(myimage, 0, 0);
             this.mapLoaded = true;
         }.bind(this);
-        myimage.src = './map.png';      
-        //document.body.appendChild(canvas);
+        myimage.src = './map.png';
+      //  document.body.appendChild(canvas);
     }
 
     getMapPixel(x, y) {
@@ -163,15 +162,17 @@ class Game {
 
     }
 
-    setMapPixelEntityType(x,y, entityType){                        
+    setMapPixelEntityType(x, y, entityType) {
         let imgData = this.mapCtx.getImageData(0, 0, 100, 100);
-        imgData.data[((Math.floor(y) + 50) * imgData.width + (Math.floor(x) + 50)) * 4 + MAPINDEX.ENTITYTYPE] = entityType*32;                
-        this.mapCtx.putImageData(imgData,0,0);
+        imgData.data[((Math.floor(y) + 50) * imgData.width + (Math.floor(x) + 50)) * 4 + MAPINDEX.ENTITYTYPE] = entityType * 32;
+        this.mapCtx.putImageData(imgData, 0, 0);
     }
-    
+
 }
 
-var game = new Game();
+if ('onSceneLoaded' in WL) {
+    var game = new Game()
+}
 
 
 

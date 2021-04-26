@@ -31,9 +31,11 @@ WL.registerComponent('prefab-storage', {
         let obj =  WL.scene.addObject(parentObject);
         obj.name = prefabName;
         var temp = [0, 0, 0];
-        prefab.getTranslationWorld(temp);
-        obj.setTranslationWorld(temp);
+        // prefab.getTranslationWorld(temp);
+        // obj.setTranslationWorld(temp);        
         obj.scale(prefab.scalingLocal);
+        obj.transformLocal.set(prefab.transformLocal);        
+        
         var prefabMesh = prefab.getComponent('mesh');
         if(prefabMesh){
             let newMesh = obj.addComponent('mesh');
@@ -47,6 +49,7 @@ WL.registerComponent('prefab-storage', {
             newCollision.extents = prefabCollision.extents;
             newCollision.group = prefabCollision.group;
         }
+        obj.setDirty();
         return obj;
     }
 });
