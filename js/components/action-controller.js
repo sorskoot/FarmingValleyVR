@@ -81,15 +81,17 @@ WL.registerComponent('action-controller', {
                     return true;
                 }                
                 return pixel[MAPINDEX.WATER] === 255
-                    && pixel[MAPINDEX.HEIGHT] === this.currentHeight;
+                && pixel[MAPINDEX.HEIGHT] === this.currentHeight;
                 
             case "Tilling":                
                 return pixel[MAPINDEX.WATER] === 255
+                    && pixel[MAPINDEX.HEIGHT] === this.currentHeight
                     && pixel[MAPINDEX.ENTITYTYPE] === ENTITYTYPE.NONE; 
             
             case "Seeding":               
             console.log(`${Math.floor(x)}-${Math.floor(y)}`); 
                 return pixel[MAPINDEX.WATER] === 255
+                    && pixel[MAPINDEX.HEIGHT] === this.currentHeight
                     && pixel[MAPINDEX.ENTITYTYPE] === ENTITYTYPE.TILLED; 
 
         }
