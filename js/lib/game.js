@@ -6,11 +6,14 @@ const MENU_ITEMS = {
 }
 
 const ENTITYTYPE = {
+    NONE: 0,
     TREE: 1,
     TWIG: 2,
     ROCK: 3,
     GRASS: 4,
-    PATHUP: 5
+    PATHUP: 5,
+    TILLED: 6,
+    PLANT: 7,
 }
 
 const MAPINDEX = {
@@ -30,7 +33,6 @@ class Game {
         this.inventory = {};
         this.plantmap = [[]];
         this.loadMap();
-
 
         Promise.all([
             new Promise(res => setInterval(() => { if (this.mapLoaded) res() }, 100)),
@@ -70,7 +72,6 @@ class Game {
             entity.rotateAxisAngleDeg([0, 1, 0], Math.random() * 360);
             entity.setTranslationWorld([Math.floor(x) + .5,
             HEIGHTINDEX[color[MAPINDEX.HEIGHT]], Math.floor(y) + .5]);
-
         }
     }
 
@@ -154,7 +155,7 @@ class Game {
             this.mapLoaded = true;
         }.bind(this);
         myimage.src = './map.png';
-      //  document.body.appendChild(canvas);
+       // document.body.appendChild(canvas);
     }
 
     getMapPixel(x, y) {
@@ -164,7 +165,7 @@ class Game {
 
     setMapPixelEntityType(x, y, entityType) {
         let imgData = this.mapCtx.getImageData(0, 0, 100, 100);
-        imgData.data[((Math.floor(y) + 50) * imgData.width + (Math.floor(x) + 50)) * 4 + MAPINDEX.ENTITYTYPE] = entityType * 32;
+        imgData.data[((Math.floor(y) + 50) * imgData.width + (Math.floor(x) + 50)) * 4 + MAPINDEX.ENTITYTYPE] = entityType;
         this.mapCtx.putImageData(imgData, 0, 0);
     }
 

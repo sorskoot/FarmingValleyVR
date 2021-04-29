@@ -48,7 +48,7 @@ WL.registerComponent('corn', {
 
         let collider = obj.addComponent('collision', {
             collider: WL.Collider.AxisAlignedBox,
-            group: 1 << 1,
+            group: 1 << 3,
             extents: [.5, 1, .5]
         });
 

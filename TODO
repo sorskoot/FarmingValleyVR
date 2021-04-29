@@ -1,4 +1,6 @@
 Must Have:
+
+   
     Movement:
         ✔ Replace option to buy tiles with option to teleport @done(21-02-25 17:09)
         ☐ Constantly show the location  (not only on down) and teleport on release
@@ -51,7 +53,7 @@ Should Have:
     ☐ Tool upgrades:
         ☐ Better axe to remove big trees or something
     ☐ Add the hight map to a WL.Texture and show it in game.
-
+    ☐ haptic feedback on controllers
     Use Construct Arcade coins to buy:
         ☐ Fertilizer
         ☐ Seeds
@@ -69,7 +71,10 @@ Bugs:
     ✔ You can plant seeds even if there's a plant already @done(21-02-08 22:55)
     ✔ 'cursor' when selecting options in the menu is missing @done(21-02-22 23:10)
     ✔ Teleporting goes to the wrong locations @done(21-02-25 22:22)
-    ☐ picking a tile to buy is .5 tile off
+    ✔ picking a tile to buy is .5 tile off @done(21-04-29 21:26)
+    ☐ Hoeing should be done on the right layer.
+    ✔ Prevent planting in the same spot twice, show correct cursor @done(21-04-29 22:38)
+    ☐ ALWAYS place cursor on the ground
 
 Ideas:
     - Cycle of planting seeds and harvestings
