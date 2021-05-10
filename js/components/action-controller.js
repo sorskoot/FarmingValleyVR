@@ -21,7 +21,7 @@ WL.registerComponent('action-controller', {
 
     act: function (obj, x, y, z) {
         switch (window.game.currentAction) {
-            case "Moving":
+            case ACTIONS.MOVING:
                 let position = [];
                 let pathUp = obj.getComponent('path-up');
                 if (pathUp) {
@@ -48,22 +48,29 @@ WL.registerComponent('action-controller', {
                     this.player.setTranslationWorld([Math.floor(x) + .5, position[1], Math.floor(z) + .5]);
                 }
                 break;
-            case "Tilling":                
+            case ACTIONS.TILLING:                
                 let landTile = window.game.prefabStorage.instantiate('Tilled_Ground');
                 landTile.setTranslationWorld([Math.floor(x) + .5, y, Math.floor(z) + .5]);
                 console.log(`${x}-${z}`);
                 window.game.setMapPixelEntityType(x, z, ENTITYTYPE.TILLED);
                 break;
-            case "Seeding":                
+            case ACTIONS.SEEDING:                
                 window.game.setMapPixelEntityType(x, z, ENTITYTYPE.PLANT);
                 this.plant = window.game.plant([Math.floor(x) + .5, y, Math.floor(z) + .5])
                 break;
+            case ACTIONS.HARVESTING:  
+                const succeeded = window.game.harvest([Math.floor(x), y, Math.floor(z)]);
+                if(succeeded){
+                    window.game.setMapPixelEntityType(x, z, ENTITYTYPE.TILLED);
+                }
+                break; 
         }
     },
     canTrigger: function () {
-        return (window.game.currentAction == "Moving") ||
-               (window.game.currentAction == "Tilling") ||
-               (window.game.currentAction == "Seeding");
+        return (window.game.currentAction == ACTIONS.MOVING) ||
+               (window.game.currentAction == ACTIONS.TILLING) ||
+               (window.game.currentAction == ACTIONS.HARVESTING) ||
+               (window.game.currentAction == ACTIONS.SEEDING);
     },
     /**
      * 
@@ -75,7 +82,7 @@ WL.registerComponent('action-controller', {
     actingAllowed: function (obj, x, _, y) {
         let pixel = window.game.getMapPixel(Math.floor(x), Math.floor(y));
         switch (window.game.currentAction) {
-            case "Moving":
+            case ACTIONS.MOVING:
                 let pathUp = obj.getComponent('path-up');
                 if (pathUp) {
                     return true;
@@ -83,17 +90,22 @@ WL.registerComponent('action-controller', {
                 return pixel[MAPINDEX.WATER] === 255
                 && pixel[MAPINDEX.HEIGHT] === this.currentHeight;
                 
-            case "Tilling":                
+            case ACTIONS.TILLING:                
                 return pixel[MAPINDEX.WATER] === 255
                     && pixel[MAPINDEX.HEIGHT] === this.currentHeight
                     && pixel[MAPINDEX.ENTITYTYPE] === ENTITYTYPE.NONE; 
             
-            case "Seeding":               
-            console.log(`${Math.floor(x)}-${Math.floor(y)}`); 
+            case ACTIONS.SEEDING:                           
                 return pixel[MAPINDEX.WATER] === 255
                     && pixel[MAPINDEX.HEIGHT] === this.currentHeight
                     && pixel[MAPINDEX.ENTITYTYPE] === ENTITYTYPE.TILLED; 
-
+            
+            case ACTIONS.HARVESTING:
+                // - Check if plant is fully grown
+                return window.game.hasPlant([x, _, y])
+                // return pixel[MAPINDEX.WATER] === 255
+                //     && pixel[MAPINDEX.HEIGHT] === this.currentHeight
+                //     && pixel[MAPINDEX.ENTITYTYPE] === ENTITYTYPE.PLANT; 
         }
     }
 });

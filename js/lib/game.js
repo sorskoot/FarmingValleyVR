@@ -2,7 +2,8 @@ const MENU_ITEMS = {
     TILLING: 1,
     WATERING: 2,
     SEEDING: 3,
-    MOVING: 4
+    MOVING: 4,
+    HARVESTING: 5
 }
 
 const ENTITYTYPE = {
@@ -21,6 +22,18 @@ const MAPINDEX = {
     HEIGHT: 1,
     PLANT: 2,
     WATER: 3
+}
+
+const ACTIONS = {
+    TILLING:"Tilling",
+    WATERING:"Watering",
+    SEEDING:"Seeding",
+    MOVING:"Moving",
+    HARVESTING:"Harvesting"
+}
+
+const PLANTS = {
+    CORN:0
 }
 
 const HEIGHTINDEX = { 82: 6, 137: 4, 171: 2, 206: 0 };
@@ -88,28 +101,52 @@ class Game {
     menuItem(item) {
         switch (item) {
             case MENU_ITEMS.TILLING:
-                this.currentAction = "Tilling"
+                this.currentAction = ACTIONS.TILLING;
                 break;
             case MENU_ITEMS.WATERING:
-                this.currentAction = "Watering"
+                this.currentAction = ACTIONS.WATERING;
                 break;
             case MENU_ITEMS.SEEDING:
-                this.currentAction = "Seeding"
+                this.currentAction = ACTIONS.SEEDING
                 break;
             case MENU_ITEMS.MOVING:
-                this.currentAction = "Moving"
+                this.currentAction = ACTIONS.MOVING
                 break;
+            case MENU_ITEMS.HARVESTING:
+                this.currentAction = ACTIONS.HARVESTING
+                break;                
         }
         for (let index = 0; index < this.menuChangeHandlers.length; index++) {
             this.menuChangeHandlers[index](item);
         }
     }
 
-    plant(position) {
-        if (this.registeredPlants[0]) {
-            this.registeredPlants[0].plant(position);
+    plant(position) {        
+        if (this.registeredPlants[PLANTS.CORN]) {            
+            this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`]=
+                this.registeredPlants[PLANTS.CORN].plant(position);
+                // this.registeredPlants[PLANTS.CORN].name;
+            console.log(this.plantmap);                        
         }
+    }
 
+    hasPlant(position){
+        return !!this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`];
+    }
+
+    isHarvestable(position){
+
+    }
+    
+    harvest(position){        
+        if(this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`]){
+            
+            const plant = this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`];
+            this.harvested(plant.plantType);
+            plant.destroy();
+            this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`] = null;
+            return true;
+        }
     }
 
     registerPlant(plant) {

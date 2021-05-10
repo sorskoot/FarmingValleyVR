@@ -21,12 +21,13 @@ WL.registerComponent('corn', {
     },
 
     plant: function (position) {
-        if(!!~this.plantedAt.indexOf(position.toString())){
-            console.log("Plant already at: "+position);
-            return;
-        }
-        this.plantedAt.push(position.toString());       
-        if (!this.meshes) {
+        // if(!!~this.plantedAt.indexOf(position.toString())){
+        //     console.log("Plant already at: "+position);
+        //     return;
+        // }
+        //this.plantedAt.push(position.toString());       
+
+        if (!this.meshes) { //TODO: Move back to start
             this.meshes = [
                 this.stage01Mesh,
                 this.stage02Mesh,
@@ -39,44 +40,24 @@ WL.registerComponent('corn', {
         meshComponent = obj.addComponent('mesh');
         meshComponent.mesh = this.meshes[0];
         meshComponent.material = this.material;
+
         let growable = obj.addComponent('growable', { 
             growthTime: .5,
             growthChance: .4 
         }); 
 
-        growable.addOnGrow(this.onGrow.bind(this));
-
-        let collider = obj.addComponent('collision', {
-            collider: WL.Collider.AxisAlignedBox,
-            group: 1 << 3,
-            extents: [.5, 1, .5]
+        growable.addOnGrow((obj, stage)=> {
+            if (stage < 4) {
+                let m = obj.getComponent('mesh');
+                m.mesh = this.meshes[stage];
+            }
         });
-
-        let target = obj.addComponent('cursor-target');
-        target.addClickFunction(this.onClick.bind(this, obj));
-
-        collider.active = false;
+        
+        obj.plantType = new PlantType("Corn", 6);
 
         obj.setTranslationLocal(position);
         obj.scale([.0625, .0625, .0625]);
-    },
 
-    onGrow: function (obj, stage) {
-        if (stage < 4) {
-            let m = obj.getComponent('mesh');
-            m.mesh = this.meshes[stage];
-        }
-
-        if (stage === 3) {
-            let collision = obj.getComponent('collision');
-            collision.active = true;
-        }
-    },
-
-    onClick:function(obj){        
-        this.plantedAt.splice(this.plantedAt.indexOf(obj.getTranslationLocal([0,0,0]).toString(),1));
-        obj.destroy();                       
-        window.game.harvested(this.plantProperties);
-    }
-    
+        return obj;
+    }    
 });

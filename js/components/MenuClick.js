@@ -1,7 +1,7 @@
 WL.registerComponent('menu-click', {
     hoverMaterial: { type: WL.Type.Material },
     selectMaterial: { type: WL.Type.Material },
-    menuItem: { type: WL.Type.Enum, values: ["Nothing", "Till", "Water", "Seed","Move"], default: "Move" }
+    menuItem: { type: WL.Type.Enum, values: ["Nothing", "Till", "Water", "Seed","Move","Harvesting"], default: "Move" }
 }, {
     init: function () {
     },
