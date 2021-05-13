@@ -1,20 +1,19 @@
-WL.registerComponent('corn', {
+WL.registerComponent('tomato', {
     stage01Mesh: { type: WL.Type.Mesh },
     stage02Mesh: { type: WL.Type.Mesh },
     stage03Mesh: { type: WL.Type.Mesh },
     stage04Mesh: { type: WL.Type.Mesh },
     material: { type: WL.Type.Material }
 }, {
-    name: "Corn",
+    name: "Tomato",
 
     init: function () {
-        console.log("Init Corn")
+        
         window.game.registerPlant(this);
-        this.plantProperties = new PlantType("Corn", 6);
+        this.plantProperties = new PlantType("Tomato", 12);
         this.plantedAt = [];
     },
     start: function () {
-
     },
 
     update: function (dt) {
@@ -54,10 +53,9 @@ WL.registerComponent('corn', {
             }
         });
         
-        obj.plantType = new PlantType("Corn", 6);
+        obj.plantType = new PlantType("Tomato", 12);
 
         obj.setTranslationLocal(position);
-        obj.scale([.0625, .0625, .0625]);
 
         return obj;
     }    

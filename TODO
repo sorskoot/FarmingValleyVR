@@ -36,18 +36,31 @@ Must Have:
 Should Have:
     ☐ Multiple different crops
         ☐ v1 has 9 different crops. in the next version we can increase.
-            ☐ Corn
+            ✔ Corn @done(21-05-13 21:22)
             ☐ Califlower
             ☐ Strawberries
             ☐ Red Pepper
             ☐ Melon
-            ☐ Tomato
+            ☐ @today Tomato
             ☐ Wheat
             ☐ Eggplant
             ☐ Pumpkin
 
         ☐ v2 ideas:
             ☐ Rice (grows better near water)
+            ☐ potatos
+            ☐ Sweet potatos
+            ☐ Carrots
+        Different Plants:
+            Trees:
+                ☐ Bananas
+                ☐ Apples              
+                ☐ Oak
+                ☐ Spruce
+            ☐ Grapes
+            ☐ Beans
+
+
     ☐ Tool upgrades:
         ☐ Better axe to remove big trees or something
     ☐ Add the hight map to a WL.Texture and show it in game.

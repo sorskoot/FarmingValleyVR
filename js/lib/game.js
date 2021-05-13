@@ -33,7 +33,8 @@ const ACTIONS = {
 }
 
 const PLANTS = {
-    CORN:0
+    CORN:0,
+    TOMATO:1,
 }
 
 const HEIGHTINDEX = { 82: 6, 137: 4, 171: 2, 206: 0 };
@@ -122,10 +123,9 @@ class Game {
     }
 
     plant(position) {        
-        if (this.registeredPlants[PLANTS.CORN]) {            
+        if (this.registeredPlants[PLANTS.TOMATO]) {            
             this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`]=
-                this.registeredPlants[PLANTS.CORN].plant(position);
-                // this.registeredPlants[PLANTS.CORN].name;
+                this.registeredPlants[PLANTS.TOMATO].plant(position);
             console.log(this.plantmap);                        
         }
     }
@@ -150,6 +150,7 @@ class Game {
     }
 
     registerPlant(plant) {
+        console.log(plant.name);
         if (!~this.registeredPlants.findIndex(v => v.name === plant.name)) {
             this.inventory[plant.name] = 0;
             this.registeredPlants.push(plant);
