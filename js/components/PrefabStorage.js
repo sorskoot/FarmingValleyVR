@@ -22,13 +22,16 @@ WL.registerComponent('prefab-storage', {
      * @param {WL.Object} parentObject 
      * @returns {WL.Object}
      */
-    instantiate:function(prefabName, parentObject){
+    instantiate:function(prefabName, obj){
         let prefab = this.prefabs[prefabName];
         if(!prefab){
             console.error('trying to create '+prefabName+' but that is not a registerd prefab');
             return;
         }
-        let obj =  WL.scene.addObject(parentObject);
+        if(!obj){
+            obj =  WL.scene.addObject();
+        }
+        //let obj =  WL.scene.addObject(parentObject);
         obj.name = prefabName;
         var temp = [0, 0, 0];
         // prefab.getTranslationWorld(temp);

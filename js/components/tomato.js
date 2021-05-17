@@ -7,8 +7,7 @@ WL.registerComponent('tomato', {
 }, {
     name: "Tomato",
 
-    init: function () {
-        
+    init: function () {        
         window.game.registerPlant(this);
         this.plantProperties = new PlantType("Tomato", 12);
         this.plantedAt = [];
@@ -54,9 +53,11 @@ WL.registerComponent('tomato', {
         });
         
         obj.plantType = new PlantType("Tomato", 12);
+        position[0]+= (Math.random()-.5)/5.0;
+        position[2]+= (Math.random()-.5)/5.0;
+        obj.rotateAxisAngleDeg([0, 1, 0], Math.random() * 360);
 
-        obj.setTranslationLocal(position);
-
+        obj.setTranslationLocal(position);        
         return obj;
     }    
 });

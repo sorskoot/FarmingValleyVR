@@ -57,20 +57,24 @@ class Game {
     }
 
     generateEntities() {
+        let treeObjs = WL.scene.addObjects(gameConfig.treeAmount, null, 3)
         for (let i = 0; i < gameConfig.treeAmount; i++) {
-            let tree = this.prefabStorage.instantiate('Tree');
+            let tree = this.prefabStorage.instantiate('Tree', treeObjs[i]);
             this.placeRandom(tree, ENTITYTYPE.TREE);
         }
+        let twigObjs = WL.scene.addObjects(gameConfig.treeAmount, null, 3)
         for (let i = 0; i < gameConfig.stickAmount; i++) {
-            let twig = this.prefabStorage.instantiate('Twig');
+            let twig = this.prefabStorage.instantiate('Twig',twigObjs[i]);
             this.placeRandom(twig, ENTITYTYPE.TWIG);
         }
+        let rocksObjs = WL.scene.addObjects(gameConfig.treeAmount, null, 3)
         for (let i = 0; i < gameConfig.stoneAmount; i++) {
-            let rock = this.prefabStorage.instantiate('Rock');
+            let rock = this.prefabStorage.instantiate('Rock',rocksObjs[i]);
             this.placeRandom(rock, ENTITYTYPE.ROCK);
         }
+        let grassObjs = WL.scene.addObjects(gameConfig.treeAmount, null, 3)
         for (let i = 0; i < gameConfig.grassAmount; i++) {
-            let grass = this.prefabStorage.instantiate('Grass');
+            let grass = this.prefabStorage.instantiate('Grass',grassObjs[i]);
             this.placeRandom(grass, ENTITYTYPE.GRASS);
         }
     }
