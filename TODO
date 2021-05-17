@@ -1,5 +1,6 @@
 Must Have:
-  
+    ☐ Add objects to scene with `addObjects`, with an S
+    
     Movement:
         ✔ Replace option to buy tiles with option to teleport @done(21-02-25 17:09)
         ☐ Constantly show the location  (not only on down) and teleport on release
@@ -85,7 +86,8 @@ Bugs:
     ✔ picking a tile to buy is .5 tile off @done(21-04-29 21:26)
     ✔ Hoeing should be done on the right layer. @done(21-04-29 22:50)
     ✔ Prevent planting in the same spot twice, show correct cursor @done(21-04-29 22:38)
-    ☐ ALWAYS place cursor on the ground
+    ✔ ALWAYS place cursor on the ground @done(21-05-17 21:28)
+    ✔ Tomato icon is missing in menu @done(21-05-17 21:37)
 
 Ideas:
     - Cycle of planting seeds and harvestings
