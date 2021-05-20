@@ -16759,7 +16759,7 @@
             ],
             "transformation": [
                 1.0,
-                7.771561172376106e-16,
+                7.771561172376108e-16,
                 2.793980824478126e-9,
                 0.0,
                 2.794222853097494e-9,
@@ -19599,8 +19599,10 @@
                 "js/lib",
                 "js/data",
                 "js/components/corn.js",
-                "js/utils"
-            ]
+                "js/utils",
+                "bundle.js"
+            ],
+            "useInternalBundler": false
         },
         "runtime": {
             "visualizeColliders": false

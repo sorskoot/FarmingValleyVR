@@ -1,0 +1,27 @@
+{
+  "name": "farming-valley-vr",
+  "version": "1.0.0",
+  "description": "VR Game around farming.",
+  "main": "bundle.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorskoot/FarmingValleyVR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sorskoot/FarmingValleyVR/issues"
+  },
+  "homepage": "https://github.com/sorskoot/FarmingValleyVR#readme",
+  "scripts": {
+    "build": "esbuild bundle.js --minify --sourcemap --bundle --outfile=deploy/FarmingValley-bundle.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.11.14"
+  },
+  "dependencies": {
+    "@wonderlandengine/components": "^0.8.6",
+    "gl-matrix": "^3.3.0"
+  }
+}

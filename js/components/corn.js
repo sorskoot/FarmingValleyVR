@@ -1,3 +1,5 @@
+import {PlantType} from '../classes/PlantType'
+
 WL.registerComponent('corn', {
     stage01Mesh: { type: WL.Type.Mesh },
     stage02Mesh: { type: WL.Type.Mesh },
@@ -10,7 +12,7 @@ WL.registerComponent('corn', {
     init: function () {
         console.log("Init Corn")
         window.game.registerPlant(this);
-        this.plantProperties = new PlantType("Corn", 6);
+        this.plantProperties = new PlantType("Corn", 6);        
         this.plantedAt = [];
     },
     start: function () {

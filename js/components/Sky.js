@@ -1,4 +1,4 @@
-/// <reference path="../../deploy/wonderland.js" />
+import {mathUtils} from '../utils/math-utils';
 
 WL.registerComponent('sky', {
 }, {

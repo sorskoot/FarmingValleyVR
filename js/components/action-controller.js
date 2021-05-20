@@ -1,4 +1,4 @@
-/// <reference path="../../deploy/wonderland.js" />
+import {ACTIONS,ENTITYTYPE,MAPINDEX} from '../lib/gameConfig';
 
 WL.registerComponent('action-controller', {
     player: { type: WL.Type.Object },

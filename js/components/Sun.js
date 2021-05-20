@@ -1,9 +1,10 @@
-/// <reference path="../../deploy/wonderland.js" />
+import {mathUtils} from '../utils/math-utils';
 
 WL.registerComponent('sun', {
 }, {
 
     init: function () {
+
         this.colorCycle = [
             [242 / 255, 156 / 255, 3 / 255],
             [240 / 255, 228 / 255, 177 / 255],
@@ -19,7 +20,6 @@ WL.registerComponent('sun', {
             [16 / 255, 16 / 255, 32 / 255],
             [242 / 255, 156 / 255, 3 / 255],
         ];
-
         this.light = this.object.getComponent('light');
         this.light.color = new Float32Array([1, 0, 0, 1]);
 

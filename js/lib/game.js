@@ -1,3 +1,6 @@
+import {gameConfig, ACTIONS,ENTITYTYPE,MAPINDEX} from './gameConfig';
+import {imageHelpers} from '../utils/imageHelpers'
+
 const MENU_ITEMS = {
     TILLING: 1,
     WATERING: 2,
@@ -6,31 +9,10 @@ const MENU_ITEMS = {
     HARVESTING: 5
 }
 
-const ENTITYTYPE = {
-    NONE: 0,
-    TREE: 1,
-    TWIG: 2,
-    ROCK: 3,
-    GRASS: 4,
-    PATHUP: 5,
-    TILLED: 6,
-    PLANT: 7,
-}
 
-const MAPINDEX = {
-    ENTITYTYPE: 0,
-    HEIGHT: 1,
-    PLANT: 2,
-    WATER: 3
-}
 
-const ACTIONS = {
-    TILLING:"Tilling",
-    WATERING:"Watering",
-    SEEDING:"Seeding",
-    MOVING:"Moving",
-    HARVESTING:"Harvesting"
-}
+
+
 
 const PLANTS = {
     CORN:0,
@@ -39,7 +21,7 @@ const PLANTS = {
 
 const HEIGHTINDEX = { 82: 6, 137: 4, 171: 2, 206: 0 };
 
-class Game {
+export class Game {
     constructor() {
         this.currentAction = "Nothing";
         this.menuChangeHandlers = [];
@@ -218,9 +200,6 @@ class Game {
 
 }
 
-if ('onSceneLoaded' in WL) {
-    var game = new Game()
-}
 
 
 

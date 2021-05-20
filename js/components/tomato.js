@@ -1,3 +1,5 @@
+import {PlantType} from '../classes/PlantType'
+
 WL.registerComponent('tomato', {
     stage01Mesh: { type: WL.Type.Mesh },
     stage02Mesh: { type: WL.Type.Mesh },
