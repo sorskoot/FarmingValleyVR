@@ -630,7 +630,7 @@
                 3.0098612491258334e-9,
                 0,
                 0,
-                -3.00986968682082e-9,
+                -3.0098696868208205e-9,
                 0.0400000624358654,
                 0,
                 0,
@@ -2569,10 +2569,10 @@
                 {
                     "type": "tomato",
                     "tomato": {
-                        "stage01Mesh": "1089",
-                        "stage02Mesh": "1089",
-                        "stage03Mesh": "1089",
-                        "stage04Mesh": "1089",
+                        "stage01Mesh": "1099",
+                        "stage02Mesh": "1122",
+                        "stage03Mesh": "1105",
+                        "stage04Mesh": "1112",
                         "material": "1088"
                     }
                 }
@@ -4693,7 +4693,7 @@
                 0.06249997019767761,
                 0,
                 2,
-                7.4505797087454088e-9,
+                7.450579708745408e-9,
                 -0.000015974044799804689,
                 1
             ],
@@ -6238,7 +6238,7 @@
                 0.06249997019767761,
                 0,
                 -0.9999997615814208,
-                7.450579708745408e-9,
+                7.4505797087454088e-9,
                 -0.000015974044799804689,
                 1
             ],
@@ -6526,7 +6526,7 @@
                 0.06249997019767761,
                 0,
                 -3.999999523162842,
-                7.450579708745408e-9,
+                7.4505797087454088e-9,
                 -0.000015974044799804689,
                 1
             ],
@@ -8622,7 +8622,7 @@
                 0.06249997019767761,
                 0,
                 1.0000017881393433,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1
             ],
@@ -8718,7 +8718,7 @@
                 0.06249997019767761,
                 0,
                 0.0000017918646335601809,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1
             ],
@@ -8910,7 +8910,7 @@
                 0.06249997019767761,
                 0,
                 -1.9999982118606568,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1
             ],
@@ -9006,7 +9006,7 @@
                 0.06249997019767761,
                 0,
                 -3.000000238418579,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1
             ],
@@ -9198,7 +9198,7 @@
                 0.06249997019767761,
                 0,
                 -5.000004291534424,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1
             ],
@@ -9294,7 +9294,7 @@
                 0.06249997019767761,
                 0,
                 -6.000000476837158,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1
             ],
@@ -9962,7 +9962,7 @@
                 0.06249997019767761,
                 0,
                 1.9999996423721312,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 -4.500014781951904,
                 1
             ],
@@ -10250,7 +10250,7 @@
                 0.06249997019767761,
                 0,
                 -0.9999979734420776,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 -4.500014781951904,
                 1
             ],
@@ -16759,7 +16759,7 @@
             ],
             "transformation": [
                 1.0,
-                7.771561172376101e-16,
+                7.771561172376106e-16,
                 2.793980824478126e-9,
                 0.0,
                 2.794222853097494e-9,
@@ -16814,11 +16814,17 @@
             ],
             "parent": "939"
         },
-        "1090": {
-            "link": {
-                "name": "TomatoStage1",
-                "file": "assets\\models\\crops\\TomatoStage1.glb"
-            },
+        "1101": {
+            "name": "Mesh.019",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "1112",
+                        "material": "1088"
+                    }
+                }
+            ],
             "transformation": [
                 1.0,
                 0.0,
@@ -16832,68 +16838,101 @@
                 0.0,
                 1.0,
                 0.0,
-                0.0,
-                0.4075852334499359,
-                1.7476162910461426,
+                0.6430500745773315,
+                0.2353704273700714,
+                7.8166656494140629,
                 1.0
             ],
             "deleted": true
         },
-        "1091": {
+        "1106": {
+            "link": {
+                "name": "PhysCamera001.Target",
+                "file": "assets\\models\\crops\\TomatoStage3.glb"
+            },
+            "parent": "1101",
+            "deleted": true
+        },
+        "1107": {
+            "link": {
+                "name": "TomatoStage003",
+                "file": "assets\\models\\crops\\TomatoStage3.glb"
+            },
+            "parent": "1101",
+            "deleted": true
+        },
+        "1108": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\TomatoStage3.glb"
+            },
+            "parent": "1101",
+            "deleted": true
+        },
+        "1113": {
+            "link": {
+                "name": "PhysCamera001.Target",
+                "file": "assets\\models\\crops\\TomatoStage4.glb"
+            },
+            "parent": "1101",
+            "deleted": true
+        },
+        "1114": {
+            "link": {
+                "name": "TomatoStage004",
+                "file": "assets\\models\\crops\\TomatoStage4.glb"
+            },
+            "parent": "1101",
+            "deleted": true
+        },
+        "1115": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\TomatoStage4.glb"
+            },
+            "parent": "1101",
+            "deleted": true
+        },
+        "1116": {
             "link": {
                 "name": "PhysCamera001.Target",
                 "file": "assets\\models\\crops\\TomatoStage1.glb"
             },
             "deleted": true
         },
-        "1092": {
+        "1117": {
+            "link": {
+                "name": "TomatoStage002",
+                "file": "assets\\models\\crops\\TomatoStage1.glb"
+            },
+            "deleted": true
+        },
+        "1118": {
             "link": {
                 "name": "Default light",
                 "file": "assets\\models\\crops\\TomatoStage1.glb"
             },
             "deleted": true
         },
-        "1095": {
-            "name": "Mesh.017",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "1089",
-                        "material": "1088"
-                    }
-                }
-            ],
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                1.3254990577697757,
-                1.0
-            ],
+        "1123": {
+            "link": {
+                "name": "TomatoStage1",
+                "file": "assets\\models\\crops\\TomatoStage2.glb"
+            },
             "deleted": true
         },
-        "1096": {
-            "name": "Mesh.018",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "material": "1088"
-                    }
-                }
-            ],
+        "1124": {
+            "link": {
+                "name": "PhysCamera001.Target",
+                "file": "assets\\models\\crops\\TomatoStage2.glb"
+            },
+            "deleted": true
+        },
+        "1125": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\TomatoStage2.glb"
+            },
             "deleted": true
         }
     },
@@ -17864,7 +17903,40 @@
                 "name": "TomatoStage1",
                 "file": "assets\\models\\crops\\TomatoStage1.glb"
             },
-            "importScaling": 0.061250001192092898
+            "importScaling": 0.061250001192092898,
+            "name": "TomatoStage--OLD"
+        },
+        "1099": {
+            "link": {
+                "name": "TomatoStage002",
+                "file": "assets\\models\\crops\\TomatoStage1.glb"
+            },
+            "name": "TomatoStage1",
+            "importScaling": 0.0625
+        },
+        "1105": {
+            "link": {
+                "name": "TomatoStage003",
+                "file": "assets\\models\\crops\\TomatoStage3.glb"
+            },
+            "importScaling": 0.0625,
+            "name": "TomatoStage3"
+        },
+        "1112": {
+            "link": {
+                "name": "TomatoStage004",
+                "file": "assets\\models\\crops\\TomatoStage4.glb"
+            },
+            "importScaling": 0.0625,
+            "name": "TomatoStage4"
+        },
+        "1122": {
+            "link": {
+                "name": "TomatoStage1",
+                "file": "assets\\models\\crops\\TomatoStage2.glb"
+            },
+            "importScaling": 0.0625,
+            "name": "TomatoStage2"
         }
     },
     "textures": {
@@ -18155,7 +18227,8 @@
             "link": {
                 "name": "textures_37.png",
                 "file": "assets\\models\\crops\\TomatoStage1.glb"
-            }
+            },
+            "image": "1093"
         },
         "1094": {
             "link": {
@@ -18167,6 +18240,26 @@
             "link": {
                 "name": "textures_38.png",
                 "file": "assets\\textures_38.png"
+            }
+        },
+        "1103": {
+            "link": {
+                "name": "textures_37.png",
+                "file": "assets\\models\\crops\\TomatoStage3.glb"
+            },
+            "image": "1093"
+        },
+        "1110": {
+            "link": {
+                "name": "textures_37.png",
+                "file": "assets\\models\\crops\\TomatoStage4.glb"
+            },
+            "image": "1093"
+        },
+        "1120": {
+            "link": {
+                "name": "textures_37.png",
+                "file": "assets\\models\\crops\\TomatoStage2.glb"
             }
         }
     },
@@ -18490,6 +18583,24 @@
                 "file": "assets\\textures_38.png"
             },
             "compress": false
+        },
+        "1102": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\TomatoStage3.glb"
+            }
+        },
+        "1109": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\TomatoStage4.glb"
+            }
+        },
+        "1119": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\TomatoStage2.glb"
+            }
         }
     },
     "materials": {
@@ -19385,6 +19496,24 @@
                 "diffuseTexture": "1087"
             },
             "name": "TomatoPlant"
+        },
+        "1104": {
+            "link": {
+                "name": "Material #44",
+                "file": "assets\\models\\crops\\TomatoStage3.glb"
+            }
+        },
+        "1111": {
+            "link": {
+                "name": "Material #44",
+                "file": "assets\\models\\crops\\TomatoStage4.glb"
+            }
+        },
+        "1121": {
+            "link": {
+                "name": "Material #44",
+                "file": "assets\\models\\crops\\TomatoStage2.glb"
+            }
         }
     },
     "shaders": {
@@ -19464,7 +19593,7 @@
         },
         "scripting": {
             "sourcePaths": [
-                "/js/components/",
+                "/js/editor-components-bundle.js",
                 "js/",
                 "js/components",
                 "js/lib",
@@ -19533,7 +19662,10 @@
         "assets/textures_34.png",
         "assets/models/PathUp.glb",
         "assets/models/crops/TomatoStage1.glb",
+        "assets/models/crops/TomatoStage2.glb",
         "assets/textures_37.png",
-        "assets/textures_38.png"
+        "assets/textures_38.png",
+        "assets/models/crops/TomatoStage3.glb",
+        "assets/models/crops/TomatoStage4.glb"
     ]
 }
