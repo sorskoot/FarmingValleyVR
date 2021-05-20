@@ -1,6 +1,9 @@
 Must Have:
-    ☐ Add objects to scene with `addObjects`, with an S
+    ✔ Add objects to scene with `addObjects`, with an S @done(21-05-20 21:10)
     
+    ☐ @today Bundling of javascript
+    
+
     Movement:
         ✔ Replace option to buy tiles with option to teleport @done(21-02-25 17:09)
         ☐ Constantly show the location  (not only on down) and teleport on release
@@ -14,7 +17,7 @@ Must Have:
     ✔ Day/Night Cycle @done(21-02-25 21:27) ~ set duration to about 20 minutes @done(21-02-25 21:27)
     ☐ Inventory system
     ☐ Crates to sell
-    ☐ Change menu with sub-menus
+    ☐ @today Change menu with sub-menus
     ☐ Make crops grow every morning - Add a global event the day as past.
     ☐ Add looping sound of time of day + weather.
     ☐ Add Rain - On rainy days, you don't have to water the plants.    
@@ -33,6 +36,7 @@ Must Have:
         ☐ Seeds    
 
     ☐ way to make real life money
+    ☐ A moon at night that passes the sky
 
 Should Have:
     ☐ Multiple different crops
@@ -42,7 +46,7 @@ Should Have:
             ☐ Strawberries
             ☐ Red Pepper
             ☐ Melon
-            ☐ @today Tomato (Headlett's big tomato (Rosie's idea))
+            ✔ Tomato (Headlett's big tomato (Rosie's idea)) @done(21-05-20 21:09)
             ☐ Wheat
             ☐ Eggplant
             ☐ Pumpkin
@@ -90,6 +94,8 @@ Bugs:
     ✔ Prevent planting in the same spot twice, show correct cursor @done(21-04-29 22:38)
     ✔ ALWAYS place cursor on the ground @done(21-05-17 21:28)
     ✔ Tomato icon is missing in menu @done(21-05-17 21:37)
+    ✔ Tomato's are harverstable from the start @done(21-05-20 21:57)
+
 
 Ideas:
     - Cycle of planting seeds and harvestings

@@ -101,8 +101,7 @@ WL.registerComponent('action-controller', {
                     && pixel[MAPINDEX.ENTITYTYPE] === ENTITYTYPE.TILLED; 
             
             case ACTIONS.HARVESTING:
-                // - Check if plant is fully grown
-                return window.game.hasPlant([x, _, y])
+                return window.game.isHarvestable([x, _, y]);
                 // return pixel[MAPINDEX.WATER] === 255
                 //     && pixel[MAPINDEX.HEIGHT] === this.currentHeight
                 //     && pixel[MAPINDEX.ENTITYTYPE] === ENTITYTYPE.PLANT; 

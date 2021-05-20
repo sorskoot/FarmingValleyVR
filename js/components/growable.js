@@ -1,6 +1,7 @@
 WL.registerComponent('growable', {
     growthTime: { type: WL.Type.Float, default: 5.0 },
-    growthChance: { type: WL.Type.Float, default: 0.8 } // == 80%
+    growthChance: { type: WL.Type.Float, default: 0.8 }, // == 80%
+    numberOfStages: {type: WL.Type.Int, default: 4}
 }, {
     init: function () {
 
@@ -13,7 +14,7 @@ WL.registerComponent('growable', {
         this.stage = 0;
     },
     update: function (dt) {
-        if (this.callback) {
+        if (this.callback || this.stage < this.numberOfStages-1) {            
             this.growthTimer -= dt;
             if (this.growthTimer < 0) {
                 this.growthTimer = this.growthTime;
@@ -24,4 +25,7 @@ WL.registerComponent('growable', {
             }
         }
     },
+    isFullyGrown:function(){
+        return this.stage == this.numberOfStages-1;
+    }
 });
