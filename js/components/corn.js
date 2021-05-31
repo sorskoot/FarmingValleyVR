@@ -45,8 +45,8 @@ WL.registerComponent('corn', {
         meshComponent.material = this.material;
 
         let growable = obj.addComponent('growable', { 
-            growthTime: .5,
-            growthChance: .4 
+            growthTime: 5,
+            growthChance: .8  
         }); 
 
         growable.addOnGrow((obj, stage)=> {

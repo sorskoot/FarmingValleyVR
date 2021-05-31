@@ -5,13 +5,15 @@
     "version": "0.2.0",
     "configurations": [
   {
-      "name": "Attach to Chrome",
-      "url": "http://localhost:8080",
+      "name": "Attach to Edge",
+      "url": "http://localhost:7550",
       "port": 9222,
-      "runtimeArgs": [ "--remote-debugging-port=9222" ],
+      //"runtimeArgs": [ "--remote-debugging-port=9222" ],
       "request": "launch",
-      "type": "msedge",
-      "webRoot": "${workspaceFolder}"
+      "type": "msedge",      
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "version": "stable"
   }
     ]
 }

@@ -14,7 +14,7 @@ WL.registerComponent('growable', {
         this.stage = 0;
     },
     update: function (dt) {
-        if (this.callback || this.stage < this.numberOfStages-1) {            
+        if (this.callback && this.stage < this.numberOfStages-1) {            
             this.growthTimer -= dt;
             if (this.growthTimer < 0) {
                 this.growthTimer = this.growthTime;
@@ -26,6 +26,7 @@ WL.registerComponent('growable', {
         }
     },
     isFullyGrown:function(){
+        console.log(`isFullyGrown: ${this.stage == this.numberOfStages-1} (${this.stage},${this.numberOfStages})`);
         return this.stage == this.numberOfStages-1;
     }
 });

@@ -15,7 +15,8 @@
   },
   "homepage": "https://github.com/sorskoot/FarmingValleyVR#readme",
   "scripts": {
-    "build": "esbuild bundle.js --minify --sourcemap --bundle --outfile=deploy/FarmingValley-bundle.js"
+    "build": "esbuild bundle.js --minify --sourcemap --bundle --outfile=deploy/FarmingValley-bundle.js",
+    "wl":"\"C:\\Program Files\\Vhite Rabbit\\WonderlandEngine\\bin\\WonderlandEditor.exe\""
   },
   "devDependencies": {
     "esbuild": "^0.11.14"

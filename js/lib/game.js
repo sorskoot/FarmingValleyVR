@@ -14,8 +14,8 @@ const MENU_ITEMS = {
 
 
 const PLANTS = {
-    CORN:0,
-    TOMATO:1,
+    CORN:"Corn",
+    TOMATO:"Tomato",
 }
 
 const HEIGHTINDEX = { 82: 6, 137: 4, 171: 2, 206: 0 };
@@ -25,7 +25,7 @@ export class Game {
         this.currentAction = "Nothing";
         this.currentActionParameter = null;
         this.menuChangeHandlers = [];
-        this.registeredPlants = [];
+        this.registeredPlants = {};
         this.inventory = {};
         this.plantmap = [[]];
         this.loadMap();
@@ -110,10 +110,11 @@ export class Game {
     }
 
     plant(position) {        
-        if (this.registeredPlants[PLANTS.TOMATO]) {            
+        console.log(`planting: ${this.currentActionParameter}`);
+        if (this.registeredPlants[this.currentActionParameter]) {            
             this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`]=
-                this.registeredPlants[PLANTS.TOMATO].plant(position);
-            console.log(this.plantmap);                        
+                this.registeredPlants[this.currentActionParameter].plant(position);
+            console.log(this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`]);                        
         }
     }
 
@@ -121,10 +122,11 @@ export class Game {
         return !!this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`];
     }
 
-    isHarvestable(position){        
+    isHarvestable(position){           
         if(this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`]){            
             const plant = this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`];
             const growable = plant.getComponent('growable');
+            console.log(growable);
             return growable.isFullyGrown();
         }
         return false;
@@ -142,10 +144,10 @@ export class Game {
     }
 
     registerPlant(plant) {
-        console.log(plant.name);
-        if (!~this.registeredPlants.findIndex(v => v.name === plant.name)) {
+        console.log(plant.name);       
+        if (!this.registeredPlants[plant.name]) {
             this.inventory[plant.name] = 0;
-            this.registeredPlants.push(plant);
+            this.registeredPlants[plant.name] = plant;
         }
     }
 
