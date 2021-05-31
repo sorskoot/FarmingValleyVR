@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@wonderlandengine/api@^0.8.5-1":
+  version "0.8.5-1"
+  resolved "https://registry.yarnpkg.com/@wonderlandengine/api/-/api-0.8.5-1.tgz#cddbd15203d899e52d8c925551895f18bc3234e0"
+  integrity sha512-irbk+t6Wh1f3q5g0tjj9P8DOerZetzDdPQiWfVlhxAVRIDKekkwhfboj0xisKhhc0r0HVN/tVA0SM8J97s/P7w==
+
 "@wonderlandengine/components@^0.8.6":
   version "0.8.6"
   resolved "https://registry.yarnpkg.com/@wonderlandengine/components/-/components-0.8.6.tgz#22885f8c0d66d8d854aee06c032ba4a45ed842f4"

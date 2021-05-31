@@ -1,11 +1,31 @@
-WL.registerComponent('menu-click', {
-    hoverMaterial: { type: WL.Type.Material },
-    selectMaterial: { type: WL.Type.Material },
-    menuItem: { type: WL.Type.Enum, values: ["Nothing", "Till", "Water", "Seed","Move","Harvesting"], default: "Move" }
-}, {
-    init: function () {
+import { Component, Material, Object as WLObject } from "@wonderlandengine/api";
+
+/**
+ * @type {Component}
+ */
+const MenuClickComponent = {
+
+    // /**
+    //  * @type {WLObject}
+    //  */
+    // subMenu,
+    // /**
+    //  * @type {Material}
+    //  */
+    // hoverMaterial,
+
+    // /**
+    //  * @type {Material}
+    //  */
+    // selectMaterial,
+
+
+    init() {
+
     },
-    start: function () {
+
+    start() {
+        console.log(this._id);
         this.isSelected = false;
         let target = this.object.getComponent("cursor-target");
         target.addClickFunction(this.onClick.bind(this));
@@ -20,39 +40,57 @@ WL.registerComponent('menu-click', {
         this.originalColor.set(this.object.getComponent('mesh').material.color);
         this.selectedColor = new Float32Array(4);
         this.selectedColor.set(this.selectMaterial.color);
+        this.showSubmenu(false);
     },
 
-    update: function (dt) {
+    update(dt) {
 
     },
-    onHover: function () {
+    onHover() {
         let color = new Float32Array(4);
-        
         glMatrix.vec3.scale(color, this.isSelected ? this.selectedColor : this.originalColor, .7);
-        color[3]=1;
+        color[3] = 1;
         this.object.getComponent('mesh').material.color = color;
-   
+
     },
-    onUnHover: function () {
+    onUnHover() {
         this.object.getComponent('mesh').material.color = this.isSelected ? this.selectedColor : this.originalColor;
     },
-    onClick: function () {
-        window.game.menuItem(this.menuItem);
+    onClick() {
+        // this.showSubmenu(true);
+        window.game.menuItem(this.menuItem,this.parameter, this._id);
     },
 
-    menuChange: function (e) {
-        this.isSelected = this.menuItem === e;
+    showSubmenu(show) {
+        if (this.subMenu) {
+            if (!show) {
+                this.subMenu.setTranslationLocal([5000, 5000, 5000]);
+            } else {
+                this.subMenu.setTranslationLocal([0, 0, 0]);
+            }
+            // const submenuMesh = this.subMenu.getComponent("mesh");
+            // if (submenuMesh) {
+            //     submenuMesh.active = show;
+            // }
+        }
+    },
+
+    menuChange(id) {
+        this.isSelected = this._id === id;
+        this.showSubmenu(this.isSelected);
         this.isSelected ? this.onHover() : this.onUnHover();
-        
-        // /**
-        //  * @type {WL.Object}
-        //  */
-        // for (let i = 0; i < 15000; i++) {
-                  
-        
-        // var t = window.game.prefabStorage.instantiate('Tree');
-        // t.setTranslationWorld([~~(Math.random()*100-50)+.5,0,~~(Math.random()*100-50)+.5]);
-        // t.rotateAxisAngleDeg([0,1,0],Math.random()*360);
-        // }
     }
-});
+};
+
+window.WL.registerComponent('menu-click', {
+    hoverMaterial: { type: WL.Type.Material },
+    selectMaterial: { type: WL.Type.Material },    
+    menuItem: {
+        type: WL.Type.String,
+        default: "Move"
+    },
+    parameter:{
+        type: WL.Type.String
+    },
+    subMenu: { type: WL.Type.Object, default: null }
+}, MenuClickComponent);

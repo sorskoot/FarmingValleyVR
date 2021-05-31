@@ -21,6 +21,7 @@
     "esbuild": "^0.11.14"
   },
   "dependencies": {
+    "@wonderlandengine/api":"^0.8.5-1",
     "@wonderlandengine/components": "^0.8.6",
     "gl-matrix": "^3.3.0"
   }

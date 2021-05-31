@@ -2,13 +2,12 @@ import {gameConfig, ACTIONS,ENTITYTYPE,MAPINDEX} from './gameConfig';
 import {imageHelpers} from '../utils/imageHelpers'
 
 const MENU_ITEMS = {
-    TILLING: 1,
-    WATERING: 2,
-    SEEDING: 3,
-    MOVING: 4,
-    HARVESTING: 5
+    TILLING: "Till",
+    WATERING: "Water",
+    SEEDING: "Seed",
+    MOVING: "Move",
+    HARVESTING: "Harvesting"
 }
-
 
 
 
@@ -24,6 +23,7 @@ const HEIGHTINDEX = { 82: 6, 137: 4, 171: 2, 206: 0 };
 export class Game {
     constructor() {
         this.currentAction = "Nothing";
+        this.currentActionParameter = null;
         this.menuChangeHandlers = [];
         this.registeredPlants = [];
         this.inventory = {};
@@ -85,16 +85,17 @@ export class Game {
     addMenuChangeFunction(callback) {
         this.menuChangeHandlers.push(callback);
     }
-    menuItem(item) {
-        switch (item) {
+    menuItem(command, parameter, id) {
+        switch (command) {
             case MENU_ITEMS.TILLING:
                 this.currentAction = ACTIONS.TILLING;
                 break;
             case MENU_ITEMS.WATERING:
                 this.currentAction = ACTIONS.WATERING;
                 break;
-            case MENU_ITEMS.SEEDING:
+            case MENU_ITEMS.SEEDING:                
                 this.currentAction = ACTIONS.SEEDING
+                this.currentActionParameter = parameter;
                 break;
             case MENU_ITEMS.MOVING:
                 this.currentAction = ACTIONS.MOVING
@@ -104,7 +105,7 @@ export class Game {
                 break;                
         }
         for (let index = 0; index < this.menuChangeHandlers.length; index++) {
-            this.menuChangeHandlers[index](item);
+            this.menuChangeHandlers[index](id);
         }
     }
 
