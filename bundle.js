@@ -21,6 +21,7 @@ import './js/components/snap-rotate';
 import './js/components/sun';
 import './js/components/target-picker';
 import './js/components/tomato';
+import './js/components/cauliflower';
 import './js/components/growable';
 
 import {Game} from './js/lib/game';

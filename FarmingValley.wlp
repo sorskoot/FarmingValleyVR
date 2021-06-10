@@ -631,7 +631,7 @@
                 3.0098612491258334e-9,
                 0,
                 0,
-                -3.0098696868208205e-9,
+                -3.00986968682082e-9,
                 0.0400000624358654,
                 0,
                 0,
@@ -2576,6 +2576,16 @@
                         "stage03Mesh": "1105",
                         "stage04Mesh": "1112",
                         "material": "1088"
+                    }
+                },
+                {
+                    "type": "cauliflower",
+                    "cauliflower": {
+                        "stage01Mesh": "1318",
+                        "stage02Mesh": "1325",
+                        "stage03Mesh": "1332",
+                        "stage04Mesh": "1339",
+                        "material": "1317"
                     }
                 }
             ]
@@ -4695,7 +4705,7 @@
                 0.06249997019767761,
                 0,
                 2,
-                7.450579708745408e-9,
+                7.4505797087454088e-9,
                 -0.000015974044799804689,
                 1
             ],
@@ -6240,7 +6250,7 @@
                 0.06249997019767761,
                 0,
                 -0.9999997615814208,
-                7.4505797087454088e-9,
+                7.450579708745408e-9,
                 -0.000015974044799804689,
                 1
             ],
@@ -6528,7 +6538,7 @@
                 0.06249997019767761,
                 0,
                 -3.999999523162842,
-                7.4505797087454088e-9,
+                7.450579708745408e-9,
                 -0.000015974044799804689,
                 1
             ],
@@ -8624,7 +8634,7 @@
                 0.06249997019767761,
                 0,
                 1.0000017881393433,
-                6.51925802230835e-9,
+                6.5192580223083508e-9,
                 13.49996852874756,
                 1
             ],
@@ -8720,7 +8730,7 @@
                 0.06249997019767761,
                 0,
                 0.0000017918646335601809,
-                6.51925802230835e-9,
+                6.5192580223083508e-9,
                 13.49996852874756,
                 1
             ],
@@ -8912,7 +8922,7 @@
                 0.06249997019767761,
                 0,
                 -1.9999982118606568,
-                6.51925802230835e-9,
+                6.5192580223083508e-9,
                 13.49996852874756,
                 1
             ],
@@ -9008,7 +9018,7 @@
                 0.06249997019767761,
                 0,
                 -3.000000238418579,
-                6.51925802230835e-9,
+                6.5192580223083508e-9,
                 13.49996852874756,
                 1
             ],
@@ -9200,7 +9210,7 @@
                 0.06249997019767761,
                 0,
                 -5.000004291534424,
-                6.51925802230835e-9,
+                6.5192580223083508e-9,
                 13.49996852874756,
                 1
             ],
@@ -9296,7 +9306,7 @@
                 0.06249997019767761,
                 0,
                 -6.000000476837158,
-                6.51925802230835e-9,
+                6.5192580223083508e-9,
                 13.49996852874756,
                 1
             ],
@@ -9964,7 +9974,7 @@
                 0.06249997019767761,
                 0,
                 1.9999996423721312,
-                6.51925802230835e-9,
+                6.5192580223083508e-9,
                 -4.500014781951904,
                 1
             ],
@@ -10252,7 +10262,7 @@
                 0.06249997019767761,
                 0,
                 -0.9999979734420776,
-                6.51925802230835e-9,
+                6.5192580223083508e-9,
                 -4.500014781951904,
                 1
             ],
@@ -17259,7 +17269,8 @@
                         "hoverMaterial": "49",
                         "menuItem": "Seed",
                         "selectMaterial": "54",
-                        "subMenu": null
+                        "subMenu": null,
+                        "parameter": "Cauliflower"
                     }
                 },
                 {
@@ -17745,6 +17756,199 @@
                 0.0,
                 1.0
             ],
+            "deleted": true
+        },
+        "1314": {
+            "name": "Empty.001",
+            "deleted": true
+        },
+        "1319": {
+            "link": {
+                "name": "PhysCamera001.Target",
+                "file": "assets\\models\\crops\\CauliflowerStage1.glb"
+            },
+            "parent": "1314",
+            "deleted": true
+        },
+        "1320": {
+            "link": {
+                "name": "CauliflowerStage1",
+                "file": "assets\\models\\crops\\CauliflowerStage1.glb"
+            },
+            "parent": "1314",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.65675687789917,
+                -1.4901161193847657e-8,
+                0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "1321": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\CauliflowerStage1.glb"
+            },
+            "parent": "1314",
+            "deleted": true
+        },
+        "1326": {
+            "link": {
+                "name": "PhysCamera001.Target",
+                "file": "assets\\models\\crops\\CauliflowerStage2.glb"
+            },
+            "parent": "1314",
+            "deleted": true
+        },
+        "1327": {
+            "link": {
+                "name": "CauliflowerStage2",
+                "file": "assets\\models\\crops\\CauliflowerStage2.glb"
+            },
+            "parent": "1314",
+            "transformation": [
+                0.1871098428964615,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23619376122951508,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1871098428964615,
+                0.0,
+                1.9769463539123536,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "1317"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "1328": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\CauliflowerStage2.glb"
+            },
+            "parent": "1314",
+            "deleted": true
+        },
+        "1333": {
+            "link": {
+                "name": "PhysCamera001.Target",
+                "file": "assets\\models\\crops\\CauliflowerStage3.glb"
+            },
+            "parent": "1314",
+            "deleted": true
+        },
+        "1334": {
+            "link": {
+                "name": "CauliflowerStage3",
+                "file": "assets\\models\\crops\\CauliflowerStage3.glb"
+            },
+            "parent": "1314",
+            "transformation": [
+                1.1694364547729493,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.1071581840515137,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.1694364547729493,
+                0.0,
+                1.3983495235443116,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "1317"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "1335": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\CauliflowerStage3.glb"
+            },
+            "parent": "1314",
+            "deleted": true
+        },
+        "1340": {
+            "link": {
+                "name": "PhysCamera001.Target",
+                "file": "assets\\models\\crops\\CauliflowerStage4.glb"
+            },
+            "parent": "1314",
+            "deleted": true
+        },
+        "1341": {
+            "link": {
+                "name": "CauliflowerStage4",
+                "file": "assets\\models\\crops\\CauliflowerStage4.glb"
+            },
+            "parent": "1314",
+            "transformation": [
+                1.9614372253417969,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.8569809198379517,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.9614372253417969,
+                0.0,
+                0.6665313243865967,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "1317"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "1342": {
+            "link": {
+                "name": "Default light",
+                "file": "assets\\models\\crops\\CauliflowerStage4.glb"
+            },
+            "parent": "1314",
             "deleted": true
         }
     },
@@ -18749,6 +18953,34 @@
             },
             "importScaling": 0.0625,
             "name": "TomatoStage2"
+        },
+        "1318": {
+            "link": {
+                "name": "CauliflowerStage1",
+                "file": "assets\\models\\crops\\CauliflowerStage1.glb"
+            },
+            "importScaling": 0.06199999898672104
+        },
+        "1325": {
+            "link": {
+                "name": "CauliflowerStage2",
+                "file": "assets\\models\\crops\\CauliflowerStage2.glb"
+            },
+            "importScaling": 0.06199999898672104
+        },
+        "1332": {
+            "link": {
+                "name": "CauliflowerStage3",
+                "file": "assets\\models\\crops\\CauliflowerStage3.glb"
+            },
+            "importScaling": 0.06199999898672104
+        },
+        "1339": {
+            "link": {
+                "name": "CauliflowerStage4",
+                "file": "assets\\models\\crops\\CauliflowerStage4.glb"
+            },
+            "importScaling": 0.06199999898672104
         }
     },
     "textures": {
@@ -19501,6 +19733,426 @@
             }
         },
         "1312": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_63.png",
+                "file": "assets\\textures_63.png"
+            }
+        },
+        "1316": {
+            "link": {
+                "name": "textures_39.png",
+                "file": "assets\\models\\crops\\CauliflowerStage1.glb"
+            }
+        },
+        "1323": {
+            "link": {
+                "name": "textures_39.png",
+                "file": "assets\\models\\crops\\CauliflowerStage2.glb"
+            }
+        },
+        "1330": {
+            "link": {
+                "name": "textures_39.png",
+                "file": "assets\\models\\crops\\CauliflowerStage3.glb"
+            }
+        },
+        "1337": {
+            "link": {
+                "name": "textures_39.png",
+                "file": "assets\\models\\crops\\CauliflowerStage4.glb"
+            }
+        },
+        "1344": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_3.png",
+                "file": "assets\\models\\textures_3.png"
+            }
+        },
+        "1346": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_4.png",
+                "file": "assets\\models\\textures_4.png"
+            }
+        },
+        "1348": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_5.png",
+                "file": "assets\\textures_5.png"
+            }
+        },
+        "1350": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_7.png",
+                "file": "assets\\textures_7.png"
+            }
+        },
+        "1352": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_6.png",
+                "file": "assets\\textures_6.png"
+            }
+        },
+        "1354": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_26.png",
+                "file": "assets\\textures_26.png"
+            }
+        },
+        "1356": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_27.png",
+                "file": "assets\\textures_27.png"
+            }
+        },
+        "1358": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_28.png",
+                "file": "assets\\textures_28.png"
+            }
+        },
+        "1360": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_29.png",
+                "file": "assets\\textures_29.png"
+            }
+        },
+        "1362": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_30.png",
+                "file": "assets\\textures_30.png"
+            }
+        },
+        "1364": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_31.png",
+                "file": "assets\\textures_31.png"
+            }
+        },
+        "1366": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_32.png",
+                "file": "assets\\textures_32.png"
+            }
+        },
+        "1368": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\LowPolyFarmLite_Texture_01.png",
+                "file": "assets\\models\\LowPolyFarmLite_Texture_01.png"
+            }
+        },
+        "1370": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_34.png",
+                "file": "assets\\textures_34.png"
+            }
+        },
+        "1372": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_37.png",
+                "file": "assets\\textures_37.png"
+            }
+        },
+        "1374": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_38.png",
+                "file": "assets\\textures_38.png"
+            }
+        },
+        "1376": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_58.png",
+                "file": "assets\\textures_58.png"
+            }
+        },
+        "1378": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_59.png",
+                "file": "assets\\textures_59.png"
+            }
+        },
+        "1380": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_60.png",
+                "file": "assets\\textures_60.png"
+            }
+        },
+        "1382": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_61.png",
+                "file": "assets\\textures_61.png"
+            }
+        },
+        "1384": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_62.png",
+                "file": "assets\\textures_62.png"
+            }
+        },
+        "1386": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_63.png",
+                "file": "assets\\textures_63.png"
+            }
+        },
+        "1388": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_3.png",
+                "file": "assets\\models\\textures_3.png"
+            }
+        },
+        "1390": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_4.png",
+                "file": "assets\\models\\textures_4.png"
+            }
+        },
+        "1392": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_5.png",
+                "file": "assets\\textures_5.png"
+            }
+        },
+        "1394": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_7.png",
+                "file": "assets\\textures_7.png"
+            }
+        },
+        "1396": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_6.png",
+                "file": "assets\\textures_6.png"
+            }
+        },
+        "1398": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_26.png",
+                "file": "assets\\textures_26.png"
+            }
+        },
+        "1400": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_27.png",
+                "file": "assets\\textures_27.png"
+            }
+        },
+        "1402": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_28.png",
+                "file": "assets\\textures_28.png"
+            }
+        },
+        "1404": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_29.png",
+                "file": "assets\\textures_29.png"
+            }
+        },
+        "1406": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_30.png",
+                "file": "assets\\textures_30.png"
+            }
+        },
+        "1408": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_31.png",
+                "file": "assets\\textures_31.png"
+            }
+        },
+        "1410": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_32.png",
+                "file": "assets\\textures_32.png"
+            }
+        },
+        "1412": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\LowPolyFarmLite_Texture_01.png",
+                "file": "assets\\models\\LowPolyFarmLite_Texture_01.png"
+            }
+        },
+        "1414": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_34.png",
+                "file": "assets\\textures_34.png"
+            }
+        },
+        "1416": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_37.png",
+                "file": "assets\\textures_37.png"
+            }
+        },
+        "1418": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_38.png",
+                "file": "assets\\textures_38.png"
+            }
+        },
+        "1420": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_58.png",
+                "file": "assets\\textures_58.png"
+            }
+        },
+        "1422": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_59.png",
+                "file": "assets\\textures_59.png"
+            }
+        },
+        "1424": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_60.png",
+                "file": "assets\\textures_60.png"
+            }
+        },
+        "1426": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_61.png",
+                "file": "assets\\textures_61.png"
+            }
+        },
+        "1428": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_62.png",
+                "file": "assets\\textures_62.png"
+            }
+        },
+        "1430": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_63.png",
+                "file": "assets\\textures_63.png"
+            }
+        },
+        "1432": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_3.png",
+                "file": "assets\\models\\textures_3.png"
+            }
+        },
+        "1434": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_4.png",
+                "file": "assets\\models\\textures_4.png"
+            }
+        },
+        "1436": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_5.png",
+                "file": "assets\\textures_5.png"
+            }
+        },
+        "1438": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_7.png",
+                "file": "assets\\textures_7.png"
+            }
+        },
+        "1440": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_6.png",
+                "file": "assets\\textures_6.png"
+            }
+        },
+        "1442": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_26.png",
+                "file": "assets\\textures_26.png"
+            }
+        },
+        "1444": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_27.png",
+                "file": "assets\\textures_27.png"
+            }
+        },
+        "1446": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_28.png",
+                "file": "assets\\textures_28.png"
+            }
+        },
+        "1448": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_29.png",
+                "file": "assets\\textures_29.png"
+            }
+        },
+        "1450": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_30.png",
+                "file": "assets\\textures_30.png"
+            }
+        },
+        "1452": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_31.png",
+                "file": "assets\\textures_31.png"
+            }
+        },
+        "1454": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_32.png",
+                "file": "assets\\textures_32.png"
+            }
+        },
+        "1456": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\LowPolyFarmLite_Texture_01.png",
+                "file": "assets\\models\\LowPolyFarmLite_Texture_01.png"
+            }
+        },
+        "1458": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_34.png",
+                "file": "assets\\textures_34.png"
+            }
+        },
+        "1460": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_37.png",
+                "file": "assets\\textures_37.png"
+            }
+        },
+        "1462": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_38.png",
+                "file": "assets\\textures_38.png"
+            }
+        },
+        "1464": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_58.png",
+                "file": "assets\\textures_58.png"
+            }
+        },
+        "1466": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_59.png",
+                "file": "assets\\textures_59.png"
+            }
+        },
+        "1468": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_60.png",
+                "file": "assets\\textures_60.png"
+            }
+        },
+        "1470": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_61.png",
+                "file": "assets\\textures_61.png"
+            }
+        },
+        "1472": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_62.png",
+                "file": "assets\\textures_62.png"
+            }
+        },
+        "1474": {
             "link": {
                 "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_63.png",
                 "file": "assets\\textures_63.png"
@@ -20273,6 +20925,426 @@
             }
         },
         "1311": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_63.png",
+                "file": "assets\\textures_63.png"
+            }
+        },
+        "1315": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\CauliflowerStage1.glb"
+            }
+        },
+        "1322": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\CauliflowerStage2.glb"
+            }
+        },
+        "1329": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\CauliflowerStage3.glb"
+            }
+        },
+        "1336": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\models\\crops\\CauliflowerStage4.glb"
+            }
+        },
+        "1343": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_3.png",
+                "file": "assets\\models\\textures_3.png"
+            }
+        },
+        "1345": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_4.png",
+                "file": "assets\\models\\textures_4.png"
+            }
+        },
+        "1347": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_5.png",
+                "file": "assets\\textures_5.png"
+            }
+        },
+        "1349": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_7.png",
+                "file": "assets\\textures_7.png"
+            }
+        },
+        "1351": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_6.png",
+                "file": "assets\\textures_6.png"
+            }
+        },
+        "1353": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_26.png",
+                "file": "assets\\textures_26.png"
+            }
+        },
+        "1355": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_27.png",
+                "file": "assets\\textures_27.png"
+            }
+        },
+        "1357": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_28.png",
+                "file": "assets\\textures_28.png"
+            }
+        },
+        "1359": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_29.png",
+                "file": "assets\\textures_29.png"
+            }
+        },
+        "1361": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_30.png",
+                "file": "assets\\textures_30.png"
+            }
+        },
+        "1363": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_31.png",
+                "file": "assets\\textures_31.png"
+            }
+        },
+        "1365": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_32.png",
+                "file": "assets\\textures_32.png"
+            }
+        },
+        "1367": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\LowPolyFarmLite_Texture_01.png",
+                "file": "assets\\models\\LowPolyFarmLite_Texture_01.png"
+            }
+        },
+        "1369": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_34.png",
+                "file": "assets\\textures_34.png"
+            }
+        },
+        "1371": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_37.png",
+                "file": "assets\\textures_37.png"
+            }
+        },
+        "1373": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_38.png",
+                "file": "assets\\textures_38.png"
+            }
+        },
+        "1375": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_58.png",
+                "file": "assets\\textures_58.png"
+            }
+        },
+        "1377": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_59.png",
+                "file": "assets\\textures_59.png"
+            }
+        },
+        "1379": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_60.png",
+                "file": "assets\\textures_60.png"
+            }
+        },
+        "1381": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_61.png",
+                "file": "assets\\textures_61.png"
+            }
+        },
+        "1383": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_62.png",
+                "file": "assets\\textures_62.png"
+            }
+        },
+        "1385": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_63.png",
+                "file": "assets\\textures_63.png"
+            }
+        },
+        "1387": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_3.png",
+                "file": "assets\\models\\textures_3.png"
+            }
+        },
+        "1389": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_4.png",
+                "file": "assets\\models\\textures_4.png"
+            }
+        },
+        "1391": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_5.png",
+                "file": "assets\\textures_5.png"
+            }
+        },
+        "1393": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_7.png",
+                "file": "assets\\textures_7.png"
+            }
+        },
+        "1395": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_6.png",
+                "file": "assets\\textures_6.png"
+            }
+        },
+        "1397": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_26.png",
+                "file": "assets\\textures_26.png"
+            }
+        },
+        "1399": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_27.png",
+                "file": "assets\\textures_27.png"
+            }
+        },
+        "1401": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_28.png",
+                "file": "assets\\textures_28.png"
+            }
+        },
+        "1403": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_29.png",
+                "file": "assets\\textures_29.png"
+            }
+        },
+        "1405": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_30.png",
+                "file": "assets\\textures_30.png"
+            }
+        },
+        "1407": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_31.png",
+                "file": "assets\\textures_31.png"
+            }
+        },
+        "1409": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_32.png",
+                "file": "assets\\textures_32.png"
+            }
+        },
+        "1411": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\LowPolyFarmLite_Texture_01.png",
+                "file": "assets\\models\\LowPolyFarmLite_Texture_01.png"
+            }
+        },
+        "1413": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_34.png",
+                "file": "assets\\textures_34.png"
+            }
+        },
+        "1415": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_37.png",
+                "file": "assets\\textures_37.png"
+            }
+        },
+        "1417": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_38.png",
+                "file": "assets\\textures_38.png"
+            }
+        },
+        "1419": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_58.png",
+                "file": "assets\\textures_58.png"
+            }
+        },
+        "1421": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_59.png",
+                "file": "assets\\textures_59.png"
+            }
+        },
+        "1423": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_60.png",
+                "file": "assets\\textures_60.png"
+            }
+        },
+        "1425": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_61.png",
+                "file": "assets\\textures_61.png"
+            }
+        },
+        "1427": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_62.png",
+                "file": "assets\\textures_62.png"
+            }
+        },
+        "1429": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_63.png",
+                "file": "assets\\textures_63.png"
+            }
+        },
+        "1431": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_3.png",
+                "file": "assets\\models\\textures_3.png"
+            }
+        },
+        "1433": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_4.png",
+                "file": "assets\\models\\textures_4.png"
+            }
+        },
+        "1435": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_5.png",
+                "file": "assets\\textures_5.png"
+            }
+        },
+        "1437": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_7.png",
+                "file": "assets\\textures_7.png"
+            }
+        },
+        "1439": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_6.png",
+                "file": "assets\\textures_6.png"
+            }
+        },
+        "1441": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_26.png",
+                "file": "assets\\textures_26.png"
+            }
+        },
+        "1443": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_27.png",
+                "file": "assets\\textures_27.png"
+            }
+        },
+        "1445": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_28.png",
+                "file": "assets\\textures_28.png"
+            }
+        },
+        "1447": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_29.png",
+                "file": "assets\\textures_29.png"
+            }
+        },
+        "1449": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_30.png",
+                "file": "assets\\textures_30.png"
+            }
+        },
+        "1451": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_31.png",
+                "file": "assets\\textures_31.png"
+            }
+        },
+        "1453": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_32.png",
+                "file": "assets\\textures_32.png"
+            }
+        },
+        "1455": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\LowPolyFarmLite_Texture_01.png",
+                "file": "assets\\models\\LowPolyFarmLite_Texture_01.png"
+            }
+        },
+        "1457": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_34.png",
+                "file": "assets\\textures_34.png"
+            }
+        },
+        "1459": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_37.png",
+                "file": "assets\\textures_37.png"
+            }
+        },
+        "1461": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_38.png",
+                "file": "assets\\textures_38.png"
+            }
+        },
+        "1463": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_58.png",
+                "file": "assets\\textures_58.png"
+            }
+        },
+        "1465": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_59.png",
+                "file": "assets\\textures_59.png"
+            }
+        },
+        "1467": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_60.png",
+                "file": "assets\\textures_60.png"
+            }
+        },
+        "1469": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_61.png",
+                "file": "assets\\textures_61.png"
+            }
+        },
+        "1471": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_62.png",
+                "file": "assets\\textures_62.png"
+            }
+        },
+        "1473": {
             "link": {
                 "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_63.png",
                 "file": "assets\\textures_63.png"
@@ -21257,6 +22329,31 @@
                 "flatTexture": "1164"
             },
             "pipeline": "1170"
+        },
+        "1317": {
+            "link": {
+                "name": "Material #45",
+                "file": "assets\\models\\crops\\CauliflowerStage1.glb"
+            },
+            "name": "Cauliflower"
+        },
+        "1324": {
+            "link": {
+                "name": "Material #45",
+                "file": "assets\\models\\crops\\CauliflowerStage2.glb"
+            }
+        },
+        "1331": {
+            "link": {
+                "name": "Material #45",
+                "file": "assets\\models\\crops\\CauliflowerStage3.glb"
+            }
+        },
+        "1338": {
+            "link": {
+                "name": "Material #45",
+                "file": "assets\\models\\crops\\CauliflowerStage4.glb"
+            }
         }
     },
     "shaders": {
@@ -21422,7 +22519,11 @@
         "assets/textures_60.png",
         "assets/textures_61.png",
         "assets/textures_62.png",
-        "assets/textures_63.png"
+        "assets/textures_63.png",
+        "assets/models/crops/CauliflowerStage1.glb",
+        "assets/models/crops/CauliflowerStage2.glb",
+        "assets/models/crops/CauliflowerStage3.glb",
+        "assets/models/crops/CauliflowerStage4.glb"
     ],
     "pipelines": {
         "1166": {
