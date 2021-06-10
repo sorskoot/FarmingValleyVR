@@ -102,6 +102,10 @@ export class Game {
 
     plant(position) {        
         console.log(`planting: ${this.currentActionParameter}`);
+        console.dir(this.registeredPlants[this.currentActionParameter]);
+        console.log(!!this.registeredPlants[this.currentActionParameter]);
+        console.log(`${Math.floor(position[0])} X ${Math.floor(position[2])}`);
+        console.dir(this.plantmap);
         if (this.registeredPlants[this.currentActionParameter]) {            
             this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`]=
                 this.registeredPlants[this.currentActionParameter].plant(position);

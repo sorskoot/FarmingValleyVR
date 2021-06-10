@@ -26,7 +26,6 @@ WL.registerComponent('growable', {
         }
     },
     isFullyGrown:function(){
-        console.log(`isFullyGrown: ${this.stage == this.numberOfStages-1} (${this.stage},${this.numberOfStages})`);
         return this.stage == this.numberOfStages-1;
     }
 });

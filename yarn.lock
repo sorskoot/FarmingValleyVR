@@ -3,14 +3,14 @@
 
 
 "@wonderlandengine/api@^0.8.5-1":
-  version "0.8.5-1"
-  resolved "https://registry.yarnpkg.com/@wonderlandengine/api/-/api-0.8.5-1.tgz#cddbd15203d899e52d8c925551895f18bc3234e0"
-  integrity sha512-irbk+t6Wh1f3q5g0tjj9P8DOerZetzDdPQiWfVlhxAVRIDKekkwhfboj0xisKhhc0r0HVN/tVA0SM8J97s/P7w==
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@wonderlandengine/api/-/api-0.8.6.tgz#39e882cdc2d812a84fa0deb56f43a4f577bab4b7"
+  integrity sha512-EEiFVpLI8385PPGizyMdHYCYnvXn+fwRSgGFdU/WRReFeuTnniL2UZUTZE8RQ3soGT/72ld5OTuY+Udj9dqhOg==
 
 "@wonderlandengine/components@^0.8.6":
-  version "0.8.6"
-  resolved "https://registry.yarnpkg.com/@wonderlandengine/components/-/components-0.8.6.tgz#22885f8c0d66d8d854aee06c032ba4a45ed842f4"
-  integrity sha512-kuQJHRMPw+ye6X+VPiacMjJhb4VwuVGLEXz4zN5mxlvlwRv5poWsHMyBszRXzppERVqekxwDAOq2iUk8DJJrqA==
+  version "0.8.8"
+  resolved "https://registry.yarnpkg.com/@wonderlandengine/components/-/components-0.8.8.tgz#bb3d9f0fa3aee08d86e0e49c7aa3a2bd9c2c96b6"
+  integrity sha512-5eYovlTLCuax5qIBkNoScWuZheSGl2qK7LjSlcpfUbJsGUG+61DBIGFquraHGAjJgLlc4rIc8iVSoNJY82iv6A==
   dependencies:
     gl-matrix "^3.3.0"
     howler "^2.2.1"

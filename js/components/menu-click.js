@@ -1,4 +1,4 @@
-import { Component, Material, Object as WLObject } from "@wonderlandengine/api";
+import { Component } from "@wonderlandengine/api";
 
 /**
  * @type {Component}
@@ -6,7 +6,7 @@ import { Component, Material, Object as WLObject } from "@wonderlandengine/api";
 const MenuClickComponent = {
 
     // /**
-    //  * @type {WLObject}
+    //  * @type {Object}
     //  */
     // subMenu,
     // /**
@@ -25,7 +25,6 @@ const MenuClickComponent = {
     },
 
     start() {
-        console.log(this._id);
         this.isSelected = false;
         let target = this.object.getComponent("cursor-target");
         target.addClickFunction(this.onClick.bind(this));
@@ -35,7 +34,7 @@ const MenuClickComponent = {
         this.object.getComponent('mesh').material = this.originalMaterial;
         window.game.addMenuChangeFunction(this.menuChange.bind(this));
         this.selectMaterial = this.selectMaterial.clone();
-
+        
         this.originalColor = new Float32Array(4);
         this.originalColor.set(this.object.getComponent('mesh').material.color);
         this.selectedColor = new Float32Array(4);

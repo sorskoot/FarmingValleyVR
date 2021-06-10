@@ -631,7 +631,7 @@
                 3.0098612491258334e-9,
                 0,
                 0,
-                -3.00986968682082e-9,
+                -3.0098696868208205e-9,
                 0.0400000624358654,
                 0,
                 0,
@@ -4695,7 +4695,7 @@
                 0.06249997019767761,
                 0,
                 2,
-                7.4505797087454088e-9,
+                7.450579708745408e-9,
                 -0.000015974044799804689,
                 1
             ],
@@ -6240,7 +6240,7 @@
                 0.06249997019767761,
                 0,
                 -0.9999997615814208,
-                7.450579708745408e-9,
+                7.4505797087454088e-9,
                 -0.000015974044799804689,
                 1
             ],
@@ -6528,7 +6528,7 @@
                 0.06249997019767761,
                 0,
                 -3.999999523162842,
-                7.450579708745408e-9,
+                7.4505797087454088e-9,
                 -0.000015974044799804689,
                 1
             ],
@@ -8624,7 +8624,7 @@
                 0.06249997019767761,
                 0,
                 1.0000017881393433,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1
             ],
@@ -8720,7 +8720,7 @@
                 0.06249997019767761,
                 0,
                 0.0000017918646335601809,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1
             ],
@@ -8912,7 +8912,7 @@
                 0.06249997019767761,
                 0,
                 -1.9999982118606568,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1
             ],
@@ -9008,7 +9008,7 @@
                 0.06249997019767761,
                 0,
                 -3.000000238418579,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1
             ],
@@ -9200,7 +9200,7 @@
                 0.06249997019767761,
                 0,
                 -5.000004291534424,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1
             ],
@@ -9296,7 +9296,7 @@
                 0.06249997019767761,
                 0,
                 -6.000000476837158,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 13.49996852874756,
                 1
             ],
@@ -9964,7 +9964,7 @@
                 0.06249997019767761,
                 0,
                 1.9999996423721312,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 -4.500014781951904,
                 1
             ],
@@ -10252,7 +10252,7 @@
                 0.06249997019767761,
                 0,
                 -0.9999979734420776,
-                6.5192580223083508e-9,
+                6.51925802230835e-9,
                 -4.500014781951904,
                 1
             ],
@@ -17053,7 +17053,7 @@
                 -3.410605131648481e-13,
                 8.891498648466726e-14,
                 0.0,
-                3.3395508580724726e-13,
+                3.339550858072473e-13,
                 0.9999999403953552,
                 0.0,
                 0.0,
@@ -17715,6 +17715,37 @@
                     }
                 }
             ]
+        },
+        "1313": {
+            "name": "Mesh.018",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "1099",
+                        "material": "1088"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.6108314990997315,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "deleted": true
         }
     },
     "meshes": {
@@ -19342,6 +19373,138 @@
                 "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_63.png",
                 "file": "assets\\textures_63.png"
             }
+        },
+        "1270": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_3.png",
+                "file": "assets\\models\\textures_3.png"
+            }
+        },
+        "1272": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_4.png",
+                "file": "assets\\models\\textures_4.png"
+            }
+        },
+        "1274": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_5.png",
+                "file": "assets\\textures_5.png"
+            }
+        },
+        "1276": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_7.png",
+                "file": "assets\\textures_7.png"
+            }
+        },
+        "1278": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_6.png",
+                "file": "assets\\textures_6.png"
+            }
+        },
+        "1280": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_26.png",
+                "file": "assets\\textures_26.png"
+            }
+        },
+        "1282": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_27.png",
+                "file": "assets\\textures_27.png"
+            }
+        },
+        "1284": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_28.png",
+                "file": "assets\\textures_28.png"
+            }
+        },
+        "1286": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_29.png",
+                "file": "assets\\textures_29.png"
+            }
+        },
+        "1288": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_30.png",
+                "file": "assets\\textures_30.png"
+            }
+        },
+        "1290": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_31.png",
+                "file": "assets\\textures_31.png"
+            }
+        },
+        "1292": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_32.png",
+                "file": "assets\\textures_32.png"
+            }
+        },
+        "1294": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\LowPolyFarmLite_Texture_01.png",
+                "file": "assets\\models\\LowPolyFarmLite_Texture_01.png"
+            }
+        },
+        "1296": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_34.png",
+                "file": "assets\\textures_34.png"
+            }
+        },
+        "1298": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_37.png",
+                "file": "assets\\textures_37.png"
+            }
+        },
+        "1300": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_38.png",
+                "file": "assets\\textures_38.png"
+            }
+        },
+        "1302": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_58.png",
+                "file": "assets\\textures_58.png"
+            }
+        },
+        "1304": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_59.png",
+                "file": "assets\\textures_59.png"
+            }
+        },
+        "1306": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_60.png",
+                "file": "assets\\textures_60.png"
+            }
+        },
+        "1308": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_61.png",
+                "file": "assets\\textures_61.png"
+            }
+        },
+        "1310": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_62.png",
+                "file": "assets\\textures_62.png"
+            }
+        },
+        "1312": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_63.png",
+                "file": "assets\\textures_63.png"
+            }
         }
     },
     "images": {
@@ -19978,6 +20141,138 @@
             }
         },
         "1267": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_63.png",
+                "file": "assets\\textures_63.png"
+            }
+        },
+        "1269": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_3.png",
+                "file": "assets\\models\\textures_3.png"
+            }
+        },
+        "1271": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\textures_4.png",
+                "file": "assets\\models\\textures_4.png"
+            }
+        },
+        "1273": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_5.png",
+                "file": "assets\\textures_5.png"
+            }
+        },
+        "1275": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_7.png",
+                "file": "assets\\textures_7.png"
+            }
+        },
+        "1277": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_6.png",
+                "file": "assets\\textures_6.png"
+            }
+        },
+        "1279": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_26.png",
+                "file": "assets\\textures_26.png"
+            }
+        },
+        "1281": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_27.png",
+                "file": "assets\\textures_27.png"
+            }
+        },
+        "1283": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_28.png",
+                "file": "assets\\textures_28.png"
+            }
+        },
+        "1285": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_29.png",
+                "file": "assets\\textures_29.png"
+            }
+        },
+        "1287": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_30.png",
+                "file": "assets\\textures_30.png"
+            }
+        },
+        "1289": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_31.png",
+                "file": "assets\\textures_31.png"
+            }
+        },
+        "1291": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_32.png",
+                "file": "assets\\textures_32.png"
+            }
+        },
+        "1293": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\models\\LowPolyFarmLite_Texture_01.png",
+                "file": "assets\\models\\LowPolyFarmLite_Texture_01.png"
+            }
+        },
+        "1295": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_34.png",
+                "file": "assets\\textures_34.png"
+            }
+        },
+        "1297": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_37.png",
+                "file": "assets\\textures_37.png"
+            }
+        },
+        "1299": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_38.png",
+                "file": "assets\\textures_38.png"
+            }
+        },
+        "1301": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_58.png",
+                "file": "assets\\textures_58.png"
+            }
+        },
+        "1303": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_59.png",
+                "file": "assets\\textures_59.png"
+            }
+        },
+        "1305": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_60.png",
+                "file": "assets\\textures_60.png"
+            }
+        },
+        "1307": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_61.png",
+                "file": "assets\\textures_61.png"
+            }
+        },
+        "1309": {
+            "link": {
+                "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_62.png",
+                "file": "assets\\textures_62.png"
+            }
+        },
+        "1311": {
             "link": {
                 "name": "C:\\dev\\FarmingValleyVR\\assets\\textures_63.png",
                 "file": "assets\\textures_63.png"
@@ -20874,9 +21169,10 @@
                 "file": "assets\\models\\crops\\TomatoStage1.glb"
             },
             "Phong": {
-                "diffuseTexture": "1087"
+                "diffuseTexture": "1120"
             },
-            "name": "TomatoPlant"
+            "name": "TomatoPlant",
+            "pipeline": "1177"
         },
         "1104": {
             "link": {
@@ -21057,7 +21353,18 @@
                 0.8352352380752564,
                 0.91372549533844,
                 1
-            ]
+            ],
+            "textureAtlasSize": [
+                8192,
+                8192
+            ],
+            "compressedTextureAtlasSize": [
+                8192,
+                8192
+            ],
+            "bloom": {
+                "enabled": false
+            }
         },
         "editor": {
             "serverPort": 7550

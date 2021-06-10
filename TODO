@@ -91,7 +91,7 @@ Could Have:
 Would Like:
 
 Bugs:
-    ☐ @today Tomatos can't be planted anymore
+    ✔ Tomatos can't be planted anymore @done(21-06-10 22:11)
     ✔ You can plant seeds even if there's a plant already @done(21-02-08 22:55)
     ✔ 'cursor' when selecting options in the menu is missing @done(21-02-22 23:10)
     ✔ Teleporting goes to the wrong locations @done(21-02-25 22:22)
