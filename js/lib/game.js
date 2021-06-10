@@ -9,15 +9,6 @@ const MENU_ITEMS = {
     HARVESTING: "Harvesting"
 }
 
-
-
-
-
-const PLANTS = {
-    CORN:"Corn",
-    TOMATO:"Tomato",
-}
-
 const HEIGHTINDEX = { 82: 6, 137: 4, 171: 2, 206: 0 };
 
 export class Game {
@@ -126,7 +117,6 @@ export class Game {
         if(this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`]){            
             const plant = this.plantmap[`${Math.floor(position[0])} X ${Math.floor(position[2])}`];
             const growable = plant.getComponent('growable');
-            console.log(growable);
             return growable.isFullyGrown();
         }
         return false;

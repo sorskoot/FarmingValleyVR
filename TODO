@@ -1,8 +1,7 @@
 Must Have:
-    ✔ Add objects to scene with `addObjects`, with an S @done(21-05-20 21:10)
-    
-    ☐ @today Bundling of javascript
-    
+    ✔ Add objects to scene with `addObjects`, with an S @done(21-05-20 21:10)    
+    ✔ Bundling of javascript @done(21-06-07 21:34)
+    ☐ Work on desktop
 
     Movement:
         ✔ Replace option to buy tiles with option to teleport @done(21-02-25 17:09)
@@ -17,7 +16,7 @@ Must Have:
     ✔ Day/Night Cycle @done(21-02-25 21:27) ~ set duration to about 20 minutes @done(21-02-25 21:27)
     ☐ Inventory system
     ☐ Crates to sell
-    ☐ @today Change menu with sub-menus
+    ✔ Change menu with sub-menus @done(21-06-07 21:34)
     ☐ Make crops grow every morning - Add a global event the day as past.
     ☐ Add looping sound of time of day + weather.
     ☐ Add Rain - On rainy days, you don't have to water the plants.    
@@ -45,17 +44,21 @@ Should Have:
             ☐ Califlower
             ☐ Strawberries
             ☐ Red Pepper
-            ☐ Melon
             ✔ Tomato (Headlett's big tomato (Rosie's idea)) @done(21-05-20 21:09)
             ☐ Wheat
             ☐ Eggplant
-            ☐ Pumpkin
+            ☐ potatos
+            ☐ Carrots
+            
+            
 
         ☐ v2 ideas:
-            ☐ Rice (grows better near water)
-            ☐ potatos
+            ☐ Rice (grows better near water)            
             ☐ Sweet potatos
-            ☐ Carrots
+            ☐ Melon   
+            ☐ Bell peppers
+            ☐ Pumpkin
+            
         Different Plants:
             Trees:
                 ☐ Bananas
@@ -88,6 +91,7 @@ Could Have:
 Would Like:
 
 Bugs:
+    ☐ @today Tomatos can't be planted anymore
     ✔ You can plant seeds even if there's a plant already @done(21-02-08 22:55)
     ✔ 'cursor' when selecting options in the menu is missing @done(21-02-22 23:10)
     ✔ Teleporting goes to the wrong locations @done(21-02-25 22:22)

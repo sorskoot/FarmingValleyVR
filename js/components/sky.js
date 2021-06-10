@@ -19,14 +19,15 @@ WL.registerComponent('sky', {
             [5 / 255, 9 / 255, 13 / 255],
             [217 / 255, 249 / 255, 182 / 255],
         ];
-        this.material = this.object.getComponent('mesh').material;
+     
 
         let color = [
             this.colorCycle[0][0],
             this.colorCycle[0][1],
             this.colorCycle[0][2], 1];
-
-        this.material.color = color;
+        
+        WL.scene.clearColor = color;
+     
         this.daySteps = 12;
     },
     start: function () {
@@ -51,8 +52,8 @@ WL.registerComponent('sky', {
                 this.colorCycle[day + 1][0],
                 this.colorCycle[day + 1][1],
                 this.colorCycle[day + 1][2]];
-
-            this.material.color = [
+            
+            WL.scene.clearColor = [
                 mathUtils.lerp(color1[0], color2[0], position),
                 mathUtils.lerp(color1[1], color2[1], position),
                 mathUtils.lerp(color1[2], color2[2], position),
